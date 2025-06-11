@@ -5,7 +5,6 @@ import { useAuth } from '../AuthContext';
 import { loadNotes } from '../services/DataService';
 import Layout from '../Layout';
 import startMatchupButton from '../assets/startmatchup.png';
-import viewMatchupHistoryButton from '../assets/viewmatchuphistory.png';
 
 function timeAgo(timestamp: number): string {
   const now = new Date();
@@ -72,6 +71,17 @@ export default function Home() {
 
       <Layout showBackground={false}>
         <div style={{ textAlign: 'center' }}>
+          <img
+  src={`${import.meta.env.BASE_URL}icon.png`}
+  alt="Logo"
+  style={{
+    width: '150px',
+    height: '150px',
+    objectFit: 'contain',
+    marginBottom: '12px',
+    filter: 'drop-shadow(0 0 6px rgba(255, 255, 255, 0.3))',
+  }}
+/>
           <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px' }}>
             <div>
               <img
@@ -121,15 +131,7 @@ export default function Home() {
             <span style={{ color: '#fff', textShadow: '0 0 6px rgba(255,255,255,0.6)' }}>➂ See Matchup Tips</span>
           </div>
 
-          <img
-            src={viewMatchupHistoryButton}
-            alt="View Matchup History"
-            style={{ width: '160px', height: '160px', cursor: 'pointer', display: 'block', margin: '12px auto', objectFit: 'contain', transition: 'transform 0.1s ease-in-out', filter: 'drop-shadow(0 0 8px rgba(255, 221, 87, 0.4))' }}
-            onClick={() => navigate('/history')}
-            onMouseDown={(e) => (e.currentTarget.style.transform = 'scale(0.95)')}
-            onMouseUp={(e) => (e.currentTarget.style.transform = 'scale(1)')}
-            onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
-          />
+          
 
           {recent.length > 0 && (
             <div style={{ marginTop: '30px', textAlign: 'left', maxWidth: '400px', marginInline: 'auto', color: '#fff' }}>

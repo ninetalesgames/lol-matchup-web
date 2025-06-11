@@ -22,9 +22,7 @@ export default function Layout({
 {showBackground && <div style={styles.skyboxBackground} />}
       <header style={styles.header}>
         <div style={styles.headerInner}>
-          <div style={styles.logo} onClick={() => navigate('/')}>
-            <img src={`${base}logo.png`} alt="LoL Matchup Master" style={styles.logoImage} />
-          </div>
+          
           <nav style={styles.nav}>
             <button style={styles.iconButton} onClick={() => navigate('/')}>
               <img src={`${base}home.png`} alt="Home" style={styles.iconImage} />
@@ -142,7 +140,7 @@ const styles: { [key: string]: React.CSSProperties } = {
   },
   headerInner: {
     display: 'flex',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     alignItems: 'center',
   },
   logo: {
