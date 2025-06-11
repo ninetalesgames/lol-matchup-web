@@ -1,262 +1,273 @@
+// MatchupDetails.tsx
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useAuth } from '../AuthContext';
 import { loadNotes, saveNotes } from '../services/DataService';
 import Layout from '../Layout';
-import ConfirmModal from '../components/ConfirmModal';
 import championsData from '../assets/champions.json';
-
-type MatchupNote = {
-  workedWell: string;
-  struggles: string;
-  itemsHelped: string;
-  rememberNext: string;
-  difficulty: number;
-  wins?: number;
-  losses?: number;
-};
 
 export default function MatchupDetails() {
   const navigate = useNavigate();
   const { user } = useAuth();
-  const { playerChampion, opponentChampion } = useParams<{
-    playerChampion: string;
-    opponentChampion: string;
-  }>();
+  const { playerChampion, opponentChampion } = useParams();
+  const [notes, setNotes] = useState<Record<string, any>>({});
+  const [showEditWins, setShowEditWins] = useState(false);
+  const [winCount, setWinCount] = useState(0);
+  const [lossCount, setLossCount] = useState(0);
 
-  const [notes, setNotes] = useState<Record<string, MatchupNote>>({});
-  const [showModal, setShowModal] = useState(false);
-  const [pendingResult, setPendingResult] = useState<'win' | 'loss' | null>(null);
   const key = `${playerChampion}_${opponentChampion}`;
   const opponentData = championsData.find((c) => c.name === opponentChampion);
+
+  const leftSplash = playerChampion
+    ? `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${playerChampion}_0.jpg`
+    : '';
+  const rightSplash = opponentChampion
+    ? `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${opponentChampion}_0.jpg`
+    : '';
 
   useEffect(() => {
     const fetchNotes = async () => {
       const savedNotes = await loadNotes(user);
       setNotes(savedNotes);
+
+      const note = savedNotes[key];
+      if (note) {
+        setWinCount(note.wins || 0);
+        setLossCount(note.losses || 0);
+      }
     };
     fetchNotes();
   }, [user]);
 
-  const handleLaneResult = (result: 'win' | 'loss') => {
-    setPendingResult(result);
-    setShowModal(true);
+  const formatTimestamp = (ts: number) =>
+    new Date(ts).toLocaleDateString('en-GB', {
+      day: '2-digit',
+      month: 'short',
+      year: 'numeric',
+    });
+
+  const generateSentences = (list: string[], type: 'worked' | 'struggles') => {
+    return list.map((entry, i) => (
+      <p key={i} style={{ color: type === 'worked' ? '#2ecc71' : '#e74c3c' }}>
+        {type === 'worked' ? `🟢 ${entry}` : `🔴 ${entry}`}
+      </p>
+    ));
   };
-
-  const confirmLaneResult = async () => {
-    if (!pendingResult) return;
-
-    const current = notes[key] || {
-      workedWell: '',
-      struggles: '',
-      itemsHelped: '',
-      rememberNext: '',
-      difficulty: 3,
-      wins: 0,
-      losses: 0,
-    };
-
-    const updated = {
-      ...notes,
-      [key]: {
-        ...current,
-        wins: pendingResult === 'win' ? (current.wins || 0) + 1 : current.wins || 0,
-        losses: pendingResult === 'loss' ? (current.losses || 0) + 1 : current.losses || 0,
-        lastUpdated: Date.now(),
-      },
-    };
-    await saveNotes(user, updated);
-
-    const refreshedNotes = await loadNotes(user);
-    setNotes(refreshedNotes);
-
-    setShowModal(false);
-    setPendingResult(null);
-  };
-
-  const handleEditWinrate = async () => {
-    const winInput = prompt('Enter updated wins:');
-    const lossInput = prompt('Enter updated losses:');
-
-    if (winInput === null || lossInput === null) return;
-
-    const newWins = parseInt(winInput, 10);
-    const newLosses = parseInt(lossInput, 10);
-
-    if (isNaN(newWins) || isNaN(newLosses)) {
-      alert('Invalid input. Please enter numbers.');
-      return;
-    }
-
-    const updated = {
-      ...notes,
-      [key]: {
-        ...notes[key],
-        wins: newWins,
-        losses: newLosses,
-        lastUpdated: Date.now(),
-      },
-    };
-    await saveNotes(user, updated);
-    const refreshedNotes = await loadNotes(user);
-    setNotes(refreshedNotes);
-  };
-
-  const renderStars = (count: number) =>
-    '★'.repeat(count) + '☆'.repeat(5 - count);
 
   const note = notes[key];
   const wins = note?.wins || 0;
   const losses = note?.losses || 0;
   const total = wins + losses;
   const winrate = total > 0 ? Math.round((wins / total) * 100) : null;
-
-  const greenWidth = total > 0 ? (wins / total) * 100 : 0;
-  const redWidth = 100 - greenWidth;
+  const hasLoggedNotes =
+    note && (note.worked?.length > 0 || note.struggles?.length > 0 || note.items?.length > 0 || note.extra);
 
   return (
-    <Layout>
-      <div style={styles.container}>
-        <h1 style={styles.title}>
-          {playerChampion} vs {opponentChampion}
-        </h1>
-
-        {note ? (
-          <div>
-            <h2 style={styles.sectionTitle}>What worked well?</h2>
-            <p>{note.workedWell}</p>
-
-            <h2 style={styles.sectionTitle}>What was hard?</h2>
-            <p>{note.struggles}</p>
-
-            <h2 style={styles.sectionTitle}>Helpful items/runes?</h2>
-            <p>{note.itemsHelped}</p>
-
-            <h2 style={styles.sectionTitle}>What to remember next time?</h2>
-            <p>{note.rememberNext}</p>
-
-            <h2 style={styles.sectionTitle}>Difficulty:</h2>
-            <p style={styles.stars}>{renderStars(note.difficulty)}</p>
-
-            {total > 0 && (
-              <div>
-                <p style={styles.winrate}>
-                  Winrate: {winrate}% ({wins}W / {losses}L)
-                </p>
-                <div style={styles.barContainer}>
-                  <div style={{ ...styles.greenBar, width: `${greenWidth}%` }} />
-                  <div style={{ ...styles.redBar, width: `${redWidth}%` }} />
-                </div>
-              </div>
-            )}
-          </div>
-        ) : (
-          <p>[No notes saved yet]</p>
+    <>
+      <div
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100vw',
+          height: '100vh',
+          zIndex: -1,
+          display: 'flex',
+        }}
+      >
+        {leftSplash && (
+          <img
+            src={leftSplash}
+            alt="left"
+            style={{ width: '50vw', height: '100%', objectFit: 'cover', opacity: 0.8, transform: 'scaleX(-1)' }}
+          />
         )}
-
-        <h2 style={styles.sectionTitle}>Exclusive Matchup Insights:</h2>
-        <p>{opponentData ? opponentData.genericTips : '[No tips available]'}</p>
-
-        <div style={styles.buttonGroup}>
-          <button
-            style={styles.button}
-            onClick={() =>
-              navigate(`/notes/${playerChampion}/${opponentChampion}/${!!note}`)
-            }
-          >
-            {note ? 'Edit Notes' : 'Add Notes'}
-          </button>
-
-          <button
-            style={{ ...styles.button, backgroundColor: 'green' }}
-            onClick={() => handleLaneResult('win')}
-          >
-            Won Lane
-          </button>
-
-          <button
-            style={{ ...styles.button, backgroundColor: 'red' }}
-            onClick={() => handleLaneResult('loss')}
-          >
-            Lost Lane
-          </button>
-
-          <button
-            style={{ ...styles.button, backgroundColor: '#555' }}
-            onClick={handleEditWinrate}
-          >
-            Edit Winrate
-          </button>
-        </div>
-
-        <button
-          style={styles.backButton}
-          onClick={() => navigate(`/opponent/${playerChampion}`)}
-        >
-          Back to Opponent Select
-        </button>
-
-        <ConfirmModal
-          isOpen={showModal}
-          message={
-            pendingResult === 'win'
-              ? "Did you *really* win lane? Or are you just coping?"
-              : "You *really* lost lane? No shame, but let's be honest!"
-          }
-          onConfirm={confirmLaneResult}
-          onCancel={() => {
-            setShowModal(false);
-            setPendingResult(null);
-          }}
-        />
+        {rightSplash && (
+          <img
+            src={rightSplash}
+            alt="right"
+            style={{ width: '50vw', height: '100%', objectFit: 'cover', opacity: 0.8 }}
+          />
+        )}
       </div>
-    </Layout>
+
+      <div style={{ position: 'relative', zIndex: 1 }}>
+        <div
+          style={{
+            position: 'relative',
+            zIndex: 2,
+            padding: '20px',
+            background:
+              'linear-gradient(to right, rgba(19, 19, 19, 0) 0%, rgba(10,10,10,1) 40%, rgba(10,10,10,1) 60%, rgba(10,10,10,0) 100%)',
+          }}
+        >
+          <Layout showBackground={false}>
+            <div style={{ textAlign: 'center' }}>
+              <h1>
+                {playerChampion} vs {opponentChampion}
+              </h1>
+
+              {hasLoggedNotes && (
+                <>
+                  {note.worked && generateSentences(note.worked, 'worked')}
+                  {note.struggles && generateSentences(note.struggles, 'struggles')}
+
+                  {note.items?.length > 0 && (
+                    <>
+                      <h3>🛠 Items That Helped</h3>
+                      <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '10px' }}>
+                        {note.items.map((id: string) => (
+                          <img
+                            key={id}
+                            src={`https://ddragon.leagueoflegends.com/cdn/14.10.1/img/item/${id}.png`}
+                            alt={id}
+                            style={{ width: '40px', height: '40px', borderRadius: 6 }}
+                          />
+                        ))}
+                      </div>
+                    </>
+                  )}
+
+                  {note.extra && (
+                    <>
+                      <h3>📝 Personal Notes</h3>
+                      <p>{note.extra}</p>
+                    </>
+                  )}
+                </>
+              )}
+
+              <h3>📊 Results</h3>
+<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+  <div style={styles.winratePillContainer}>
+    <div style={styles.winratePill}>
+      <div style={{ ...styles.greenFill, width: `${(wins / total) * 100}%` }} />
+      <div style={{ ...styles.redFill, width: `${(losses / total) * 100}%` }} />
+    </div>
+    <div style={styles.winrateText}>
+      {winrate !== null ? `${winrate}%` : 'N/A'}
+    </div>
+  </div>
+  <span>{total} Games | {wins}W / {losses}L</span>
+  <button onClick={() => setShowEditWins(!showEditWins)} style={styles.iconButton}>
+    ✏️
+  </button>
+</div>
+{note?.lastUpdated && (
+  <p style={{ fontSize: '12px', color: '#aaa' }}>Last played: {formatTimestamp(note.lastUpdated)}</p>
+)}
+
+
+
+              {showEditWins && (
+                <div style={styles.resultEditor}>
+                  <div style={{ marginBottom: '8px' }}>
+                    <strong>Wins:</strong>
+                    <button onClick={() => setWinCount((prev) => Math.max(0, prev - 1))} style={styles.adjustButton}>
+                      -
+                    </button>
+                    <span style={{ margin: '0 10px' }}>{winCount}</span>
+                    <button onClick={() => setWinCount((prev) => prev + 1)} style={styles.adjustButton}>
+                      +
+                    </button>
+                  </div>
+                  <div style={{ marginBottom: '8px' }}>
+                    <strong>Losses:</strong>
+                    <button onClick={() => setLossCount((prev) => Math.max(0, prev - 1))} style={styles.adjustButton}>
+                      -
+                    </button>
+                    <span style={{ margin: '0 10px' }}>{lossCount}</span>
+                    <button onClick={() => setLossCount((prev) => prev + 1)} style={styles.adjustButton}>
+                      +
+                    </button>
+                  </div>
+                  <button
+                    style={{ ...styles.button, marginTop: '8px' }}
+                    onClick={async () => {
+                      const updated = {
+                        ...notes,
+                        [key]: {
+                          ...note,
+                          wins: winCount,
+                          losses: lossCount,
+                          lastUpdated: Date.now(),
+                        },
+                      };
+                      await saveNotes(user, updated);
+                      setNotes(updated);
+                      setShowEditWins(false);
+                    }}
+                  >
+                    Save Changes
+                  </button>
+                </div>
+              )}
+
+              <h2>Exclusive Matchup Insights:</h2>
+              {opponentData?.matchupTips ? (
+                opponentData.matchupTips.map((section: any, index: number) => (
+                  <div key={index} style={{ marginBottom: '20px' }}>
+                    <h3>{section.phase}</h3>
+                    <ul style={{ paddingLeft: 0, listStyleType: 'none' }}>
+                      {section.tips.map((tip: string, idx: number) => (
+                        <li key={idx} style={{ marginBottom: '6px' }}>
+                          • {tip}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))
+              ) : (
+                <p>{opponentData?.genericTips || '[No tips available]'}</p>
+              )}
+
+              {opponentData?.recommendedPicks?.length ? (
+                <>
+                  <h3>Recommended Picks</h3>
+                  <div style={{ display: 'flex', justifyContent: 'center', gap: 10, flexWrap: 'wrap' }}>
+                    {opponentData.recommendedPicks.map((champName: string) => (
+                      <div key={champName} style={{ textAlign: 'center' }}>
+                        <img
+                          src={`https://ddragon.leagueoflegends.com/cdn/15.11.1/img/champion/${champName}.png`}
+                          alt={champName}
+                          style={{ width: 40, height: 40, borderRadius: 8 }}
+                        />
+                        <p style={{ fontSize: 12 }}>{champName}</p>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              ) : null}
+
+              <div style={{ marginTop: 20 }}>
+                <button
+                  onClick={() => navigate(`/notes/${playerChampion}/${opponentChampion}/false`)}
+                  style={styles.button}
+                >
+                  Log Game
+                </button>
+                {hasLoggedNotes && (
+                  <button
+                    onClick={() => navigate(`/notes/${playerChampion}/${opponentChampion}/true`)}
+                    style={styles.button}
+                  >
+                    Edit Notes
+                  </button>
+                )}
+              </div>
+
+              <button onClick={() => navigate(`/opponent/${playerChampion}`)} style={styles.backButton}>
+                Back to Opponent Select
+              </button>
+            </div>
+          </Layout>
+        </div>
+      </div>
+    </>
   );
 }
 
 const styles: { [key: string]: React.CSSProperties } = {
-  container: {
-    textAlign: 'center',
-  },
-  title: {
-    marginBottom: '20px',
-    fontSize: '24px',
-    fontWeight: 'bold',
-  },
-  sectionTitle: {
-    marginTop: '20px',
-    fontSize: '18px',
-    fontWeight: 'bold',
-  },
-  stars: {
-    fontSize: '20px',
-    color: 'gold',
-  },
-  winrate: {
-    fontSize: '14px',
-    color: '#aaa',
-    marginTop: '10px',
-  },
-  barContainer: {
-    display: 'flex',
-    height: '10px',
-    width: '80%',
-    margin: '0 auto 10px',
-    borderRadius: '5px',
-    overflow: 'hidden',
-    backgroundColor: '#555',
-  },
-  greenBar: {
-    backgroundColor: 'green',
-    height: '100%',
-  },
-  redBar: {
-    backgroundColor: 'red',
-    height: '100%',
-  },
-  buttonGroup: {
-    marginTop: '20px',
-  },
   button: {
     margin: '5px',
     padding: '10px 20px',
@@ -267,7 +278,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     cursor: 'pointer',
   },
   backButton: {
-    margin: '10px',
+    marginTop: '20px',
     padding: '10px 20px',
     backgroundColor: '#34495e',
     color: '#fff',
@@ -275,4 +286,74 @@ const styles: { [key: string]: React.CSSProperties } = {
     borderRadius: '20px',
     cursor: 'pointer',
   },
+  adjustButton: {
+    marginLeft: '10px',
+    marginRight: '10px',
+    padding: '2px 8px',
+    borderRadius: '8px',
+    border: 'none',
+    backgroundColor: '#8e44ad',
+    color: '#fff',
+    cursor: 'pointer',
+  },
+  resultEditor: {
+    marginTop: '10px',
+    backgroundColor: '#1e1e1e',
+    padding: '10px',
+    borderRadius: '10px',
+    display: 'inline-block',
+  },
+winratePillContainer: {
+  position: 'relative',
+  width: '160px',
+  height: '20px',
+},
+
+winratePill: {
+  display: 'flex',
+  width: '100%',
+  height: '100%',
+  borderRadius: '999px',
+  overflow: 'hidden',
+  border: '1px solid #444',
+  backgroundColor: '#333',
+},
+
+greenFill: {
+  backgroundColor: '#2ecc71',
+  height: '100%',
+  transition: 'width 0.3s ease',
+},
+
+redFill: {
+  backgroundColor: '#e74c3c',
+  height: '100%',
+  transition: 'width 0.3s ease',
+},
+
+winrateText: {
+  position: 'absolute',
+  top: 0,
+  left: 0,
+  width: '100%',
+  height: '100%',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  fontWeight: 'bold',
+  fontSize: '13px',
+  color: '#fff',
+  pointerEvents: 'none',
+},
+
+iconButton: {
+  background: 'none',
+  border: 'none',
+  fontSize: '18px',
+  cursor: 'pointer',
+  color: '#fff',
+  marginLeft: '4px',
+},
+
+
 };

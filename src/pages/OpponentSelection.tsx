@@ -18,7 +18,6 @@ export default function OpponentSelection() {
   const { playerChampion } = useParams<{ playerChampion: string }>();
   const [opponents, setOpponents] = useState<Champion[]>([]);
   const [search, setSearch] = useState<string>('');
- // const [favorites, setFavorites] = useState<string[]>([]);
 
   useEffect(() => {
     const loadData = async () => {
@@ -41,50 +40,85 @@ export default function OpponentSelection() {
     .sort((a, b) => (b.isFavorite ? 1 : 0) - (a.isFavorite ? 1 : 0));
 
   return (
-    <Layout>
-      <div style={styles.container}>
-        <h1 style={styles.title}>Who Are You Laning Against?</h1>
-        <h2 style={styles.subtitle}>You selected: {playerChampion}</h2>
+    <>
+      <div style={styles.skyboxLayer} />
 
-        <input
-          type="text"
-          placeholder="Search opponent..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          style={styles.search}
-        />
+      <div style={styles.contentWrapper}>
+        <div style={styles.overlay}>
+          <Layout>
+            <div style={styles.container}>
+              <h1 style={styles.title}>Who Are You Laning Against?</h1>
+              <h2 style={styles.subtitle}>You selected: {playerChampion}</h2>
 
-        <div style={styles.grid}>
-          {filteredOpponents.map((champ) => (
-            <div
-              key={champ.id}
-              style={{
-                ...styles.card,
-                border: champ.isFavorite ? '2px solid gold' : '1px solid #444',
-              }}
-              onClick={() =>
-                navigate(`/matchup/${playerChampion}/${champ.name}`)
-              }
-            >
-              <img
-                src={`https://ddragon.leagueoflegends.com/cdn/15.11.1/img/champion/${champ.id}.png`}
-                alt={champ.name}
-                style={styles.image}
+              <input
+                type="text"
+                placeholder="Search opponent..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                style={styles.search}
               />
-              <div style={styles.champName}>{champ.name}</div>
-            </div>
-          ))}
-        </div>
 
-        <button style={styles.backButton} onClick={() => navigate('/')}>
-          Back to Champion Select
-        </button>
+              <div style={styles.grid}>
+                {filteredOpponents.map((champ) => (
+                  <div
+                    key={champ.id}
+                    style={{
+                      ...styles.card,
+                      border: champ.isFavorite ? '2px solid gold' : '1px solid #444',
+                    }}
+                    onClick={() =>
+                      navigate(`/matchup/${playerChampion}/${champ.name}`)
+                    }
+                  >
+                    <img
+                      src={`https://ddragon.leagueoflegends.com/cdn/15.11.1/img/champion/${champ.id}.png`}
+                      alt={champ.name}
+                      style={styles.image}
+                    />
+                    <div style={styles.champName}>{champ.name}</div>
+                  </div>
+                ))}
+              </div>
+
+              <button style={styles.backButton} onClick={() => navigate('/')}>
+                Back to Champion Select
+              </button>
+            </div>
+          </Layout>
+        </div>
       </div>
-    </Layout>
+    </>
   );
 }
 
 const styles: { [key: string]: React.CSSProperties } = {
+  skyboxLayer: {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    width: '100vw',
+    height: '100vh',
+    zIndex: -1,
+    backgroundImage:
+      'url("https://raw.communitydragon.org/latest/game/assets/maps/skyboxes/riots_sru_skybox_cubemap.png")',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+    opacity: 0.8,
+    filter: 'brightness(1)',
+    pointerEvents: 'none',
+  },
+  contentWrapper: {
+    position: 'relative',
+    zIndex: 1,
+  },
+  overlay: {
+    position: 'relative',
+    zIndex: 2,
+    padding: '20px',
+    background: 'rgba(10, 10, 10, 0.2)',
+  },
   container: {
     textAlign: 'center',
   },
@@ -101,21 +135,23 @@ const styles: { [key: string]: React.CSSProperties } = {
   search: {
     padding: '10px',
     borderRadius: '20px',
-    width: '60%',
-    marginBottom: '20px',
+    width: '100%',
+    maxWidth: '400px',
+    margin: '0 auto 20px',
+    display: 'block',
     border: '1px solid #ccc',
   },
   grid: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(80px, 1fr))',
-    gap: '10px',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))',
+    gap: '16px',
     justifyItems: 'center',
     marginBottom: '20px',
   },
   card: {
     position: 'relative',
-    width: '80px',
-    height: '80px',
+    width: '100px',
+    height: '100px',
     borderRadius: '8px',
     overflow: 'hidden',
     cursor: 'pointer',
@@ -131,7 +167,8 @@ const styles: { [key: string]: React.CSSProperties } = {
     bottom: '0',
     width: '100%',
     backgroundColor: 'rgba(0,0,0,0.6)',
-    fontSize: '10px',
+    fontSize: '11px',
+    padding: '2px 0',
   },
   backButton: {
     marginTop: '20px',

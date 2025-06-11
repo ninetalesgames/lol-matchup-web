@@ -1,9 +1,54 @@
 [
-  {
-    "id": "Aatrox",
-    "name": "Aatrox",
-    "genericTips": "- Avoid standing in the hit zone of his Q sweet spots.\n- Watch his Q cooldown; trade when it’s down.\n- Build early armor if struggling.\n- Harass him early before he scales into healing items.\n- Apply Grievous Wounds to reduce his sustain.\n- Dodge sideways to avoid his knock-up combo.\n- Stay clear of his passive empowered attacks; they chunk hard.\n- Keep track of his healing surge during R (World Ender).\n- Kite back when he ults; his movement speed ramps up.\n- Force short trades rather than extended brawls.\n- Ward river and jungle; Aatrox loves to roam or flank.\n- Respect his level 6 power spike; he’s a monster in duels.\n- Time crowd control to interrupt his dashes.\n- Don’t fight near his passive cooldown; wait for it to fall off.\n- Watch his item spikes, especially Goredrinker or Eclipse.\n- Play around minion waves to block skillshots if possible."
-  },
+{
+  "id": "Aatrox",
+  "name": "Aatrox",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Avoid standing in the center of his Q — sweet spots deal huge damage.",
+        "Let him push early; punish only when Q is down or on cooldown chain."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "If he uses R (World Ender) and you can disengage, do it — it wastes his healing window.",
+        "Save crowd control for after his ult activation to break his all-in momentum."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "His Q max hits hard now. Play around minions to block and stay mobile.",
+        "Have anti-heal ready (e.g. Bramble Vest, Executioner’s); he heals heavily in trades."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Ward river and jungle — he loves flanking after pushing side lanes.",
+        "Ping teammates if he's missing; Aatrox with R can 1v2 from fog."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Don’t fight without Grievous Wounds — his healing in teamfights is insane.",
+        "Peel back during his R — if he doesn’t reset, he becomes useless after cooldowns."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Teemo", "Warwick", "Gwen", "Quinn", "Malphite"],
+  "recommendedItems": [
+    { "id": "3123", "name": "Executioner's Calling" },
+    { "id": "3075", "name": "Thornmail" },
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3193", "name": "Gargoyle Stoneplate" },
+    { "id": "3076", "name": "Bramble Vest" }
+  ]
+}
+,
   {
     "id": "Akali",
     "name": "Akali",
@@ -87,38 +132,216 @@
 {
   "id": "Camille",
   "name": "Camille",
-  "genericTips": "- Avoid extended trades: Camille thrives in prolonged fights due to her passive shield (Adaptive Defenses) and true damage from Precision Protocol (Q). Opt for short trades and disengage quickly.\n- Punish missed Hookshots: Camille’s Hookshot (E) is her main engage and escape tool. If she misses it, she’s vulnerable—capitalize on this window to trade or all-in.\n- Respect her level 6 power spike: Once she unlocks Hextech Ultimatum (R), Camille can lock down and isolate targets. Be extra cautious when she hits level 6.\n- Maintain vision control: Ward common flank routes and jungle entrances, as Camille can use her mobility to set up surprise engages.\n- Build armor and anti-heal: Items like Plated Steelcaps reduce her auto-attack damage, and Bramble Vest cuts down her healing from lifesteal and Conqueror stacks.\n- Watch her early game: Camille’s early laning is weaker compared to many top laners—harass her early to delay her scaling and item spikes.\n- Group up mid-to-late game: Post-6, Camille excels at picking off isolated targets or split-pushing. Group as a team to minimize her impact."
-},
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Avoid extended trades — Camille wins long fights with her passive shield and true damage Q.",
+        "Respect her level 2 all-in potential with E + auto + Q2. Stay behind minions to block E (Hookshot)."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "Her R (Hextech Ultimatum) guarantees an isolated fight. Don't stand near walls when she's level 6.",
+        "Use disengage tools or Flash early if she R's and your jungler isn’t nearby."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "Camille Q max spikes here — don’t let her proc both Qs in extended trades.",
+        "She often builds Ravenous Hydra — apply anti-heal (e.g. Executioner's, Bramble) to cut sustain."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Camille thrives in side lanes with TP and flanks. Keep river and lane bushes warded.",
+        "Call MIA loudly — she’s one of the best 1v1 → roam punishers in the game."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Camille will dive backline with E+R. Peel her off your carries quickly.",
+        "Don’t group too tight — she can isolate and delete a priority target with Galeforce or Flash R."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Malphite", "Quinn", "Teemo", "Poppy", "Jax"],
+  "recommendedItems": [
+    { "id": "3075", "name": "Thornmail" },
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3123", "name": "Executioner's Calling" },
+    { "id": "3076", "name": "Bramble Vest" },
+    { "id": "3067", "name": "Kindlegem" }
+  ]
+}
+,
   {
     "id": "Cassiopeia",
     "name": "Cassiopeia",
     "genericTips": "- **Dodge her Q (Noxious Blast)**: If she misses her Q, her damage output is significantly reduced. Use this window to trade.\n- **Avoid standing in her W (Miasma)**: It grounds you, preventing movement abilities. Stay out of it to maintain mobility.\n- **Engage when her E (Twin Fang) is on cooldown**: Her E is her main damage tool. If it's on cooldown, she's vulnerable.\n- **Be cautious of her R (Petrifying Gaze)**: Facing her when she casts it will stun you. Try to turn away or sidestep.\n- **Build magic resistance**: Items like Mercury's Treads and Banshee's Veil can help reduce her burst potential."
   },
   {
-    "id": "Chogath",
-    "name": "Cho'Gath",
-    "genericTips": "- **Avoid his Q (Rupture)**: It's a powerful knock-up. If you dodge it, you can trade effectively.\n- **Keep distance when he's low**: His R (Feast) can execute low-health targets. Maintain a safe distance when you're low.\n- **Apply Grievous Wounds**: Cho'Gath has significant sustain. Items like Morellonomicon or Executioner's Calling can reduce his healing.\n- **Pressure early**: Cho'Gath is weaker in the early game. Apply pressure to prevent him from scaling.\n- **Ward river and jungle**: Cho'Gath can roam and secure objectives with his R. Maintain vision to track his movements."
-  },
+  "id": "Chogath",
+  "name": "Cho'Gath",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Punish Cho'Gath early — he is weak before level 3 and relies on hitting Q (Rupture).",
+        "Stand behind minions to reduce risk of being knocked up and harassed by E autos."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "His R (Feast) can execute you — be mindful of your HP if he has 6 and stacks.",
+        "Respect his level 6 all-in with Q+W+R combo, especially if you're already chunked."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "He becomes tanky with HP and armor items — avoid extended fights without cut/heal reduction.",
+        "Poke or short trade and back off before his E (auto slam) stacks up too much."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Don’t let him stack Feast for free — deny minion R stacks by trading and pushing him out.",
+        "Ping him if missing — his silence (W) can swing mid fights hard when he roams."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "He can tank a full team with Feast stacks and Warmog. Don't commit to long fights without anti-tank items.",
+        "Spread out in fights to avoid multi-man Q knockup and W silence cone."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Vayne", "Yorick", "Trundle", "Kayle", "Camille"],
+  "recommendedItems": [
+    { "id": "3123", "name": "Executioner's Calling" },
+    { "id": "3076", "name": "Bramble Vest" },
+    { "id": "3033", "name": "Mortal Reminder" },
+    { "id": "3071", "name": "Black Cleaver" },
+    { "id": "3153", "name": "Blade of the Ruined King" }
+  ]
+}
+,
   {
     "id": "Corki",
     "name": "Corki",
     "genericTips": "- **Avoid his Q (Phosphorus Bomb)**: It's his primary poke tool. Dodging it reduces his damage output.\n- **Be cautious of his package**: When Corki picks up the package, he gains a powerful engage tool. Play defensively during this time.\n- **Engage when his W (Valkyrie) is on cooldown**: Without his escape, Corki is vulnerable to ganks and all-ins.\n- **Build magic resistance**: Despite being an ADC, Corki deals mixed damage. Items like Hexdrinker can be effective.\n- **Pressure early**: Corki scales well into the mid and late game. Applying early pressure can delay his power spikes."
   },
   {
-    "id": "Darius",
-    "name": "Darius",
-    "genericTips": "- **Avoid extended trades**: Darius thrives in prolonged fights due to his passive. Opt for short trades and disengage.\n- **Stay out of his Q (Decimate) outer edge**: The outer edge deals more damage and heals him. Position yourself to avoid it.\n- **Be cautious when he has 5 passive stacks**: At full stacks, his damage is significantly increased. Disengage when he reaches this point.\n- **Apply crowd control**: Darius lacks mobility. CC can help kite and control him in fights.\n- **Build armor and healing reduction**: Items like Bramble Vest can reduce his sustain and damage output."
-  },
+  "id": "Darius",
+  "name": "Darius",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Avoid short trades — his passive bleeds stack quickly. Look for longer trades if you can win them or avoid fighting.",
+        "Stay out of Q (Decimate) blade range to deny healing. If he hits you with the outer edge, he heals massively."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "Darius can all-in with Flash + R (Noxian Guillotine) if you’re low. Don't bait yourself with a close trade.",
+        "Keep distance and ward deep — many Darius players force fights at level 6 with jungler support."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "He often rushes Stridebreaker or Black Cleaver — if you get pulled in, he’ll stick on you. Don’t let him start extended fights.",
+        "Build early armor and anti-heal (e.g. Bramble Vest) to reduce his Q sustain and passive trades."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Darius will look to side lane and force 1v1s. Avoid fighting him alone unless you have clear advantage.",
+        "Keep objectives warded — a 5-stack Darius entering a skirmish will often clean up everything."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Darius falls off slightly in coordinated fights, but if he gets a reset with R, he can 1v3 easily.",
+        "Save crowd control or displacement abilities (like knockback) to interrupt his engage or reset snowball."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Teemo", "Quinn", "Vayne", "Kayle", "Nasus"],
+  "recommendedItems": [
+    { "id": "3076", "name": "Bramble Vest" },
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3075", "name": "Thornmail" },
+    { "id": "3065", "name": "Spirit Visage" },
+    { "id": "3111", "name": "Mercury's Treads" }
+  ]
+},
 {
     "id": "Diana",
     "name": "Diana",
     "genericTips": "- **Avoid her Q (Crescent Strike)**: Diana's primary engage tool is her Q. Dodging it reduces her ability to all-in effectively.\n- **Early Game Pressure**: Diana is weaker before level 6. Apply pressure during this phase to delay her scaling.\n- **Ward Flanks**: Diana can engage from unexpected angles. Maintain vision control to prevent surprise all-ins.\n- **Post-6 Caution**: After level 6, her all-in potential increases significantly. Play more defensively unless you have a clear advantage.\n- **Itemization**: Building magic resistance items like Mercury's Treads can help mitigate her burst damage."
   },
   {
-    "id": "DrMundo",
-    "name": "Dr. Mundo",
-    "genericTips": "- **Apply Grievous Wounds**: Mundo's sustain is significant. Items like Morellonomicon or Executioner's Calling can reduce his healing.\n- **Kite Effectively**: Mundo lacks mobility. Use ranged attacks and movement to kite him during fights.\n- **Avoid Extended Trades**: Prolonged engagements favor Mundo due to his passive and ultimate healing.\n- **Objective Control**: Mundo can be difficult to displace from objectives. Coordinate with your team to secure them before he arrives.\n- **Itemization**: Armor penetration and healing reduction items are effective against Mundo."
-  },
+  "id": "DrMundo",
+  "name": "Dr. Mundo",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Punish Mundo early — he lacks damage and mobility before level 3.",
+        "Dodge his cleavers and use short trades. He sustains well but has weak early trading."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "His R (Maximum Dosage) gives a huge heal — avoid fighting while it’s active.",
+        "Try to bait it out early and disengage, then re-engage when it ends."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "Mundo becomes hard to kill as he gets mythics and HP. Use Grievous Wounds to cut his passive and R healing.",
+        "Avoid drawn-out fights — he wins over time with cleaver spam and healing."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "He wants to group and soak pressure. Don't waste cooldowns on him if you're not committing to a kill.",
+        "Ping him early if he roams — his slow and tankiness can ruin skirmishes."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "He becomes near-unkillable with Warmog’s and healing. Apply anti-heal consistently.",
+        "Don’t tunnel — focus squishies and kite him when his R is up."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Vayne", "Trundle", "Quinn", "Kennen", "Olaf"],
+  "recommendedItems": [
+    { "id": "3123", "name": "Executioner's Calling" },
+    { "id": "3076", "name": "Bramble Vest" },
+    { "id": "3033", "name": "Mortal Reminder" },
+    { "id": "3153", "name": "Blade of the Ruined King" },
+    { "id": "3071", "name": "Black Cleaver" }
+  ]
+},
   {
     "id": "Draven",
     "name": "Draven",
@@ -149,11 +372,55 @@
     "name": "Fiddlesticks",
     "genericTips": "- **Ward Jungle Entrances**: Fiddlesticks often uses his R (Crowstorm) from over walls. Maintain vision in key jungle areas to spot him before he engages.\n- **Interrupt Drain**: Use crowd control to interrupt his W (Bountiful Harvest) to reduce his sustain in fights.\n- **Avoid Clumping**: His abilities deal area-of-effect damage. Spread out during teamfights to minimize his impact.\n- **Build Magic Resistance**: Items like Spirit Visage or Adaptive Helm can help mitigate his damage.\n- **Track His Passive**: Fiddlesticks' passive creates effigies. Destroy them to deny his vision and map control."
   },
-  {
-    "id": "Fiora",
-    "name": "Fiora",
-    "genericTips": "- **Avoid Her Riposte**: Fiora's W (Riposte) can parry crowd control and deal damage. Bait it out before committing to an engage.\n- **Deny Vital Procs**: Position yourself to make it difficult for her to hit the vitals marked by her passive.\n- **Apply Crowd Control**: Locking Fiora down can prevent her from proccing her passive and using her abilities effectively.\n- **Build Armor**: Items like Thornmail or Randuin's Omen can help reduce her damage output.\n- **Be Cautious of Her Ultimate**: Fiora's R (Grand Challenge) can turn fights in her favor. Disengage if you're low on health."
-  },
+{
+  "id": "Fiora",
+  "name": "Fiora",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Respect her level 1 — she wins most early trades with passive procs and Q poke.",
+        "Trade only after she uses Q or W — early parry (W) can turn fights hard in her favor."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "Her R (Grand Challenge) forces long fights. Disengage when she ults, or kite around her vitals.",
+        "Avoid fighting near walls or turrets where she can land multiple vitals easily."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "Fiora Q max gives her high mobility. She can force short trades and disengage — don’t chase blindly.",
+        "Anti-heal (e.g. Executioner’s or Bramble Vest) cuts her R healing and Conqueror sustain."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "She wants to split. Ping when she leaves lane — she can solo tower and take jungle camps fast.",
+        "Try to match her with someone who can waveclear safely or duel her with CC (e.g. Malphite, Sett)."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Don’t clump in fights — if she hits multiple vitals during R she can full-heal and clean up.",
+        "Peel her off your backline or disengage hard when she commits with Q + R."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Malphite", "Sett", "Rammus", "Quinn", "Jax"],
+  "recommendedItems": [
+    { "id": "3123", "name": "Executioner's Calling" },
+    { "id": "3076", "name": "Bramble Vest" },
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3075", "name": "Thornmail" },
+    { "id": "3065", "name": "Spirit Visage" }
+  ]
+},
   {
     "id": "Fizz",
     "name": "Fizz",
@@ -170,30 +437,206 @@
     "genericTips": "- **Destroy his barrels**: Gangplank's damage heavily relies on his barrels. Auto-attack them before he can detonate to reduce his poke.\n- **Avoid extended trades when his passive is up**: His passive, Trial by Fire, grants a powerful burn effect. Wait for it to expire before engaging.\n- **Apply early pressure**: Gangplank is weak in the early game. Aggressive play can delay his scaling.\n- **Be cautious of his global ultimate**: Cannon Barrage can impact other lanes. Communicate with teammates and ping when it's used.\n- **Build armor**: Items like Ninja Tabi or Plated Steelcaps can help reduce his physical damage output."
   },
   {
-    "id": "Garen",
-    "name": "Garen",
-    "genericTips": "- **Avoid standing still**: Garen's Q (Decisive Strike) silences and deals bonus damage. Keep moving to make it harder for him to engage.\n- **Disengage during his E (Judgment)**: His spin deals significant damage. Create distance until it ends.\n- **Apply Grievous Wounds**: Garen's passive grants him health regeneration. Items like Executioner's Calling can reduce his sustain.\n- **Be cautious when low on health**: His R (Demacian Justice) executes low-health targets. Maintain a safe distance when you're low.\n- **Use crowd control**: Garen lacks mobility. CC can help kite and control him in fights."
-  },
+  "id": "Garen",
+  "name": "Garen",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Don’t trade into his level 1 Q+E — let the minions do work or bait out his spin before committing.",
+        "His passive gives massive regen if he’s untouched — keep light pressure to delay healing."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "Be cautious when low — his R (Demacian Justice) is an execute and can’t be blocked by shield.",
+        "He often rushes Stridebreaker — stay behind minions or use dashes to dodge Q engage."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "Garen becomes very tanky with mid items and level scaling. Avoid extended trades unless you have sustain or armor shred.",
+        "Anti-heal is essential to stop his passive, especially if he takes Second Wind + DShield."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Garen looks to side lane and force duels. Don’t 1v1 unless ahead or with anti-tank tools.",
+        "Ping when he's missing — he moves fast and can punish low HP teammates with Q silence + R."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "He becomes a silence → execute bot in fights. Keep spacing and use CC to peel him off carries.",
+        "Avoid clumping — Garen is surprisingly effective at punishing grouped targets with AoE spin and movement speed burst."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Quinn", "Teemo", "Vayne", "Kayle", "Mordekaiser"],
+  "recommendedItems": [
+    { "id": "3123", "name": "Executioner's Calling" },
+    { "id": "3076", "name": "Bramble Vest" },
+    { "id": "3033", "name": "Mortal Reminder" },
+    { "id": "3071", "name": "Black Cleaver" },
+    { "id": "3153", "name": "Blade of the Ruined King" }
+  ]
+},
   {
-    "id": "Gnar",
-    "name": "Gnar",
-    "genericTips": "- **Monitor his rage bar**: Gnar transforms into Mega Gnar when his rage is full. Avoid engaging during this time.\n- **Punish his Mini Gnar form**: He's more vulnerable and deals less damage. Look for trades when he's in this form.\n- **Avoid fighting near walls**: Mega Gnar's ultimate can stun multiple targets against terrain. Stay in open areas during teamfights.\n- **Bait out his E (Hop)**: Once used, he has limited mobility. Engage during this window.\n- **Build armor**: Items like Thornmail or Randuin's Omen can help reduce his physical damage output."
-  },
+  "id": "Gnar",
+  "name": "Gnar",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Gnar is weak in early mini form. Trade when he’s not close to Mega form bar filling up.",
+        "Stay behind minions to block Boomerang (Q) poke, and punish if he misses it."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "Gnar's R (GNAR!) in Mega form can turn fights. Watch his rage bar and back off if it’s full.",
+        "Avoid standing near walls — his ult stuns if he slams you into terrain."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "Gnar spikes with maxed Q for ranged poke and kite. Engage only when his rage is low.",
+        "Mini Gnar is squishy — force trades or all-ins when he’s stuck in it and his E is down."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Gnar likes to side lane and flank with TP. Track his rage and ward flanks during setup.",
+        "Don’t group near walls in river or jungle — he can 1v2 or 1v3 with a good Mega transform."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Mega Gnar can win fights with a single combo. Ping his rage bar and disengage when he’s near full.",
+        "Use displacement, slows, or CC to peel him if he tries to jump in with E + R."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Renekton", "Malphite", "Wukong", "Kennen", "Ornn"],
+  "recommendedItems": [
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3071", "name": "Black Cleaver" },
+    { "id": "3111", "name": "Mercury's Treads" },
+    { "id": "3053", "name": "Sterak's Gage" },
+    { "id": "3075", "name": "Thornmail" }
+  ]
+},
   {
-    "id": "Gragas",
-    "name": "Gragas",
-    "genericTips": "- **Dodge his Q (Barrel Roll)**: This is his primary poke tool. Sidestep to minimize damage.\n- **Avoid clumping**: His R (Explosive Cask) can disrupt multiple champions. Spread out during teamfights.\n- **Apply Grievous Wounds**: Gragas has sustain from his W (Drunken Rage). Items like Morellonomicon can reduce his healing.\n- **Engage after he uses his E (Body Slam)**: Without it, his mobility and crowd control are limited.\n- **Build magic resistance**: Items like Spirit Visage or Adaptive Helm can help mitigate his magic damage."
-  },
+  "id": "Gragas",
+  "name": "Gragas",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Gragas has strong poke and sustain — avoid eating Q (barrel) poke and punish his E if it misses.",
+        "Try short trades between cooldowns. He’s mana-hungry early, so force him to use abilities defensively."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "His R (Explosive Cask) can knock you into tower or his jungler. Be mindful of wave position at level 6.",
+        "He’ll look for all-ins by combining E+R — save your dash or Flash to react."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "Gragas can tank up and build AP — if he's building damage, avoid standing near minions to reduce splash poke.",
+        "If he's tank Gragas, keep up the pressure and use healing cut items to reduce passive + Doran’s + Second Wind."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "He excels at picks and disengage. Avoid chasing him through jungle or tight spaces — he can turn with R.",
+        "Ping missing often — Gragas loves to roam with Flash R to blow up squishies in mid."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Respect his R in teamfights — it can isolate your carry or split your frontline.",
+        "Group with peel and don’t overchase — he punishes poor positioning hard with AoE CC."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Trundle", "Sett", "Yorick", "Irelia", "Fiora"],
+  "recommendedItems": [
+    { "id": "3076", "name": "Bramble Vest" },
+    { "id": "3033", "name": "Mortal Reminder" },
+    { "id": "3111", "name": "Mercury's Treads" },
+    { "id": "3153", "name": "Blade of the Ruined King" },
+    { "id": "3071", "name": "Black Cleaver" }
+  ]
+},
  {
     "id": "Graves",
     "name": "Graves",
     "genericTips": "- **Respect his burst damage**: Graves excels in close-range skirmishes due to his passive and Q (End of the Line). Avoid fighting him in tight spaces.\n- **Avoid his smoke screen**: His W (Smoke Screen) can disrupt vision and movement. Stay out of it to maintain awareness during fights.\n- **Punish his cooldowns**: After Graves uses his dash (E), he becomes more vulnerable. Engage during this window.\n- **Build armor**: Items like Ninja Tabi and Thornmail can help mitigate his physical damage.\n- **Maintain vision control**: Graves can invade and duel effectively. Ward your jungle entrances to track his movements."
   },
   {
-    "id": "Gwen",
-    "name": "Gwen",
-    "genericTips": "- **Avoid extended trades**: Gwen's passive and Q (Snip Snip!) deal significant damage over time. Opt for short trades and disengage.\n- **Be cautious of her W (Hallowed Mist)**: It provides immunity to non-targeted abilities. Wait for it to expire before engaging.\n- **Apply Grievous Wounds**: Gwen has sustain through her passive. Items like Executioner's Calling can reduce her healing.\n- **Build magic resistance**: Items like Mercury's Treads and Spirit Visage can help mitigate her magic damage.\n- **Coordinate with your team**: Gwen is weaker when crowd-controlled. Use CC to lock her down during fights."
-  },
+  "id": "Gwen",
+  "name": "Gwen",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Gwen’s level 1 is weak — punish her hard before she gets Q stacks and passive up.",
+        "Avoid short trades once she has Q (snip) and E (dash). Her all-in ramps up fast."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "Her R (Needlework) deals massive true damage in all-ins. Don’t fight if she lands the first R + E combo.",
+        "Disengage if you see her using Hallowed Mist — it blocks targeting and makes her hard to lock down."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "Gwen Q+E is on short cooldowns now. She can kite melee champs and win extended trades easily.",
+        "Grievous Wounds is essential — she heals a ton from passive, Riftmaker, and Conqueror."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "She’ll look to side lane and punish weak laners. Use CC or ranged poke to zone her off waves.",
+        "Ping her missing — Gwen can roam and dive with jungle help thanks to her immunity in mist."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "She is extremely strong in 1v1 and 2v2 skirmishes. Group and burst her early or peel her off carries fast.",
+        "Avoid clumping — her R can hit multiple targets and stack Conqueror to full in one fight."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Malphite", "Kayle", "Vayne", "Quinn", "Nasus"],
+  "recommendedItems": [
+    { "id": "3123", "name": "Executioner's Calling" },
+    { "id": "3076", "name": "Bramble Vest" },
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3153", "name": "Blade of the Ruined King" },
+    { "id": "3075", "name": "Thornmail" }
+  ]
+},
   {
     "id": "Hecarim",
     "name": "Hecarim",
@@ -205,10 +648,103 @@
     "genericTips": "- **Destroy his turrets**: Heimerdinger's turrets are his primary source of damage. Clear them to reduce his lane control.\n- **Avoid standing in his grenade (E) zone**: His E (CH-2 Electron Storm Grenade) can stun. Stay mobile to dodge it.\n- **Engage when his turrets are on cooldown**: After placing turrets, Heimerdinger has limited defensive options. Capitalize on this.\n- **Apply crowd control**: Heimerdinger is immobile. Use CC to lock him down during fights.\n- **Coordinate with your jungler**: Ganking Heimerdinger can be effective if you avoid his turret setups."
   },
   {
-    "id": "Illaoi",
-    "name": "Illaoi",
-    "genericTips": "- **Avoid her tentacles**: Illaoi's passive spawns tentacles that deal damage. Stay mobile to dodge their slams.\n- **Dodge her E (Test of Spirit)**: If she lands it, she can deal significant damage. Sidestep to avoid being tethered.\n- **Disengage during her ultimate**: Illaoi's R (Leap of Faith) empowers her tentacles. Wait for it to expire before re-engaging.\n- **Apply crowd control**: Illaoi is vulnerable to CC. Use it to interrupt her abilities and reduce her damage output.\n- **Build armor**: Items like Ninja Tabi and Bramble Vest can help mitigate her physical damage."
-  },
+  "id": "Illaoi",
+  "name": "Illaoi",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Avoid standing near tentacles — she can land Q and W easily to zone or trade.",
+        "Early short trades work well. If she lands E (spirit test), play safe or break the tether quickly."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "Never fight Illaoi in her tentacle zone after she hits level 6. Her R + W chain will destroy you.",
+        "Try to bait out her E or R, then disengage — she has a long cooldown window to punish."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "She scales into a raid boss with Divine Sunderer + Sterak’s — avoid 1v1s in lane.",
+        "Grievous Wounds reduces her healing from Tentacle Slams and R if not burst down."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Illaoi wants to push and draw attention. Ping teammates to not group into her ult zone.",
+        "Disengage hard when she presses R — fighting inside her passive zone usually ends in a wipe."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Avoid fighting in tight spaces or near walls where tentacles spawn easily.",
+        "Chain CC and burst her fast — if she gets R + Sterak off, she can 1v3 in choke points."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Quinn", "Vayne", "Trundle", "Gwen", "Teemo"],
+  "recommendedItems": [
+    { "id": "3123", "name": "Executioner's Calling" },
+    { "id": "3076", "name": "Bramble Vest" },
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3071", "name": "Black Cleaver" },
+    { "id": "3153", "name": "Blade of the Ruined King" }
+  ]
+},
+{
+  "id": "Irelia",
+  "name": "Irelia",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Don’t let her stack passive early — trade before she gets 4 stacks or disengage when she hits them.",
+        "Keep minions low but not last-hittable — this denies her Q resets and all-in potential."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "Her R (Vanguard’s Edge) marks you and zones space. If she lands it, back off and wait out her passive.",
+        "Try to dodge R side-to-side, not back — her E and Q follow up easily if you get marked."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "Irelia can dive and cleanly reset Q if she’s ahead. Use displacement or burst to stop her from chaining.",
+        "Grievous Wounds helps vs her passive + conqueror sustain in extended trades."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "She’ll side lane and punish isolated targets. Call MIA often — she’s great at turning small fights.",
+        "Group tightly when she’s missing — she excels at collapsing fast with TP or flanks."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Irelia can one-shot squishies or reset through frontline. Save CC or peel tools to punish her engage.",
+        "Fight away from minions if possible — her Q resets make her slippery in teamfights."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Malphite", "Nasus", "Quinn", "Pantheon", "MonkeyKing"],
+  "recommendedItems": [
+    { "id": "3123", "name": "Executioner's Calling" },
+    { "id": "3076", "name": "Bramble Vest" },
+    { "id": "3075", "name": "Thornmail" },
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3053", "name": "Sterak's Gage" }
+  ]
+},
  {
     "id": "Janna",
     "name": "Janna",
@@ -220,15 +756,103 @@
     "genericTips": "- Early Gank Pressure: Jarvan IV can gank as early as level 2 with his E-Q combo. Ward early and play cautiously to avoid giving him an advantage.\n- Avoid Clumping: His R (Cataclysm) can trap multiple champions. Spread out during teamfights to minimize its effectiveness.\n- Interrupt His Combo: Disrupting his E-Q combo can prevent him from engaging effectively. Use crowd control or displacement abilities to interrupt.\n- Track His Movements: Jarvan IV is a strong early-game jungler. Keep major objectives warded to spot him before he secures them."
   },
   {
-    "id": "Jax",
-    "name": "Jax",
-    "genericTips": "- Avoid Extended Trades: Jax excels in prolonged fights due to his passive and ultimate. Opt for short trades and disengage quickly.\n- Bait Out His E (Counter Strike): Once used, Jax is vulnerable. Engage during this window to trade effectively.\n- Apply Early Pressure: Jax is weaker in the early game. Harass him to prevent him from scaling freely.\n- Maintain Vision: Jax often split-pushes in the mid to late game. Keep track of his position to prevent unexpected objectives."
-  },
+  "id": "Jax",
+  "name": "Jax",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Level 1 Jax is weak — trade early before he unlocks E (Counter-Strike) and Q (Leap Strike).",
+        "Keep wave near your tower to avoid giving him long trades or jungle setup."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "His R (Grandmaster’s Might) gives him a defensive power spike — avoid extended all-ins if he hits 6 first.",
+        "Try to trade short or poke while his E is on cooldown. Don’t let him engage with Q + E for free."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "This is Jax’s first real carry phase — he’ll start dueling well with mythic and passive stacked.",
+        "Cut healing if he builds Lifesteal or Conqueror — he becomes harder to kill in 1v1s."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "He’ll side lane and force duels — group when he shows on map and avoid letting him push freely.",
+        "Don’t chase through jungle — his Counter-Strike + Q combo lets him kite or re-engage cleanly."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "He scales very hard. If fed, he can kill tanks and squishies alike — chain CC and burst him fast.",
+        "Split-push denial is key — send someone who can waveclear safely or survive long enough to stall him."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Malphite", "Nasus", "Quinn", "Kayle", "Teemo"],
+  "recommendedItems": [
+    { "id": "3076", "name": "Bramble Vest" },
+    { "id": "3123", "name": "Executioner's Calling" },
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3053", "name": "Sterak's Gage" },
+    { "id": "3071", "name": "Black Cleaver" }
+  ]
+},
   {
-    "id": "Jayce",
-    "name": "Jayce",
-    "genericTips": "- Dodge His Skillshots: Jayce relies on his Q-E combo for poke. Sidestep to minimize damage during the laning phase.\n- Engage When He's in Melee Form: Jayce is more vulnerable in his hammer stance. Look for opportunities to trade during this time.\n- Avoid Grouping Near Objectives: Jayce can poke effectively around objectives. Engage quickly to prevent him from whittling down your team.\n- Manage Wave Control: Jayce can push waves rapidly. Keep the wave near your tower to reduce his poke opportunities."
-  },
+  "id": "Jayce",
+  "name": "Jayce",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Jayce has strong poke and lane control early. Stand behind minions to block Shock Blasts.",
+        "Avoid trading near his minion wave — he can shove fast and punish with range + melee swap."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "He doesn’t get an ultimate at 6, but he can all-in with full combo. Respect his burst trades.",
+        "If he uses E-Q for poke, it’s a window to engage — he lacks mobility when both are down."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "Jayce maxes Q and gains high poke damage. Get armor and sustain if you're behind.",
+        "Look for flank angles or engage while he’s in ranged form — his melee form is riskier to fight in."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Jayce wants to poke and chunk you before objectives. Don’t group in narrow paths without vision.",
+        "Engage quickly when he’s isolated or has just used ranged Q — he can’t disengage easily."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Jayce falls off if he doesn’t snowball. Build resistances and close gap quickly in fights.",
+        "Force 5v5s and peel for carries — Jayce excels in spread skirmishes, not brawls."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Malphite", "Ornn", "Wukong", "Sett", "Sion"],
+  "recommendedItems": [
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3075", "name": "Thornmail" },
+    { "id": "3071", "name": "Black Cleaver" },
+    { "id": "3053", "name": "Sterak's Gage" },
+    { "id": "3068", "name": "Sunfire Aegis" }
+  ]
+},
   {
     "id": "Jhin",
     "name": "Jhin",
@@ -285,10 +909,54 @@
     "genericTips": "- **Track his transformation**: Kayn becomes significantly stronger after transforming into either Rhaast or Shadow Assassin. Monitor his progress and adjust your play accordingly.\n- **Ward jungle entrances**: Kayn can traverse walls with his E (Shadow Step). Maintain vision to anticipate his ganks.\n- **Apply crowd control**: Kayn is vulnerable to CC. Use it to disrupt his engages and peel for your carries.\n- **Build armor or magic resistance**: Depending on his form, build appropriate defenses. Armor for Rhaast (bruiser) and magic resistance for Shadow Assassin.\n- **Be cautious of his ultimate**: Kayn's R (Umbral Trespass) allows him to become untargetable. Save CC for when he reappears."
   },
 {
-    "id": "Kennen",
-    "name": "Kennen",
-    "genericTips": "- **Avoid clumping**: Kennen's ultimate, Slicing Maelstrom, deals area-of-effect damage. Spread out during teamfights to minimize its impact.\n- **Dodge his Q (Thundering Shuriken)**: This is his primary poke tool. Sidestep to reduce incoming damage.\n- **Be cautious of his E (Lightning Rush)**: Kennen can use this to engage or disengage. Maintain vision to anticipate his movements.\n- **Apply crowd control**: Locking Kennen down can prevent him from using his mobility to escape or engage.\n- **Build magic resistance**: Items like Mercury's Treads and Banshee's Veil can help mitigate his magic damage."
-  },
+  "id": "Kennen",
+  "name": "Kennen",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Avoid standing near minions — his Q (shuriken) can poke through waves.",
+        "Be wary of W stacks and E poke — Kennen can zone hard in early levels with speed advantage."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "His R (Slicing Maelstrom) is a massive AoE stun — don’t fight in minion waves or tight spaces.",
+        "Ward river and jungle — he wants to flash + R combo with jungler help."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "He spikes with Rocketbelt and Sorcs — watch for aggressive E + Flash + R dives.",
+        "Force his E early, then trade — it’s his main mobility and defense tool."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Track his TP — he excels at flanks with ult. Keep vision deep in jungle when playing toward objectives.",
+        "Kennen can’t side lane well if behind — shove him in and group to deny ult angles."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "He becomes a backline nuke. Peel with CC or kill him before he can press R in grouped fights.",
+        "Fight in open space — avoid river, jungle, or chokes where he can ult multiple targets."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Malphite", "Sett", "Pantheon", "Yorick", "Sion"],
+  "recommendedItems": [
+    { "id": "3111", "name": "Mercury's Treads" },
+    { "id": "3075", "name": "Thornmail" },
+    { "id": "3053", "name": "Sterak's Gage" },
+    { "id": "3065", "name": "Spirit Visage" },
+    { "id": "3068", "name": "Sunfire Aegis" }
+  ]
+},
   {
     "id": "Khazix",
     "name": "Kha'Zix",
@@ -300,10 +968,54 @@
     "genericTips": "- **Deny her passive stacks**: Kindred's passive marks targets. Protect marked allies and contest marked jungle camps.\n- **Apply crowd control**: Locking Kindred down can prevent her from kiting effectively.\n- **Be cautious of her ultimate**: Kindred's R (Lamb's Respite) prevents units from dying. Wait for it to expire before committing to a kill.\n- **Build armor**: Items like Randuin's Omen and Thornmail can help reduce her physical damage.\n- **Maintain vision control**: Kindred can invade and duel effectively. Ward your jungle entrances to track her movements."
   },
   {
-    "id": "Kled",
-    "name": "Kled",
-    "genericTips": "- **Be cautious of his engage**: Kled's R (Chaaaaaaaarge!!!) allows him to initiate fights from a distance. Maintain vision to anticipate his engages.\n- **Dodge his Q (Bear Trap on a Rope)**: This ability pulls you back if not avoided. Sidestep to prevent being pulled in.\n- **Apply crowd control**: Locking Kled down can prevent him from remounting Skaarl.\n- **Build armor**: Items like Ninja Tabi and Bramble Vest can help mitigate his physical damage.\n- **Punish him when dismounted**: Kled is significantly weaker without Skaarl. Engage during this window."
-  },
+  "id": "Kled",
+  "name": "Kled",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Respect his level 3 — he can all-in with Q + E + W for huge burst and gap close.",
+        "Stand near minions to block Q (Bear Trap) or stay out of tether range entirely."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "Kled’s R (Chaaaaaaaarge!!!) gives him a huge engage threat. Play safe if his jungler is nearby.",
+        "If he dismounts, punish fast — his dismounted form has no mobility and lower damage."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "Kled spikes with Titanic Hydra or Black Cleaver — he can solo kill from half HP if you’re careless.",
+        "Disengage when he dismounts — don’t let him auto minions to remount for free."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Ping when he leaves lane — his R gives him map presence and pick potential across lanes.",
+        "Don’t let him force side lane dives — keep vision in river and flanks to prevent his R setup."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Peel him off your carries — he’ll R engage and dive backline instantly.",
+        "If he dismounts in teamfights, switch focus to other threats — he’s weaker until remount."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Teemo", "Quinn", "Malphite", "Ornn", "Sett"],
+  "recommendedItems": [
+    { "id": "3076", "name": "Bramble Vest" },
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3075", "name": "Thornmail" },
+    { "id": "3071", "name": "Black Cleaver" },
+    { "id": "3053", "name": "Sterak's Gage" }
+  ]
+},
   {
     "id": "KogMaw",
     "name": "Kog'Maw",
@@ -350,10 +1062,54 @@
     "genericTips": "- **Avoid her skillshots**: Lux's Q (Light Binding) and E (Lucent Singularity) are her primary damage tools. Sidestep to minimize poke damage.\n- **Be cautious of her ultimate**: Lux's R (Final Spark) has a long range. Maintain health to avoid being sniped.\n- **Apply crowd control**: Locking Lux down can prevent her from using her abilities effectively.\n- **Build magic resistance**: Items like Banshee's Veil can help mitigate her burst damage.\n- **Coordinate with your team**: Lux excels at poking from a distance. Engage quickly to prevent her from dictating the pace."
   },
   {
-    "id": "Malphite",
-    "name": "Malphite",
-    "genericTips": "- **Avoid clumping**: Malphite's ultimate (Unstoppable Force) can knock up multiple targets. Spread out during teamfights.\n- **Be cautious of his armor stacking**: Malphite becomes tankier as he builds armor. Magic damage champions can exploit this.\n- **Apply crowd control**: Locking Malphite down can prevent him from engaging effectively.\n- **Build magic resistance**: If Malphite builds AP, items like Mercury's Treads can help mitigate his burst damage.\n- **Coordinate with your team**: Malphite excels at initiating fights. Maintain vision to anticipate his engages."
-  },
+  "id": "Malphite",
+  "name": "Malphite",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "His passive shield blocks early poke — wait it out before trading.",
+        "Avoid short trades into his Q+E — look for all-ins if you're AD and he’s rushing armor."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "Ping level 6 — Malphite’s R (Unstoppable Force) is a game-changer. He’ll flash R if he sees a kill window.",
+        "If he steps up too aggressively, back off — it’s a signal he might engage with R soon."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "He’ll often have Sunfire or Iceborn by now. Avoid fighting without magic damage or shred.",
+        "If he misses R, punish hard — it has a long cooldown, and he’s easy to kite afterward."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "He excels in grouped fights. Force him to respond in side lane or pick him before objectives.",
+        "Don’t clump when walking into fog — his R will punish grouped movement."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Malphite becomes a frontline engage bot. Bait his R, or peel it with flashes/CC.",
+        "Play around vision and split pressure to reduce his impact — he needs grouped fights to shine."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Kayle", "Vayne", "Gwen", "Swain", "Teemo"],
+  "recommendedItems": [
+    { "id": "3153", "name": "Blade of the Ruined King" },
+    { "id": "3124", "name": "Guinsoo's Rageblade" },
+    { "id": "3035", "name": "Last Whisper" },
+    { "id": "3135", "name": "Void Staff" },
+    { "id": "3151", "name": "Liandry's Anguish" }
+  ]
+},
   {
     "id": "Malzahar",
     "name": "Malzahar",
@@ -375,10 +1131,54 @@
     "genericTips": "- **Avoid standing behind minions**: Her Q (Double Up) can bounce and deal significant damage. Position yourself to the side.\n- **Be cautious of her E (Make It Rain)**: This ability slows and pokes. Step out of it quickly to minimize damage.\n- **Apply crowd control**: Locking Miss Fortune down can prevent her from channeling her ultimate.\n- **Build armor**: Items like Ninja Tabi can help mitigate her physical damage.\n- **Coordinate with your support**: Engage supports can capitalize on her immobility."
   },
   {
-    "id": "Mordekaiser",
-    "name": "Mordekaiser",
-    "genericTips": "- **Avoid extended trades**: Mordekaiser's passive deals damage over time. Opt for short trades.\n- **Be cautious of his E (Death's Grasp)**: This ability pulls you in. Maintain distance to avoid being caught.\n- **Apply crowd control**: Locking Mordekaiser down can prevent him from activating his abilities.\n- **Build magic resistance**: Items like Mercury's Treads can help mitigate his magic damage.\n- **Coordinate with your team**: Mordekaiser's ultimate isolates targets. Group up to prevent him from picking off allies."
-  },
+  "id": "Mordekaiser",
+  "name": "Mordekaiser",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Respect his passive — if he lands 3 hits, it deals massive DPS and zoning damage early.",
+        "Avoid standing in the center of his E (pull) range — dodge sideways, not backward."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "He can isolate you with R (Realm of Death). If behind, don’t fight 1v1 unless R is down.",
+        "Buy Stopwatch or QSS if you're a squishy champ vulnerable to his ult pressure."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "He spikes with Riftmaker and becomes a full drain tank — Grievous Wounds is essential.",
+        "Don't fight extended trades unless you have healing reduction or burst to cut through him."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Morde is slow but great in tight jungle fights. Avoid fighting in narrow terrain where his AOE thrives.",
+        "If he ults your carry, focus bursting the rest of his team or disengage entirely."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "He can duel any non-tank late game. Peel with CC or group and bait his ult on a tanky member.",
+        "Split him with pressure — he has no mobility and struggles vs ranged or TP-heavy comps."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Vayne", "Tryndamere", "Kayle", "Fiora", "Swain"],
+  "recommendedItems": [
+    { "id": "3123", "name": "Executioner's Calling" },
+    { "id": "3076", "name": "Bramble Vest" },
+    { "id": "3111", "name": "Mercury's Treads" },
+    { "id": "3153", "name": "Blade of the Ruined King" },
+    { "id": "3075", "name": "Thornmail" }
+  ]
+},
   {
     "id": "Morgana",
     "name": "Morgana",
@@ -390,10 +1190,54 @@
     "genericTips": "- **Against Engage Supports**: When facing champions like Nautilus or Leona, consider taking Guardian as your keystone rune to provide additional protection for your ADC.\n- **Positioning**: Maintain a safe distance to avoid being caught by hard crowd control abilities. Utilize your W (Ebb and Flow) to sustain and poke.\n- **Timing Your Abilities**: Use your Q (Aqua Prison) reactively to interrupt enemy engages or to follow up on your ADC's crowd control.\n- **Itemization**: Against healing-heavy lanes, rush Chemtech Putrifier to apply Grievous Wounds and reduce their sustain.\n- **Wave Management**: Be cautious with your E (Tidecaller's Blessing) usage; overusing it can push the wave unintentionally."
   },
   {
-    "id": "Nasus",
-    "name": "Nasus",
-    "genericTips": "- **Early Game Pressure**: Nasus is weak in the early game. Harass him to delay his scaling and Q (Siphoning Strike) stacking.\n- **Wave Control**: Freeze the wave near your turret to force Nasus to overextend, making him vulnerable to ganks.\n- **Avoid Extended Trades**: Nasus excels in prolonged fights due to his sustain. Opt for short, frequent trades.\n- **Itemization**: Consider building items that apply Grievous Wounds, like Executioner's Calling, to reduce his healing from passive and lifesteal.\n- **Post-6 Awareness**: Be cautious when Nasus has his R (Fury of the Sands) available, as it significantly boosts his combat capabilities."
-  },
+  "id": "Nasus",
+  "name": "Nasus",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Hard shove early and punish him under tower — his Q stacks are weak without Sheen.",
+        "Harass when he walks up for CS. Stay outside tower range and trade when he uses Q on minions."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "Nasus R (Fury of the Sands) turns trades around. Don’t fight extended unless you can kite or burst.",
+        "Disengage when he pops R unless you're confident in burst or have Grievous Wounds."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "If left unchecked, he will outscale most bruisers — continue pressuring and roaming if ahead.",
+        "Use ranged poke or CC to stop his farm pattern. Don’t let him stack Q for free."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Nasus becomes hard to 1v1. Group early and force objectives so he can’t AFK split-push.",
+        "If he groups, avoid clumping — his W + E shred armor and slow carries for days."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Don’t solo him — he can 1v2+ with max Q stacks and R. Peel and kite him off your backline.",
+        "If he splits, force Baron or dragon fights to punish his lack of TP or delay."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Teemo", "Vayne", "Quinn", "Trundle", "Yorick"],
+  "recommendedItems": [
+    { "id": "3123", "name": "Executioner's Calling" },
+    { "id": "3035", "name": "Last Whisper" },
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3071", "name": "Black Cleaver" },
+    { "id": "3153", "name": "Blade of the Ruined King" }
+  ]
+},
   {
     "id": "Nautilus",
     "name": "Nautilus",
@@ -430,20 +1274,152 @@
     "genericTips": "- Watch the ball! Her damage zones depend entirely on ball placement.\n- Sidestep her Q (Command: Attack) to reduce poke and follow-up W damage.\n- Trade after she uses abilities; her cooldowns are moderate early.\n- Build early MR (Null-Magic Mantle or Merc’s) if struggling with poke.\n- Ward flanks; she’s vulnerable to ganks without flash.\n- Keep minions between you and the ball to reduce Q poke angles.\n- Post-6, spread out in fights to avoid Shockwave catching multiple.\n- Orianna has no mobility; coordinate jungle ganks when she’s pushed.\n- Her mana pool is limited early; force her to use abilities on waveclear.\n- Shove waves under turret to limit her roam potential.\n- Be aware when the ball is on a teammate — it can Shockwave from them.\n- Time shields or defensive tools to block incoming poke.\n- When low, avoid predictable movement; her ult can finish fights.\n- Orianna is less effective in side lanes; match her rotations smartly.\n- If she burns R and misses, punish her during the long cooldown window.\n- Flanking her in fights breaks her ball zone control.\n- Watch her build: Luden’s spikes earlier; Liandry’s favors longer fights.\n- Save key defensive summoners for her all-in combos.\n- She struggles to waveclear under heavy pressure without burning mana."
   },
   {
-    "id": "Ornn",
-    "name": "Ornn",
-    "genericTips": "- Don’t stand near walls; his E (Searing Charge) knocks up if it hits terrain.\n- Watch for his Q (Volcanic Rupture) + E combo; dodge the pillar or reposition quickly.\n- His W (Bellows Breath) makes him unstoppable — avoid wasting CC during it.\n- Short poke trades work better; Ornn thrives in long, drawn-out fights.\n- Post-6, dodge the first half of R (Call of the Forge God) to avoid the knock-up.\n- Build %HP damage or armor pen to chip through his tankiness.\n- Keep track of his passive item upgrades; they scale his team’s strength.\n- Avoid brawling when his passive Brittle is on you — he follows up with big damage.\n- Pull waves near turret; Ornn has decent waveclear but overextends slowly.\n- Watch his mana pool early; he’s limited in spamming abilities.\n- Call for jungle help pre-6; his all-in is weaker before ult.\n- His ult has a long cooldown; punish when it’s down.\n- Avoid clustering in jungle fights; Ornn thrives in narrow areas.\n- Grievous Wounds is less effective; focus on sustained %HP damage.\n- Keep vision on objectives; Ornn sets up fights well around Dragon and Baron.\n- If playing ranged, maintain distance and poke safely.\n- Consider healing reduction only if paired with healing supports.\n- Ornn scales super well into late; pressure him early to limit his influence.\n- Play around his cooldowns; once abilities are down, he’s less dangerous."
-  },
+  "id": "Ornn",
+  "name": "Ornn",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Ornn has solid trading with Q + W + auto. Don’t take short trades unless you dodge his Q or W.",
+        "Avoid standing near walls — his E will knock you up if it connects with terrain or his Q pillar."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "Ornn’s R (Call of the Forge God) is a strong setup tool. Flash or sidestep the second cast or you’ll get knocked up.",
+        "Play outside of minion waves to reduce the chance of being hit by his full combo."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "He becomes very tanky with early armor/MR — look to roam or farm safely if you’re behind.",
+        "He can forge items in lane, giving him a gold and power lead — look to punish when he shops mid-wave."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Ornn will group and look for 5v5s. Avoid fighting in jungle corridors where his ult and Q+E are strongest.",
+        "Try to flank or engage before he can R — his ult is slow but devastating if it hits multiple people."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "He gives free stats to allies via upgraded items. Don’t let him stall to late game for free.",
+        "Keep him away from your backline with peel and kiting — he doesn’t have tools to stick if you play spaced."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Vayne", "Gwen", "Kayle", "Darius", "Sett"],
+  "recommendedItems": [
+    { "id": "3035", "name": "Last Whisper" },
+    { "id": "3153", "name": "Blade of the Ruined King" },
+    { "id": "3124", "name": "Guinsoo's Rageblade" },
+    { "id": "3135", "name": "Void Staff" },
+    { "id": "3151", "name": "Liandry's Anguish" }
+  ]
+},
   {
-    "id": "Pantheon",
-    "name": "Pantheon",
-    "genericTips": "- Respect his level 3 all-in potential; avoid extended trades early.\n- Bait out his W (Shield Vault) before committing to trades.\n- After he uses E (Aegis Assault), he is vulnerable; capitalize on this window.\n- Keep track of his passive stacks; he becomes more threatening at 5 stacks.\n- Build early armor to mitigate his burst damage.\n- Maintain vision in river and jungle to anticipate his R (Grand Starfall) roams.\n- Avoid standing in minion waves to reduce the impact of his Q (Comet Spear).\n- Use crowd control to interrupt his E channel when possible.\n- Post-6, communicate with your team to track his ultimate cooldown.\n- Play under turret when low on health to deter his dive potential."
-  },
+  "id": "Pantheon",
+  "name": "Pantheon",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Respect his level 1 all-in — he has one of the strongest early trades with Q + PTA.",
+        "If he stacks passive (5 spears), back off — his empowered W leads to guaranteed burst."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "Pantheon R lets him roam fast. Ping when he's missing — he wants to snowball bot or mid.",
+        "If he uses ult to return to lane, wait for it to finish channeling before committing to a trade."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "His burst falls off if he doesn’t get kills. Build armor and bait out his cooldowns.",
+        "Stay mobile — he relies on predictable combo (W > E > Q). Dodge Q or bait his E channel early."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Avoid grouped objectives if he has flash + ult up — he excels at collapsing from fog.",
+        "Bait his E — it locks him in place and has a long cooldown. Then you can punish safely."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Pantheon falls off late — stall him out in fights and he becomes a utility stun bot.",
+        "Force extended fights — his short burst window makes him ineffective if not snowballed."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Malphite", "Quinn", "Nasus", "Yorick", "Ornn"],
+  "recommendedItems": [
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3076", "name": "Bramble Vest" },
+    { "id": "3071", "name": "Black Cleaver" },
+    { "id": "3053", "name": "Sterak's Gage" },
+    { "id": "3068", "name": "Sunfire Aegis" }
+  ]
+},
   {
-    "id": "Poppy",
-    "name": "Poppy",
-    "genericTips": "- Avoid fighting near walls to prevent her E (Heroic Charge) stun.\n- Bait out her W (Steadfast Presence) before using dashes or mobility spells.\n- Engage in short trades; Poppy excels in extended engagements.\n- Keep track of her passive shield; trade when it's down.\n- Build magic resistance to reduce her Q (Hammer Shock) damage.\n- Use ranged poke to whittle her down before committing.\n- Ward flanks to anticipate her R (Keeper's Verdict) attempts.\n- Coordinate with your jungler to gank when her W is on cooldown.\n- Maintain minion wave control to limit her engage opportunities.\n- Be cautious of her tankiness; avoid underestimating her durability."
-  },
+  "id": "Poppy",
+  "name": "Poppy",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Avoid walls when she has E (Heroic Charge) — she’ll look for stuns in early trades.",
+        "Poppy’s passive shield (iron hammer throw) gives strong short trades — bait it out, then engage."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "Her R (Keeper’s Verdict) can eject you pre-fight. Don’t get caught alone before an objective.",
+        "Use movement unpredictably — she’ll often channel R from fog to displace your frontliner or jungler."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "Poppy’s W stops dashes — avoid committing if your champ relies on gap closers (e.g. Camille, Jax).",
+        "Fight in open space — if you dodge her E and R, her threat is low in mid-game brawls."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Don’t let her pin you in jungle paths — she thrives near walls and around objective pits.",
+        "She peels extremely well — kill her backline if she’s focused on zoning your diver."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Poppy excels at punishing mobile champs. Use non-dash engage or flank if she holds W.",
+        "She’s hard to kill but has low damage. Burn cooldowns on teammates first, then rotate to her."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Ornn", "Swain", "Nasus", "Yorick", "Malphite"],
+  "recommendedItems": [
+    { "id": "3035", "name": "Last Whisper" },
+    { "id": "3071", "name": "Black Cleaver" },
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3053", "name": "Sterak's Gage" },
+    { "id": "3068", "name": "Sunfire Aegis" }
+  ]
+},
   {
     "id": "Pyke",
     "name": "Pyke",
@@ -455,10 +1431,54 @@
     "genericTips": "- Respect her level 3 power spike; avoid extended trades early.\n- Keep track of her element selection to anticipate her next move.\n- Avoid fighting near terrain to reduce the impact of her R (Supreme Display of Talent).\n- Use crowd control to interrupt her E (Audacity) engage.\n- Build magic resistance to mitigate her burst damage.\n- Maintain vision in river and jungle to anticipate her roams.\n- Punish her when her W (Terrashape) is on cooldown.\n- Play under turret when low on health to deter her dive potential.\n- Communicate with your team to track her ultimate cooldown.\n- Use ranged poke to whittle her down before committing."
   },
   {
-    "id": "Quinn",
-    "name": "Quinn",
-    "genericTips": "- Avoid standing near minions to reduce the impact of her Q (Blinding Assault).\n- Bait out her E (Vault) before engaging in trades.\n- Build armor to mitigate her auto-attack damage.\n- Use crowd control to interrupt her R (Behind Enemy Lines) roams.\n- Maintain vision in river and jungle to anticipate her movements.\n- Play under turret when low on health to deter her dive potential.\n- Coordinate with your team to track her roaming patterns.\n- Use ranged poke to whittle her down before committing.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to collapse on her during roams."
-  },
+  "id": "Quinn",
+  "name": "Quinn",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Avoid long trades — Quinn excels at short burst then backing off.",
+        "Stand behind minions to block her Q (Blind) and limit her early damage."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "She gains global presence with R (Behind Enemy Lines) — ping when she leaves lane.",
+        "She can dive with combo + tower aggro drop — ward deeper and hug tower when low."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "If Quinn is roaming often, hard shove and take plates to punish her absence.",
+        "Armor is key — her damage is physical and very bursty with Lethality builds."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "She picks off isolated targets — avoid splitting without vision.",
+        "If behind, let her push and farm under tower — don’t overextend without jungle help."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Quinn falls off in teamfights. Group and force 5v5 — she struggles to front-line or peel.",
+        "Her burst still deletes squishies — peel and exhaust her if she dives your carry."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Malphite", "Ornn", "Swain", "Sett", "Sion"],
+  "recommendedItems": [
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3075", "name": "Thornmail" },
+    { "id": "3068", "name": "Sunfire Aegis" },
+    { "id": "3053", "name": "Sterak's Gage" },
+    { "id": "3071", "name": "Black Cleaver" }
+  ]
+},
   {
     "id": "Rakan",
     "name": "Rakan",
@@ -485,20 +1505,108 @@
     "genericTips": "- Avoid fighting in tight spaces to reduce the impact of her R (Hostile Takeover).\n- Use crowd control to interrupt her Q (Handshake) engage.\n- Build magic resistance to mitigate her magic damage.\n- Maintain vision in river and jungle to anticipate her roams.\n- Play under turret when low on health to deter her dive potential.\n- Coordinate with your ADC to zone her out during laning phase.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to track her roaming patterns.\n- Use ranged poke to whittle her down before committing.\n- Build items that reduce healing to counter her sustain."
   },
  {
-    "id": "Renekton",
-    "name": "Renekton",
-    "genericTips": "- Respect his level 3 power spike; avoid extended trades early.\n- Keep track of his Fury bar; he becomes more threatening at 50 Fury.\n- Bait out his W (Ruthless Predator) before committing to trades.\n- Use ranged poke to whittle him down before engaging.\n- Build armor to mitigate his physical damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Avoid fighting him when his R (Dominus) is active."
-  },
+  "id": "Renekton",
+  "name": "Renekton",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Avoid extended trades — Renekton thrives in short bursts with his Q and empowered W.",
+        "Track his fury bar — if it’s red, back off until he uses an ability or it decays."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "His R (Dominus) gives him sustain, AoE damage, and health — don’t fight extended when it’s up.",
+        "Wait out his ult or kite him. CC after his E dash to punish overcommitment."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "He often rushes Goredrinker or Black Cleaver — get healing reduction ASAP.",
+        "Avoid fighting inside minion waves — his Q heals more per unit hit."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Renekton looks for flank angles and flash Ws in skirmishes. Peel or exhaust him quickly.",
+        "If he burns both E dashes, punish immediately — he has no escape or gap closer."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "He falls off in pure 5v5s — play grouped and avoid giving him isolated picks.",
+        "CC chains ruin him late — he’s tanky but lacks true front-line peel or scaling damage."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Quinn", "Gnar", "Teemo", "Kayle", "Malphite"],
+  "recommendedItems": [
+    { "id": "3076", "name": "Bramble Vest" },
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3075", "name": "Thornmail" },
+    { "id": "3053", "name": "Sterak's Gage" },
+    { "id": "3110", "name": "Frozen Heart" }
+  ]
+},
   {
     "id": "Rengar",
     "name": "Rengar",
     "genericTips": "- Ward enemy jungle entrances to spot his early invades.\n- Avoid standing near bushes to reduce his engage potential.\n- Use crowd control to interrupt his leap from passive.\n- Build armor to mitigate his burst damage.\n- Maintain vision in river and jungle to anticipate his ganks.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your team to track his ultimate cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to collapse on him during ganks.\n- Use ranged poke to whittle him down before committing."
   },
-  {
-    "id": "Riven",
-    "name": "Riven",
-    "genericTips": "- Respect her level 2 power spike; avoid extended trades early.\n- Bait out her Q (Broken Wings) combo before engaging.\n- Use crowd control to interrupt her E (Valor) shield.\n- Build armor to mitigate her physical damage.\n- Maintain vision in river and jungle to anticipate her roams.\n- Play under turret when low on health to deter her dive potential.\n- Coordinate with your jungler to gank when her mobility spells are on cooldown.\n- Communicate with your team to track her ultimate cooldown.\n- Punish her when her mobility spells are on cooldown.\n- Use ranged poke to whittle her down before committing."
-  },
+ {
+  "id": "Riven",
+  "name": "Riven",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Don’t trade level 1 — she spikes hard with Q and passive autos.",
+        "If she burns all Q charges to waveclear, punish while it's on cooldown (12s early)."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "Her R (Wind Slash) is an execution tool — play safer when below 50% HP.",
+        "She will Flash > W stun > combo — keep distance and ward flanks post-6."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "She has high CDR and near-perma Q uptime. Disengage when she starts full rotation.",
+        "Build early armor — she’s 100% physical and doesn’t deal well with tanks early."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Ping if she’s missing — Riven thrives off roaming or collapsing on skirmishes.",
+        "Avoid narrow terrain where she can Q-Q-E burst onto your carry."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "She becomes a reset champ in chaos. Peel with CC and chain lock her if she dives.",
+        "If she burns W and E, she’s vulnerable — collapse fast after her engage."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Malphite", "Ornn", "Quinn", "Teemo", "Nasus"],
+  "recommendedItems": [
+    { "id": "3076", "name": "Bramble Vest" },
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3075", "name": "Thornmail" },
+    { "id": "3053", "name": "Sterak's Gage" },
+    { "id": "3068", "name": "Sunfire Aegis" }
+  ]
+},
   {
     "id": "Rumble",
     "name": "Rumble",
@@ -530,15 +1638,201 @@
     "genericTips": "- Avoid clumping to reduce the impact of her R (Encore).\n- Use crowd control to interrupt her Q (High Note) poke.\n- Build magic resistance to mitigate her magic damage.\n- Maintain vision in river and jungle to anticipate her roams.\n- Play under turret when low on health to deter her dive potential.\n- Coordinate with your ADC to zone her out during laning phase.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to track her roaming patterns.\n- Use ranged poke to whittle her down before committing.\n- Build items that reduce healing to counter her sustain."
   },
   {
-    "id": "Sett",
-    "name": "Sett",
-    "genericTips": "- Avoid standing near walls to prevent his E (Facebreaker) stun.\n- Bait out his W (Haymaker) before engaging.\n- Build armor to mitigate his physical damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use ranged poke to whittle him down before committing.\n- Avoid extended trades where his passive grants bonus damage."
-  },
+  "id": "Sett",
+  "name": "Sett",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Don’t trade early unless you have range — Sett's W hits hard with full Grit.",
+        "Watch his passive: he trades fast with alternating left-right punches."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "His R (The Show Stopper) can isolate and burst — avoid grouping near minions or jungle walls.",
+        "Flash or sidestep his E (Facebreaker) — it stuns only if you’re next to an enemy or minion."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "He spikes with Goredrinker/Sterak’s. Apply Grievous Wounds before he gets W off.",
+        "Disengage when he channels W — it’s telegraphed and easy to dodge if anticipated."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Sett wants front-to-back fights. Bait out his W, then collapse with your damage core.",
+        "If he builds tank, ignore him until W is down. His cooldowns are long without Haste."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Kite him — Sett struggles against mobility and slows. Peel him off your carry.",
+        "Don’t give him big W shields — burst him fast or layer CC to shut down his Grit value."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Teemo", "Vayne", "Quinn", "Malphite", "Gnar"],
+  "recommendedItems": [
+    { "id": "3123", "name": "Executioner's Calling" },
+    { "id": "3076", "name": "Bramble Vest" },
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3071", "name": "Black Cleaver" },
+    { "id": "3053", "name": "Sterak's Gage" }
+  ]
+},
+{
+  "id": "Shen",
+  "name": "Shen",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Avoid trading inside his Spirit Blade (Q active) — it boosts damage and slows.",
+        "Shove early if you have waveclear — Shen struggles to CS under pressure pre-6."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "Watch for R (Stand United) — if he disappears with ult, ping your teammates instantly.",
+        "Force trades while he’s ulting — it’s a channel and leaves him vulnerable to interrupts."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "He’ll often have tank items and good map presence — consider TP or push hard when he leaves.",
+        "Cut healing from his passive and Doran’s Shield sustain using Executioner’s or Ignite."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Track his ult cooldown — force fights when it's down or bait it top then engage bot.",
+        "Avoid tower dives — his taunt and R+TP combo can stall long enough for reinforcements."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Shen becomes a peel/engage tool — kite him and don’t clump for AoE taunt or R follow-up.",
+        "Force him to group early or catch him split without ult to delay global impact."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Trundle", "Mordekaiser", "Darius", "Fiora", "Malphite"],
+  "recommendedItems": [
+    { "id": "3123", "name": "Executioner's Calling" },
+    { "id": "3035", "name": "Last Whisper" },
+    { "id": "3053", "name": "Sterak's Gage" },
+    { "id": "3071", "name": "Black Cleaver" },
+    { "id": "3047", "name": "Plated Steelcaps" }
+  ]
+},
+{
+  "id": "Singed",
+  "name": "Singed",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Don’t chase him — you’ll take unnecessary poison trail damage and risk jungle collapse.",
+        "Ping if he proxy farms behind your tower — coordinate with jungle to collapse or shove fast."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "His R (Insanity Potion) boosts all stats — don’t all-in while it’s active unless you have burst + healing reduction.",
+        "Avoid fighting when he has Ghost + R — he will chase you endlessly and flip you back into his poison."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "If he rushes Rylai’s, avoid extended trades — you’ll be permanently slowed.",
+        "Use Grievous Wounds — he often builds Demonic + Riftmaker for drain-tanking."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "He’ll roam to drag waves and troll fights. Hard shove when he leaves lane and call MIA often.",
+        "Don’t follow him blindly through jungle or over walls — Singed thrives in chaos and fog zones."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Ignore him in teamfights unless he flips your carry — peel and kite to minimize chaos.",
+        "Don’t group on choke points — his AoE poison + R disrupts front-to-back team comps."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Teemo", "Quinn", "Kayle", "Tryndamere", "Vayne"],
+  "recommendedItems": [
+    { "id": "3123", "name": "Executioner's Calling" },
+    { "id": "3111", "name": "Mercury's Treads" },
+    { "id": "3135", "name": "Void Staff" },
+    { "id": "3151", "name": "Liandry's Anguish" },
+    { "id": "3075", "name": "Thornmail" }
+  ]
+},
  {
-    "id": "Sion",
-    "name": "Sion",
-    "genericTips": "- Dodge his Q (Decimating Smash) by moving laterally; it's easier to avoid than retreating backward.\n- Interrupt his Q charge with crowd control to prevent the knock-up.\n- Be cautious of his E (Roar of the Slayer) slowing you into walls for easy Q setups.\n- Maintain distance to avoid his passive's enhanced auto-attacks after death.\n- Ward flanks to anticipate his R (Unstoppable Onslaught) roams to other lanes.\n- Punish him when his abilities are on cooldown; he's less threatening without them.\n- Build Grievous Wounds to reduce his sustain from W (Soul Furnace).\n- Avoid extended trades where he can stack his passive shield.\n- Coordinate with your jungler to gank him when his ultimate is down.\n- Keep the minion wave on your side to limit his engage opportunities."
-  },
+  "id": "Sion",
+  "name": "Sion",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Don’t fight extended trades early — he outstats you with Q charge and shield burst.",
+        "Watch for Q wind-up and dodge sideways — short Qs do less damage and no knock-up."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "His R (Unstoppable Onslaught) can gank mid from base or lane — ward deep after 6.",
+        "If you see him channeling ult, break vision and sidestep — it’s predictable in open space."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "He’ll start stacking HP with Heartsteel or Titanic — apply Grievous Wounds if he runs healing.",
+        "Avoid fighting in waves — his W shield scales with health and can burst hard mid-trade."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "He pushes and dies to create map pressure. Ping missing — Sion roams post-death form.",
+        "Burn his passive quickly after kill — don’t let him finish towers or chunk carries while dead."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Sion becomes a wall of meat — don’t focus him unless you can isolate or catch him overextended.",
+        "Keep slow zones or disengage tools to kite him in 5v5s — he has no reliable backline access."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Vayne", "Kayle", "Quinn", "Yorick", "Tryndamere"],
+  "recommendedItems": [
+    { "id": "3035", "name": "Last Whisper" },
+    { "id": "3153", "name": "Blade of the Ruined King" },
+    { "id": "3123", "name": "Executioner's Calling" },
+    { "id": "3071", "name": "Black Cleaver" },
+    { "id": "3135", "name": "Void Staff" }
+  ]
+},
   {
     "id": "Sivir",
     "name": "Sivir",
@@ -600,10 +1894,54 @@
     "genericTips": "- Avoid clumping to reduce the impact of his R (Cosmic Radiance).\n- Use crowd control to interrupt his E (Dazzle) channel.\n- Build magic resistance to mitigate his magic damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Coordinate with your ADC to zone him out during laning phase.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use ranged poke to whittle him down before committing.\n- Build items that reduce healing to counter his sustain.\n- Avoid extended trades where his passive grants bonus damage."
   },
   {
-    "id": "Teemo",
-    "name": "Teemo",
-    "genericTips": "- Avoid standing in minion waves to reduce the impact of his Q (Blinding Dart).\n- Bait out his W (Move Quick) before engaging.\n- Build magic resistance to mitigate his magic damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use ranged poke to whittle him down before committing.\n- Build items that reduce healing to counter his sustain.\n- Avoid extended trades where his poison damage stacks up."
-  },
+  "id": "Teemo",
+  "name": "Teemo",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Respect his level 1 — he has high base damage with autos and poison. Don’t take blind trades.",
+        "If you're melee, use minions for cover and rush level 2 to punish his squishiness."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "Buy early Control Wards — his R (Mushroom) becomes oppressive without vision.",
+        "Sweep before engaging in jungle paths — his shrooms cover flanks and escape zones."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "He’ll max Q or E — either burst your autos or poke you down. Build MR or sustain to survive.",
+        "Hard engage if he uses Q — Teemo has no mobility or escapes if you close the gap."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Avoid chasing blindly — he’ll kite you into shrooms. Pink bush paths and stick to lane.",
+        "Group for objectives — Teemo is weak in 5v5s and relies on control rather than all-in."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Teemo is annoying but squishy. If he gets caught, he dies — lock him down early.",
+        "Keep Sweepers or Oracles in teamfights — you don’t want to blind engage into mushroom traps."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Malphite", "Ornn", "Sion", "Yorick", "Maokai"],
+  "recommendedItems": [
+    { "id": "3111", "name": "Mercury's Treads" },
+    { "id": "3742", "name": "Dead Man's Plate" },
+    { "id": "3065", "name": "Spirit Visage" },
+    { "id": "3194", "name": "Adaptive Helm" },
+    { "id": "3364", "name": "Oracle Lens" }
+  ]
+},
   {
     "id": "Thresh",
     "name": "Thresh",
@@ -615,15 +1953,103 @@
     "genericTips": "- Respect her level 2 power spike; she can all-in with E and W.\n- Bait out her W (Rocket Jump) before engaging; it's her main escape.\n- Avoid standing near low-health minions to prevent E (Explosive Charge) splash damage.\n- Build early armor to mitigate her burst damage.\n- Coordinate with your support to zone her out during laning phase.\n- Maintain vision in river and jungle to anticipate her roams.\n- Play under turret when low on health to deter her dive potential.\n- Communicate with your team to track her ultimate cooldown.\n- Punish her when her mobility spells are on cooldown.\n- Use crowd control to interrupt her aggressive jumps."
   },
   {
-    "id": "Trundle",
-    "name": "Trundle",
-    "genericTips": "- Avoid fighting near his W (Frozen Domain); it grants him increased stats.\n- Bait out his E (Pillar of Ice) before engaging to reduce his zoning potential.\n- Build armor to mitigate his physical damage.\n- Maintain vision in river and jungle to anticipate his ganks.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your team to collapse on him during ganks.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use ranged poke to whittle him down before committing.\n- Build items that reduce healing to counter his sustain."
-  },
+  "id": "Trundle",
+  "name": "Trundle",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Respect his level 1 — his Q is a low-cooldown auto reset that wins early trades.",
+        "Avoid standing near walls — if he uses E (pillar), you’ll be slowed and vulnerable to Q spam."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "His R (Subjugate) steals your armor/MR — disengage or bait it out before extended fights.",
+        "Apply Grievous Wounds early — he heals heavily from R and Conqueror during trades."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "Trundle will often have 1–2 items and be unkillable in duels. Avoid isolation if behind.",
+        "Kite or CC him after he uses W — that’s when he has bonus move and attack speed."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "He loves skirmishing — don’t overextend without vision. His pillar enables jungle follow-ups.",
+        "If he's split-pushing, group and force a fight — he lacks reliable TP follow-up and waveclear."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Peel him off your carry with slows or CC — he wants to stick and drain tank.",
+        "If he R’s your tank, disengage until the stats expire — then re-engage with burst."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Malphite", "Ornn", "Kennen", "Swain", "Gwen"],
+  "recommendedItems": [
+    { "id": "3123", "name": "Executioner's Calling" },
+    { "id": "3075", "name": "Thornmail" },
+    { "id": "3053", "name": "Sterak's Gage" },
+    { "id": "3110", "name": "Frozen Heart" },
+    { "id": "3047", "name": "Plated Steelcaps" }
+  ]
+},
   {
-    "id": "Tryndamere",
-    "name": "Tryndamere",
-    "genericTips": "- Avoid extended trades where he can stack Fury for critical strikes.\n- Bait out his E (Spinning Slash) before engaging to reduce his mobility.\n- Build armor to mitigate his physical damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his ultimate is down.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use crowd control to lock him down during his R (Undying Rage).\n- Build items that reduce healing to counter his sustain."
-  },
+  "id": "Tryndamere",
+  "name": "Tryndamere",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Don’t trade when he has full Fury — his crits spike hard with passive stacked.",
+        "Ward early — Trynd can start level 2 cheese all-ins if you misstep in lane."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "He’ll dive with R (Undying Rage). Save CC or displacement to stall out his ult duration.",
+        "Don’t burn ignite too early — wait until his R ends or is close to expiring."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "He’ll have crit items (Navori/Shieldbow). Kite, slow, or blind to deny full damage rotations.",
+        "Anti-heal is critical — Trynd heals off Q and runes like Triumph. Reduce sustain ASAP."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Tryndamere wants side lanes — group and force teamfights to limit his macro pressure.",
+        "Ping MIA if he leaves lane — his tower dives and mid ganks can snowball him fast."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "He splits and forces pressure. Send tanky CC to answer — not your ADC.",
+        "Trynd is weak in 5v5s if you peel — bait his R and re-engage after it's down."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Malphite", "Nasus", "Quinn", "Teemo", "Rammus"],
+  "recommendedItems": [
+    { "id": "3123", "name": "Executioner's Calling" },
+    { "id": "3075", "name": "Thornmail" },
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3026", "name": "Guardian Angel" },
+    { "id": "3110", "name": "Frozen Heart" }
+  ]
+},
   {
     "id": "TwistedFate",
     "name": "Twisted Fate",
@@ -640,20 +2066,108 @@
     "genericTips": "- Avoid extended trades where his passive grants bonus attack speed.\n- Bait out his E (Blazing Stampede) before engaging to reduce his mobility.\n- Build armor to mitigate his physical damage.\n- Maintain vision in river and jungle to anticipate his ganks.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your team to collapse on him during ganks.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use ranged poke to whittle him down before committing.\n- Build items that reduce healing to counter his sustain."
   },
   {
-    "id": "Urgot",
-    "name": "Urgot",
-    "genericTips": "- Avoid standing near walls to reduce the impact of his E (Disdain).\n- Bait out his Q (Corrosive Charge) before engaging.\n- Build armor to mitigate his physical damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use ranged poke to whittle him down before committing.\n- Avoid extended trades where his passive grants bonus damage."
-  },
+  "id": "Urgot",
+  "name": "Urgot",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Avoid standing close early — his passive autos shred in a circle around him.",
+        "Urgot wins short trades with Q + passive — either commit fully or disengage quickly."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "His R (Fear Beyond Death) executes at 25% HP — don’t let yourself get low and greedy.",
+        "He’ll often Flash → E (dash+stun) → full combo. Respect his all-in angle when he hits 6."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "He spikes with Titanic + Black Cleaver — avoid fighting when his shotgun legs are ready.",
+        "Use slows or CC after he burns his E — he’s vulnerable without it."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Urgot loves skirmishes and picks — avoid jungle corridors where he can isolate targets.",
+        "He wants 1v1s. Group and force 5v5s if you're behind — he doesn’t peel well for carries."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Peel and kite — Urgot can’t gap close well if his Flash or E are down.",
+        "Watch for his ult cooldown — it wins fights if your backline gets chunked below 25%."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Teemo", "Quinn", "Malphite", "Vayne", "Kayle"],
+  "recommendedItems": [
+    { "id": "3075", "name": "Thornmail" },
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3071", "name": "Black Cleaver" },
+    { "id": "3068", "name": "Sunfire Aegis" },
+    { "id": "3026", "name": "Guardian Angel" }
+  ]
+},
   {
     "id": "Varus",
     "name": "Varus",
     "genericTips": "- Avoid standing near minions to reduce the impact of his Q (Piercing Arrow).\n- Bait out his E (Hail of Arrows) before engaging.\n- Build magic resistance to mitigate his poke damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Coordinate with your support to zone him out during laning phase.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use crowd control to interrupt his R (Chain of Corruption) channel.\n- Build items that reduce healing to counter his sustain.\n- Avoid extended trades where his passive grants bonus attack speed."
   },
-  {
-    "id": "Vayne",
-    "name": "Vayne",
-    "genericTips": "- Respect her level 6 power spike; her R (Final Hour) enhances her dueling.\n- Bait out her Q (Tumble) before engaging.\n- Build armor to mitigate her physical damage.\n- Maintain vision in river and jungle to anticipate her roams.\n- Coordinate with your support to zone her out during laning phase.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to track her ultimate cooldown.\n- Use crowd control to lock her down during her R (Final Hour).\n- Build items that reduce healing to counter her sustain.\n- Avoid extended trades where her W (Silver Bolts) can proc."
-  },
+ {
+  "id": "Vayne",
+  "name": "Vayne",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Respect early damage — she wins short trades with Q + passive + PTA.",
+        "Use brush control or range to deny her chase potential with movement speed passive."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "Her R (Final Hour) + Q invisibility lets her outplay hard — don’t 1v1 unless you’re sure she’s isolated.",
+        "Save CC for post-Q reposition — you want to lock her after tumble, not before."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "She’ll likely have Kraken or BORK — build armor and HP to survive all-ins.",
+        "Try not to fight near walls — she’ll E (Condemn) you for a free stun and 50% HP loss."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Vayne top wants 1v1 duels. Group and force objectives to pull her out of side lanes.",
+        "She can kite tanks easily — rely on coordinated CC chains, not solo dives."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "She shreds frontlines. CC and burst her fast or keep vision to prevent her kiting around fog.",
+        "Don’t stack tanks without lockdown — Vayne will melt them and reset through fights."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Malphite", "Pantheon", "Wukong", "Sett", "Ornn"],
+  "recommendedItems": [
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3075", "name": "Thornmail" },
+    { "id": "3068", "name": "Sunfire Aegis" },
+    { "id": "3143", "name": "Randuin's Omen" },
+    { "id": "3193", "name": "Gargoyle Stoneplate" }
+  ]
+},
   {
     "id": "Veigar",
     "name": "Veigar",
@@ -664,6 +2178,11 @@
     "name": "Vex",
     "genericTips": "- Monitor her passive bar; when glowing, she can fear you with her next ability.\n- Bait out her W (Personal Space) before engaging to reduce her defensive options.\n- Maintain distance to avoid her Q (Mistral Bolt) poke.\n- Build magic resistance to mitigate her burst damage.\n- Ward flanks to anticipate her R (Shadow Surge) roams.\n- Play under turret when low on health to deter her dive potential.\n- Coordinate with your jungler to gank when her mobility spells are on cooldown.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to track her ultimate cooldown.\n- Use ranged poke to whittle her down before committing."
   },
+    {
+  "id": "Velkoz",
+  "name": "Vel'Koz",
+  "genericTips": "- Sidestep his Q (Plasma Fission) to avoid poke and slow.\n- Engage after he misses E (Tectonic Disruption) — it's his main peel.\n- Stay mobile to dodge his R (Life Form Disintegration Ray).\n- Build magic resist early to reduce burst (e.g. Null-Magic Mantle).\n- Roam proactively — Vel'Koz has weak waveclear under pressure.\n- Take advantage of his immobility; gap-closers work well.\n- Ward flanks to avoid long-range ult channel angles.\n- Keep fights close range to limit his poke effectiveness.\n- Use terrain to block skillshots and break line-of-sight.\n- Punish when his cooldowns are down; he relies on combos."
+},
   {
     "id": "Vi",
     "name": "Vi",
@@ -684,21 +2203,109 @@
     "name": "Vladimir",
     "genericTips": "- Harass him early; he is weak before level 6.\n- Bait out his W (Sanguine Pool) before committing to all-ins.\n- Build magic resistance to mitigate his poke damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use crowd control to lock him down during his R (Hemoplague).\n- Build items that reduce healing to counter his sustain."
   },
- {
-    "id": "Volibear",
-    "name": "Volibear",
-    "genericTips": "- Respect his early game strength; avoid extended trades before level 6.\n- Bait out his Q (Thundering Smash) before engaging to reduce his engage potential.\n- Build armor to mitigate his physical damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use ranged poke to whittle him down before committing.\n- Build items that reduce healing to counter his sustain."
-  },
+{
+  "id": "Volibear",
+  "name": "Volibear",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Avoid early all-ins — his W heals a lot after a few hits. Short trades are better.",
+        "Respect his E (Sky Splitter) slow + shield combo — it lets him force trades easily."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "His R (Stormbringer) disables towers — play safe if your wave is crashing and he hits 6.",
+        "If he ults into tower, try to kite backwards — he becomes unstoppable but his DPS is frontloaded."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "Anti-heal is key — he gets huge value from W and runes like Triumph and Second Wind.",
+        "Bait out his Q (Thundering Smash) — it’s telegraphed and punishable on cooldown."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Voli thrives in skirmishes and tower dives — group and play under vision.",
+        "If behind, he becomes an engage bot — CC him early to prevent his dive from landing."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "He struggles into peel and slows — kite him post-ult when he’s on cooldowns.",
+        "Don’t stack squishies — Voli can flip and kill 2+ targets with R + AoE W if unchecked."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Teemo", "Vayne", "Ornn", "Malphite", "Trundle"],
+  "recommendedItems": [
+    { "id": "3123", "name": "Executioner's Calling" },
+    { "id": "3075", "name": "Thornmail" },
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3053", "name": "Sterak's Gage" },
+    { "id": "3068", "name": "Sunfire Aegis" }
+  ]
+},
   {
     "id": "Warwick",
     "name": "Warwick",
     "genericTips": "- Avoid extended trades where his passive grants bonus healing.\n- Bait out his Q (Jaws of the Beast) before engaging to reduce his sustain.\n- Build armor to mitigate his physical damage.\n- Maintain vision in river and jungle to anticipate his ganks.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your team to collapse on him during ganks.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use crowd control to interrupt his R (Infinite Duress) channel.\n- Build items that reduce healing to counter his sustain."
   },
   {
-    "id": "MonkeyKing",
-    "name": "Wukong",
-    "genericTips": "- Respect his level 2 power spike; he can all-in with E and Q.\n- Bait out his W (Warrior Trickster) before engaging to reduce his escape potential.\n- Build armor to mitigate his physical damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use crowd control to interrupt his R (Cyclone) channel.\n- Avoid clumping to reduce the impact of his AoE damage."
-  },
+  "id": "MonkeyKing",
+  "name": "Wukong",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Respect early Q poke — it shreds armor and trades well with short cooldowns.",
+        "If he vanishes (W clone), hold CC or skillshots — the real one will reappear quickly."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "His R (Cyclone) knocks up twice — save Flash or mobility for the second cast.",
+        "Avoid fighting in narrow lanes — he can hit multiple targets with AoE knockups."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "Wukong will dive with Mythic + teamfights — punish clone cooldown if burned early.",
+        "Buy early armor — most Wukong damage is physical and up-front."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "He excels in skirmishes — group early and force vision control to deny flanks.",
+        "Peel back during Cyclone and re-engage once his ult expires."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Wukong engages with invisibility + R — keep sweepers active in key jungle areas.",
+        "CC him before he reaches carries or peel with displacement/knockback tools."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Malphite", "Ornn", "Poppy", "Darius", "Garen"],
+  "recommendedItems": [
+    { "id": "3075", "name": "Thornmail" },
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3143", "name": "Randuin's Omen" },
+    { "id": "3065", "name": "Spirit Visage" },
+    { "id": "3026", "name": "Guardian Angel" }
+  ]
+},
   {
     "id": "Xayah",
     "name": "Xayah",
@@ -715,10 +2322,54 @@
     "genericTips": "- Monitor his Q stacks; avoid engaging when he has Q3 ready.\n- Bait out his E (Soul Unbound) before committing to trades.\n- Build armor to mitigate his physical damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use crowd control to lock him down during his R (Fate Sealed).\n- Avoid extended trades where his passive grants bonus damage."
   },
   {
-    "id": "Yorick",
-    "name": "Yorick",
-    "genericTips": "- Fight him when he doesn't have ghouls; he's significantly weaker.\n- Bait out his E (Mourning Mist) before engaging to reduce his poke potential.\n- Build armor to mitigate his physical damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your team to collapse on him during split pushes.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use crowd control to interrupt his W (Dark Procession) channel.\n- Avoid extended trades where his passive grants bonus damage."
-  },
+  "id": "Yorick",
+  "name": "Yorick",
+  "matchupTips": [
+    {
+      "phase": "🕐 Levels 1–3",
+      "tips": [
+        "Avoid last-hitting near graves — he’ll summon ghouls and win early trades with E (Mourning Mist).",
+        "Play safe when he reaches level 3 — his full combo with Q + ghoul summon hurts more than expected."
+      ]
+    },
+    {
+      "phase": "⚔️ Level 6 Spike",
+      "tips": [
+        "Kill the Maiden (R) quickly in trades — it deals %HP damage and boosts ghoul aggression.",
+        "Don’t all-in under his tower if Maiden is active — you’ll be overwhelmed by minions and damage."
+      ]
+    },
+    {
+      "phase": "💢 Levels 9–11",
+      "tips": [
+        "Yorick has massive side lane pressure with 2+ items. Ping early if he leaves lane.",
+        "If behind, waveclear safely and don’t chase him through his Mist — his ghouls do major damage."
+      ]
+    },
+    {
+      "phase": "🌍 Mid Game",
+      "tips": [
+        "Group with your team — Yorick doesn’t teamfight well if Maiden isn’t nearby.",
+        "Track his Maiden cooldown — he’s much weaker in lane and fights without it."
+      ]
+    },
+    {
+      "phase": "🧟‍♂️ Late Game",
+      "tips": [
+        "Send someone who can waveclear and kill ghouls to match his split push.",
+        "If he gets inhib, try to trap him on next wave and collapse before he resets or backs off."
+      ]
+    }
+  ],
+  "recommendedPicks": ["Malphite", "Fiora", "Camille", "Volibear", "Vayne"],
+  "recommendedItems": [
+    { "id": "3075", "name": "Thornmail" },
+    { "id": "3123", "name": "Executioner's Calling" },
+    { "id": "3047", "name": "Plated Steelcaps" },
+    { "id": "3193", "name": "Gargoyle Stoneplate" },
+    { "id": "3068", "name": "Sunfire Aegis" }
+  ]
+},
   {
     "id": "Yuumi",
     "name": "Yuumi",
@@ -759,5 +2410,6 @@
     "name": "Zyra",
     "genericTips": "- Avoid standing near her plants to reduce the impact of her poke.\n- Bait out her E (Grasping Roots) before engaging to reduce her CC potential.\n- Build magic resistance to mitigate her magic damage.\n- Maintain vision in river and jungle to anticipate her roams.\n- Coordinate with your support to zone her out during laning phase.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to track her ultimate cooldown.\n- Use crowd control to lock her down during her R (Stranglethorns).\n- Build items that reduce healing to counter her sustain.\n- Avoid extended trades where her plants can continuously deal damage."
   }
+
 ]
 

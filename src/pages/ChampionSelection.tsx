@@ -42,12 +42,9 @@ export default function ChampionSelection() {
   }, [user]);
 
   const toggleFavorite = async (id: string) => {
-    let updatedFavorites;
-    if (favorites.includes(id)) {
-      updatedFavorites = favorites.filter((fav) => fav !== id);
-    } else {
-      updatedFavorites = [...favorites, id];
-    }
+    const updatedFavorites = favorites.includes(id)
+      ? favorites.filter((fav) => fav !== id)
+      : [...favorites, id];
 
     setFavorites(updatedFavorites);
     await saveNotes(user, { favorites: updatedFavorites });
@@ -63,61 +60,89 @@ export default function ChampionSelection() {
     .sort((a, b) => (b.isFavorite ? 1 : 0) - (a.isFavorite ? 1 : 0));
 
   return (
-    <Layout>
-      <div style={styles.container}>
-        <h1 style={styles.title}>Who Are You Playing Today?</h1>
+    <>
+      <div style={styles.skyboxLayer} />
 
-        <input
-          type="text"
-          placeholder="Search champion..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          style={styles.search}
-        />
+      <div style={styles.contentWrapper}>
+        <div style={styles.overlay}>
+          <Layout>
+            <div style={styles.container}>
+              <h1 style={styles.title}>Who Are You Playing Today?</h1>
 
-        <div style={styles.grid}>
-          {filteredChampions.map((champ) => (
-            <div
-              key={champ.id}
-              style={{
-                ...styles.card,
-                border: champ.isFavorite ? '2px solid gold' : '1px solid #444',
-              }}
-              onClick={() => navigate(`/opponent/${champ.name}`)}
-              onContextMenu={(e) => {
-                e.preventDefault();
-                toggleFavorite(champ.id);
-              }}
-            >
-              <img
-                src={`https://ddragon.leagueoflegends.com/cdn/15.11.1/img/champion/${champ.id}.png`}
-                alt={champ.name}
-                style={styles.image}
+              <input
+                type="text"
+                placeholder="Search champion..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                style={styles.search}
               />
-              <div style={styles.champName}>{champ.name}</div>
-              {champ.isFavorite && <div style={styles.star}>⭐</div>}
-            </div>
-          ))}
-        </div>
 
-        <button style={styles.button} onClick={() => navigate('/history')}>
-          View Matchup History
-        </button>
+              <div style={styles.grid}>
+                {filteredChampions.map((champ) => (
+                  <div
+                    key={champ.id}
+                    style={{
+                      ...styles.card,
+                      border: champ.isFavorite ? '2px solid gold' : '1px solid #444',
+                    }}
+                    onClick={() => navigate(`/opponent/${champ.name}`)}
+                    onContextMenu={(e) => {
+                      e.preventDefault();
+                      toggleFavorite(champ.id);
+                    }}
+                  >
+                    <img
+                      src={`https://ddragon.leagueoflegends.com/cdn/15.11.1/img/champion/${champ.id}.png`}
+                      alt={champ.name}
+                      style={styles.image}
+                    />
+                    <div style={styles.champName}>{champ.name}</div>
+                    {champ.isFavorite && <div style={styles.star}>⭐</div>}
+                  </div>
+                ))}
+              </div>
+
+              <button style={styles.button} onClick={() => navigate('/history')}>
+                View Matchup History
+              </button>
+            </div>
+          </Layout>
+        </div>
       </div>
-    </Layout>
+    </>
   );
 }
 
 const styles: { [key: string]: React.CSSProperties } = {
-  container: {
+  skyboxLayer: {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    width: '100vw',
+    height: '100vh',
+    zIndex: -1,
+    backgroundImage:
+      'url("https://raw.communitydragon.org/latest/game/assets/maps/skyboxes/riots_sru_skybox_cubemap.png")',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+    opacity: 0.8,
+    filter: 'brightness(1)',
+    pointerEvents: 'none',
+  },
+  contentWrapper: {
+    position: 'relative',
+    zIndex: 1,
+  },
+  overlay: {
+    position: 'relative',
+    zIndex: 2,
     padding: '20px',
-    backgroundColor: '#1a1f2e',
-    minHeight: '100vh',
-    color: '#fff',
+    background: 'rgba(10, 10, 10, 0.2)', // ✅ use solid dark, not gradient
+  },
+  container: {
     textAlign: 'center',
-    width: '100%',
-    maxWidth: '100%', // Force full stretch
-    boxSizing: 'border-box',
   },
   title: {
     marginBottom: '20px',
@@ -130,13 +155,13 @@ const styles: { [key: string]: React.CSSProperties } = {
     maxWidth: '400px',
     margin: '0 auto 20px',
     display: 'block',
+    border: '1px solid #ccc',
   },
   grid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))',
     gap: '16px',
     justifyItems: 'center',
-    padding: '0 10px',
     marginBottom: '20px',
   },
   card: {
