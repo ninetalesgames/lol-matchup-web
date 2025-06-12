@@ -5,6 +5,7 @@ import OpponentSelection from './pages/OpponentSelection';
 import MatchupDetails from './pages/MatchupDetails';
 import NotesForm from './pages/NotesForm';
 import MatchupHistory from './pages/MatchupHistory';
+import './globalAnimations.css';
 
 export default function App() {
   return (

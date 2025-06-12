@@ -41,6 +41,21 @@ export default function ChampionSelection() {
     loadData();
   }, [user]);
 
+  useEffect(() => {
+    const style = document.createElement('style');
+    style.innerHTML = `
+      @keyframes flyIn {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      .fly-in {
+        animation: flyIn 0.5s ease forwards;
+      }
+    `;
+    document.head.appendChild(style);
+    return () => document.head.removeChild(style);
+  }, []);
+
   const toggleFavorite = async (id: string) => {
     const updatedFavorites = favorites.includes(id)
       ? favorites.filter((fav) => fav !== id)
@@ -81,9 +96,12 @@ export default function ChampionSelection() {
                 {filteredChampions.map((champ) => (
                   <div
                     key={champ.id}
+                    className="fly-in"
                     style={{
                       ...styles.card,
                       border: champ.isFavorite ? '2px solid gold' : '1px solid #444',
+                      opacity: 0,
+                      willChange: 'opacity, transform',
                     }}
                     onClick={() => navigate(`/opponent/${champ.name}`)}
                     onContextMenu={(e) => {
@@ -139,7 +157,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     position: 'relative',
     zIndex: 2,
     padding: '20px',
-    background: 'rgba(10, 10, 10, 0.2)', // ✅ use solid dark, not gradient
+    background: 'rgba(10, 10, 10, 0.2)',
   },
   container: {
     textAlign: 'center',

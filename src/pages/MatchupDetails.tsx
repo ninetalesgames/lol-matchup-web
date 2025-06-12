@@ -1,4 +1,3 @@
-// MatchupDetails.tsx
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useAuth } from '../AuthContext';
@@ -39,6 +38,22 @@ export default function MatchupDetails() {
     fetchNotes();
   }, [user]);
 
+  useEffect(() => {
+    const style = document.createElement('style');
+    style.innerHTML = `
+      @keyframes fadeInUp {
+        0% { opacity: 0; transform: translateY(10px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      .fade-in {
+        animation: fadeInUp 0.5s ease forwards;
+        opacity: 0;
+      }
+    `;
+    document.head.appendChild(style);
+    return () => document.head.removeChild(style);
+  }, []);
+
   const formatTimestamp = (ts: number) =>
     new Date(ts).toLocaleDateString('en-GB', {
       day: '2-digit',
@@ -48,7 +63,11 @@ export default function MatchupDetails() {
 
   const generateSentences = (list: string[], type: 'worked' | 'struggles') => {
     return list.map((entry, i) => (
-      <p key={i} style={{ color: type === 'worked' ? '#2ecc71' : '#e74c3c' }}>
+      <p
+        key={i}
+        className="fade-in"
+        style={{ color: type === 'worked' ? '#2ecc71' : '#e74c3c' }}
+      >
         {type === 'worked' ? `🟢 ${entry}` : `🔴 ${entry}`}
       </p>
     ));
@@ -61,7 +80,6 @@ export default function MatchupDetails() {
   const winrate = total > 0 ? Math.round((wins / total) * 100) : null;
   const hasLoggedNotes =
     note && (note.worked?.length > 0 || note.struggles?.length > 0 || note.items?.length > 0 || note.extra);
-
   return (
     <>
       <div
@@ -103,9 +121,7 @@ export default function MatchupDetails() {
         >
           <Layout showBackground={false}>
             <div style={{ textAlign: 'center' }}>
-              <h1>
-                {playerChampion} vs {opponentChampion}
-              </h1>
+              <h1 className="fade-in">{playerChampion} vs {opponentChampion}</h1>
 
               {hasLoggedNotes && (
                 <>
@@ -114,13 +130,14 @@ export default function MatchupDetails() {
 
                   {note.items?.length > 0 && (
                     <>
-                      <h3>🛠 Items That Helped</h3>
+                      <h3 className="fade-in">🛠 Items That Helped</h3>
                       <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '10px' }}>
                         {note.items.map((id: string) => (
                           <img
                             key={id}
                             src={`https://ddragon.leagueoflegends.com/cdn/14.10.1/img/item/${id}.png`}
                             alt={id}
+                            className="fade-in"
                             style={{ width: '40px', height: '40px', borderRadius: 6 }}
                           />
                         ))}
@@ -130,56 +147,46 @@ export default function MatchupDetails() {
 
                   {note.extra && (
                     <>
-                      <h3>📝 Personal Notes</h3>
-                      <p>{note.extra}</p>
+                      <h3 className="fade-in">📝 Personal Notes</h3>
+                      <p className="fade-in">{note.extra}</p>
                     </>
                   )}
                 </>
               )}
 
-              <h3>📊 Results</h3>
-<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
-  <div style={styles.winratePillContainer}>
-    <div style={styles.winratePill}>
-      <div style={{ ...styles.greenFill, width: `${(wins / total) * 100}%` }} />
-      <div style={{ ...styles.redFill, width: `${(losses / total) * 100}%` }} />
-    </div>
-    <div style={styles.winrateText}>
-      {winrate !== null ? `${winrate}%` : 'N/A'}
-    </div>
-  </div>
-  <span>{total} Games | {wins}W / {losses}L</span>
-  <button onClick={() => setShowEditWins(!showEditWins)} style={styles.iconButton}>
-    ✏️
-  </button>
-</div>
-{note?.lastUpdated && (
-  <p style={{ fontSize: '12px', color: '#aaa' }}>Last played: {formatTimestamp(note.lastUpdated)}</p>
-)}
-
-
+              <h3 className="fade-in">📊 Results</h3>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+                <div style={styles.winratePillContainer}>
+                  <div style={styles.winratePill}>
+                    <div style={{ ...styles.greenFill, width: `${(wins / total) * 100}%` }} />
+                    <div style={{ ...styles.redFill, width: `${(losses / total) * 100}%` }} />
+                  </div>
+                  <div style={styles.winrateText}>
+                    {winrate !== null ? `${winrate}%` : 'N/A'}
+                  </div>
+                </div>
+                <span>{total} Games | {wins}W / {losses}L</span>
+                <button onClick={() => setShowEditWins(!showEditWins)} style={styles.iconButton}>
+                  ✏️
+                </button>
+              </div>
+              {note?.lastUpdated && (
+                <p style={{ fontSize: '12px', color: '#aaa' }}>Last played: {formatTimestamp(note.lastUpdated)}</p>
+              )}
 
               {showEditWins && (
                 <div style={styles.resultEditor}>
                   <div style={{ marginBottom: '8px' }}>
                     <strong>Wins:</strong>
-                    <button onClick={() => setWinCount((prev) => Math.max(0, prev - 1))} style={styles.adjustButton}>
-                      -
-                    </button>
+                    <button onClick={() => setWinCount((prev) => Math.max(0, prev - 1))} style={styles.adjustButton}>-</button>
                     <span style={{ margin: '0 10px' }}>{winCount}</span>
-                    <button onClick={() => setWinCount((prev) => prev + 1)} style={styles.adjustButton}>
-                      +
-                    </button>
+                    <button onClick={() => setWinCount((prev) => prev + 1)} style={styles.adjustButton}>+</button>
                   </div>
                   <div style={{ marginBottom: '8px' }}>
                     <strong>Losses:</strong>
-                    <button onClick={() => setLossCount((prev) => Math.max(0, prev - 1))} style={styles.adjustButton}>
-                      -
-                    </button>
+                    <button onClick={() => setLossCount((prev) => Math.max(0, prev - 1))} style={styles.adjustButton}>-</button>
                     <span style={{ margin: '0 10px' }}>{lossCount}</span>
-                    <button onClick={() => setLossCount((prev) => prev + 1)} style={styles.adjustButton}>
-                      +
-                    </button>
+                    <button onClick={() => setLossCount((prev) => prev + 1)} style={styles.adjustButton}>+</button>
                   </div>
                   <button
                     style={{ ...styles.button, marginTop: '8px' }}
@@ -203,14 +210,14 @@ export default function MatchupDetails() {
                 </div>
               )}
 
-              <h2>Exclusive Matchup Insights:</h2>
+              <h2 className="fade-in">Exclusive Matchup Insights:</h2>
               {opponentData?.matchupTips ? (
                 opponentData.matchupTips.map((section: any, index: number) => (
-                  <div key={index} style={{ marginBottom: '20px' }}>
-                    <h3>{section.phase}</h3>
+                  <div key={index} className="fade-in" style={{ marginBottom: '20px' }}>
+                    <h3 className="fade-in">{section.phase}</h3>
                     <ul style={{ paddingLeft: 0, listStyleType: 'none' }}>
                       {section.tips.map((tip: string, idx: number) => (
-                        <li key={idx} style={{ marginBottom: '6px' }}>
+                        <li key={idx} className="fade-in" style={{ marginBottom: '6px' }}>
                           • {tip}
                         </li>
                       ))}
@@ -218,15 +225,15 @@ export default function MatchupDetails() {
                   </div>
                 ))
               ) : (
-                <p>{opponentData?.genericTips || '[No tips available]'}</p>
+                <p className="fade-in">{opponentData?.genericTips || '[No tips available]'}</p>
               )}
 
               {opponentData?.recommendedPicks?.length ? (
                 <>
-                  <h3>Recommended Picks</h3>
+                  <h3 className="fade-in">Recommended Picks</h3>
                   <div style={{ display: 'flex', justifyContent: 'center', gap: 10, flexWrap: 'wrap' }}>
                     {opponentData.recommendedPicks.map((champName: string) => (
-                      <div key={champName} style={{ textAlign: 'center' }}>
+                      <div key={champName} className="fade-in" style={{ textAlign: 'center' }}>
                         <img
                           src={`https://ddragon.leagueoflegends.com/cdn/15.11.1/img/champion/${champName}.png`}
                           alt={champName}
@@ -266,6 +273,9 @@ export default function MatchupDetails() {
     </>
   );
 }
+
+// (Keep the `styles` object at the bottom unchanged from your current file)
+
 
 const styles: { [key: string]: React.CSSProperties } = {
   button: {

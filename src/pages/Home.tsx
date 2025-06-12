@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../AuthContext';
 import { loadNotes } from '../services/DataService';
 import Layout from '../Layout';
-import startMatchupButton from '../assets/startmatchup.png';
+import startMatchupButton from '../assets/startmatchup.webp';
 
 function timeAgo(timestamp: number): string {
   const now = new Date();
@@ -65,7 +65,7 @@ export default function Home() {
   return (
     <>
       <div style={styles.backgroundLayer}>
-        <img src={`${import.meta.env.BASE_URL}background.png`} alt="Base Background" style={styles.baseBackground} />
+        <img src={`${import.meta.env.BASE_URL}background.webp`} alt="Base Background" style={styles.baseBackground} />
         <img src={opponentSplash} alt="Cho'Gath Splash" style={styles.rightSplash} />
       </div>
 

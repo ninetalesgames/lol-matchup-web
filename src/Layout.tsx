@@ -22,19 +22,28 @@ export default function Layout({
 {showBackground && <div style={styles.skyboxBackground} />}
       <header style={styles.header}>
         <div style={styles.headerInner}>
-          
+          <button onClick={() => navigate(-1)} style={styles.backTextButton} title="Back">
+  &lt;
+</button>
+
+
           <nav style={styles.nav}>
             <button style={styles.iconButton} onClick={() => navigate('/')}>
-              <img src={`${base}home.png`} alt="Home" style={styles.iconImage} />
+              <img src={`${base}home.webp`} alt="Home" style={styles.iconImage} />
             </button>
 
             <button style={styles.iconButton} onClick={() => navigate('/history')}>
-              <img src={`${base}matchhistory.png`} alt="Matchup History" style={styles.iconImage} />
+              <img src={`${base}matchhistory.webp`} alt="Matchup History" style={styles.iconImage} />
             </button>
 
             <div style={styles.dropdownContainer}>
               <button style={styles.iconButton} onClick={() => setShowDropdown(!showDropdown)}>
-                <img src={`${base}account.png`} alt="Account" title="Account" style={styles.iconImage} />
+<img
+  src={`${base}${user ? 'account.webp' : 'login.webp'}`}
+  alt={user ? 'Account' : 'Login'}
+  title={user ? 'Account' : 'Login'}
+  style={styles.iconImage}
+/>
               </button>
 
               {showDropdown && (
@@ -88,7 +97,7 @@ export default function Layout({
 
       <footer style={styles.footer}>
         <p>
-          © 2025 NinetalesGames | v1.0.1 |{' '}
+          © 2025 NinetalesGames | v1.0.2 |{' '}
           <a href={`${base}privacy.html`} style={styles.link}>
             Privacy Policy
           </a>{' '}
@@ -114,7 +123,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     overflowX: 'hidden',
   },
   skyboxBackground: {
-    backgroundImage: `url("${import.meta.env.BASE_URL}background.png")`,
+    backgroundImage: `url("${import.meta.env.BASE_URL}background.webp")`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
@@ -234,4 +243,23 @@ const styles: { [key: string]: React.CSSProperties } = {
     display: 'block',
     filter: 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.25))',
   },
+backTextButton: {
+  position: 'absolute',
+  left: '12px',
+  top: '50%',
+  transform: 'translateY(-50%)',
+  fontSize: '28px',
+  fontWeight: 900,
+  background: 'none',
+  border: 'none',
+  cursor: 'pointer',
+  zIndex: 1002,
+  backgroundImage: 'linear-gradient(145deg, #f8e58c, #c29f4c, #fff1b2)',
+  WebkitBackgroundClip: 'text',
+  WebkitTextFillColor: 'transparent',
+  textShadow: '0 0 6px rgba(255, 221, 87, 0.5), 0 0 2px #b58c3f',
+},
+
+
+
 };

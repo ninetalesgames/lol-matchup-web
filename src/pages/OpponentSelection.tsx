@@ -35,6 +35,21 @@ export default function OpponentSelection() {
     loadData();
   }, [user]);
 
+  useEffect(() => {
+    const style = document.createElement('style');
+    style.innerHTML = `
+      @keyframes flyIn {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      .fly-in {
+        animation: flyIn 0.5s ease forwards;
+      }
+    `;
+    document.head.appendChild(style);
+    return () => document.head.removeChild(style);
+  }, []);
+
   const filteredOpponents = opponents
     .filter((champ) => champ.name.toLowerCase().includes(search.toLowerCase()))
     .sort((a, b) => (b.isFavorite ? 1 : 0) - (a.isFavorite ? 1 : 0));
@@ -48,7 +63,22 @@ export default function OpponentSelection() {
           <Layout>
             <div style={styles.container}>
               <h1 style={styles.title}>Who Are You Laning Against?</h1>
-              <h2 style={styles.subtitle}>You selected: {playerChampion}</h2>
+
+              <div style={{ marginBottom: '20px' }}>
+                <h2 style={styles.subtitle}>You selected:</h2>
+                <img
+                  src={`https://ddragon.leagueoflegends.com/cdn/15.11.1/img/champion/${playerChampion}.png`}
+                  alt={playerChampion}
+                  style={{
+                    width: '80px',
+                    height: '80px',
+                    borderRadius: '12px',
+                    border: '2px solid #3498db',
+                    boxShadow: '0 0 6px rgba(52, 152, 219, 0.6)',
+                    marginTop: '8px'
+                  }}
+                />
+              </div>
 
               <input
                 type="text"
@@ -62,9 +92,14 @@ export default function OpponentSelection() {
                 {filteredOpponents.map((champ) => (
                   <div
                     key={champ.id}
+                    className="fly-in"
                     style={{
                       ...styles.card,
-                      border: champ.isFavorite ? '2px solid gold' : '1px solid #444',
+                      border: champ.isFavorite
+                        ? '2px solid gold'
+                        : '2px solid #c0392b',
+                      opacity: 0,
+                      willChange: 'opacity, transform',
                     }}
                     onClick={() =>
                       navigate(`/matchup/${playerChampion}/${champ.name}`)
@@ -128,7 +163,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     fontWeight: 'bold',
   },
   subtitle: {
-    marginBottom: '20px',
+    marginBottom: '10px',
     fontSize: '16px',
     color: '#ccc',
   },
