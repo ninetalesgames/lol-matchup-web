@@ -28,16 +28,12 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
       if (firebaseUser) {
         console.log('User logged in:', firebaseUser.uid);
 
-        // Sync local and cloud notes after login
         try {
           await syncLocalAndCloud(firebaseUser);
-          console.log('Local and cloud notes synced');
+          console.log('✅ Synced cloud → localStorage');
         } catch (error) {
           console.error('Error syncing notes:', error);
         }
-
-        // Optional: reload the page to refresh state (only if needed)
-        // window.location.reload();
       }
     });
 
