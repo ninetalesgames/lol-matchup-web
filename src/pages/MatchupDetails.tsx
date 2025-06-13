@@ -4,7 +4,7 @@ import { useAuth } from '../AuthContext';
 import { loadNotes, saveNotes } from '../services/DataService';
 import Layout from '../Layout';
 import championsData from '../assets/champions.json';
-
+import { useLevel } from '../LevelContext'; // 👈 Add this
 export default function MatchupDetails() {
   const navigate = useNavigate();
   const { user } = useAuth();
@@ -13,16 +13,22 @@ export default function MatchupDetails() {
   const [showEditWins, setShowEditWins] = useState(false);
   const [winCount, setWinCount] = useState(0);
   const [lossCount, setLossCount] = useState(0);
-
+ const { level } = useLevel(); // ✅ ACTUALLY call the hook here
   const key = `${playerChampion}_${opponentChampion}`;
   const opponentData = championsData.find((c) => c.name === opponentChampion);
 
-  const leftSplash = playerChampion
-    ? `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${playerChampion}_0.jpg`
-    : '';
-  const rightSplash = opponentChampion
-    ? `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${opponentChampion}_0.jpg`
-    : '';
+const getChampionSplashId = (championName: string) => {
+  const champ = championsData.find(c => c.name === championName);
+  return champ?.id || championName;
+};
+
+const leftSplash = playerChampion
+  ? `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${getChampionSplashId(playerChampion)}_0.jpg`
+  : '';
+
+const rightSplash = opponentChampion
+  ? `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${getChampionSplashId(opponentChampion)}_0.jpg`
+  : '';
 
   useEffect(() => {
     const fetchNotes = async () => {
@@ -39,20 +45,25 @@ export default function MatchupDetails() {
   }, [user]);
 
   useEffect(() => {
-    const style = document.createElement('style');
-    style.innerHTML = `
-      @keyframes fadeInUp {
-        0% { opacity: 0; transform: translateY(10px); }
-        100% { opacity: 1; transform: translateY(0); }
-      }
-      .fade-in {
-        animation: fadeInUp 0.5s ease forwards;
-        opacity: 0;
-      }
-    `;
-    document.head.appendChild(style);
-    return () => document.head.removeChild(style);
-  }, []);
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeInUp 0.5s ease forwards;
+      opacity: 0;
+    }
+  `;
+  document.head.appendChild(style);
+
+  return () => {
+    if (style.parentNode) {
+      style.parentNode.removeChild(style);
+    }
+  };
+}, []);
 
   const formatTimestamp = (ts: number) =>
     new Date(ts).toLocaleDateString('en-GB', {
@@ -122,7 +133,30 @@ export default function MatchupDetails() {
           <Layout showBackground={false}>
             <div style={{ textAlign: 'center' }}>
               <h1 className="fade-in">{playerChampion} vs {opponentChampion}</h1>
+<div style={{ marginTop: 20, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+    <button
+      onClick={() => navigate(`/notes/${playerChampion}/${opponentChampion}/false`)}
+      style={styles.button}
+    >
+      Log Game
+    </button>
+    {level <= 10 && (
+  <span style={{ color: '#ccc', fontSize: '13px' }}>
+    ⬅️ Click here after your matchup to record what worked, what didn’t, and track your win/loss!
+  </span>
+)}
 
+  </div>
+  {hasLoggedNotes && (
+    <button
+      onClick={() => navigate(`/notes/${playerChampion}/${opponentChampion}/true`)}
+      style={styles.button}
+    >
+      Edit Notes
+    </button>
+  )}
+</div>
               {hasLoggedNotes && (
                 <>
                   {note.worked && generateSentences(note.worked, 'worked')}
@@ -153,7 +187,7 @@ export default function MatchupDetails() {
                   )}
                 </>
               )}
-
+              
               <h3 className="fade-in">📊 Results</h3>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
                 <div style={styles.winratePillContainer}>
@@ -246,26 +280,9 @@ export default function MatchupDetails() {
                 </>
               ) : null}
 
-              <div style={{ marginTop: 20 }}>
-                <button
-                  onClick={() => navigate(`/notes/${playerChampion}/${opponentChampion}/false`)}
-                  style={styles.button}
-                >
-                  Log Game
-                </button>
-                {hasLoggedNotes && (
-                  <button
-                    onClick={() => navigate(`/notes/${playerChampion}/${opponentChampion}/true`)}
-                    style={styles.button}
-                  >
-                    Edit Notes
-                  </button>
-                )}
-              </div>
+              
 
-              <button onClick={() => navigate(`/opponent/${playerChampion}`)} style={styles.backButton}>
-                Back to Opponent Select
-              </button>
+              
             </div>
           </Layout>
         </div>

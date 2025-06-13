@@ -20,22 +20,27 @@ export default function MatchupHistory() {
   }, [user]);
 
   useEffect(() => {
-    const style = document.createElement('style');
-    style.innerHTML = `
-      @keyframes jiggle {
-        0% { transform: translateX(0); }
-        25% { transform: translateX(-2px); }
-        50% { transform: translateX(2px); }
-        75% { transform: translateX(-2px); }
-        100% { transform: translateX(0); }
-      }
-      .matchup-jiggle:hover {
-        animation: jiggle 0.3s ease-in-out;
-      }
-    `;
-    document.head.appendChild(style);
-    return () => document.head.removeChild(style);
-  }, []);
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes jiggle {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-2px); }
+      50% { transform: translateX(2px); }
+      75% { transform: translateX(-2px); }
+      100% { transform: translateX(0); }
+    }
+    .matchup-jiggle:hover {
+      animation: jiggle 0.3s ease-in-out;
+    }
+  `;
+  document.head.appendChild(style);
+
+  return () => {
+    if (style.parentNode) {
+      style.parentNode.removeChild(style);
+    }
+  };
+}, []);
 
   const filteredKeys = Object.keys(notes).filter((key) =>
     key.toLowerCase().includes(search.toLowerCase())

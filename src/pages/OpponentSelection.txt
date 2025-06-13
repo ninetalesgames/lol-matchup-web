@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useAuth } from '../AuthContext';
-import { loadNotes, saveNotes } from '../services/DataService';
-import championsData from '../assets/champions.json';
+import { loadNotes } from '../services/DataService';
 import Layout from '../Layout';
+import championsData from '../assets/champions.json';
 
 type Champion = {
   id: string;
@@ -12,34 +12,29 @@ type Champion = {
   isFavorite: boolean;
 };
 
-export default function ChampionSelection() {
+export default function OpponentSelection() {
   const navigate = useNavigate();
   const { user } = useAuth();
-  const [champions, setChampions] = useState<Champion[]>([]);
+  const { playerChampion } = useParams<{ playerChampion: string }>();
+  const [opponents, setOpponents] = useState<Champion[]>([]);
   const [search, setSearch] = useState<string>('');
-  const [favorites, setFavorites] = useState<string[]>([]);
 
   useEffect(() => {
-    const loadData = async () => {
-      const loadedChamps: Champion[] = championsData.map((champ: any) => ({
-        ...champ,
-        isFavorite: false,
-      }));
+  const loadData = async () => {
+    const notes = await loadNotes(user);
+    const favList: string[] = notes.favorites || [];
 
-      const notes = await loadNotes(user);
-      const favList: string[] = notes.favorites || [];
+    const loadedOpponents: Champion[] = championsData.map((champ: any) => ({
+      ...champ,
+      isFavorite: favList.includes(champ.id),
+    }));
 
-      const updatedChamps = loadedChamps.map((champ) => ({
-        ...champ,
-        isFavorite: favList.includes(champ.id),
-      }));
+    setOpponents(loadedOpponents);
+  };
 
-      setChampions(updatedChamps);
-      setFavorites(favList);
-    };
+  loadData();
+}, [user]); // <- end effect cleanly here
 
-    loadData();
-  }, [user]);
 
   useEffect(() => {
     const style = document.createElement('style');
@@ -56,21 +51,7 @@ export default function ChampionSelection() {
     return () => document.head.removeChild(style);
   }, []);
 
-  const toggleFavorite = async (id: string) => {
-    const updatedFavorites = favorites.includes(id)
-      ? favorites.filter((fav) => fav !== id)
-      : [...favorites, id];
-
-    setFavorites(updatedFavorites);
-    await saveNotes(user, { favorites: updatedFavorites });
-
-    const updatedChamps = champions.map((champ) =>
-      champ.id === id ? { ...champ, isFavorite: !champ.isFavorite } : champ
-    );
-    setChampions(updatedChamps);
-  };
-
-  const filteredChampions = champions
+  const filteredOpponents = opponents
     .filter((champ) => champ.name.toLowerCase().includes(search.toLowerCase()))
     .sort((a, b) => (b.isFavorite ? 1 : 0) - (a.isFavorite ? 1 : 0));
 
@@ -82,32 +63,48 @@ export default function ChampionSelection() {
         <div style={styles.overlay}>
           <Layout>
             <div style={styles.container}>
-              <h1 style={styles.title}>Who Are You Playing Today?</h1>
+              <h1 style={styles.title}>Who Are You Laning Against?</h1>
+
+              <div style={{ marginBottom: '20px' }}>
+                <h2 style={styles.subtitle}>You selected:</h2>
+                <img
+                  src={`https://ddragon.leagueoflegends.com/cdn/15.11.1/img/champion/${playerChampion}.png`}
+                  alt={playerChampion}
+                  style={{
+                    width: '80px',
+                    height: '80px',
+                    borderRadius: '12px',
+                    border: '2px solid #3498db',
+                    boxShadow: '0 0 6px rgba(52, 152, 219, 0.6)',
+                    marginTop: '8px'
+                  }}
+                />
+              </div>
 
               <input
                 type="text"
-                placeholder="Search champion..."
+                placeholder="Search opponent..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 style={styles.search}
               />
 
               <div style={styles.grid}>
-                {filteredChampions.map((champ) => (
+                {filteredOpponents.map((champ) => (
                   <div
                     key={champ.id}
                     className="fly-in"
                     style={{
                       ...styles.card,
-                      border: champ.isFavorite ? '2px solid gold' : '1px solid #444',
+                      border: champ.isFavorite
+                        ? '2px solid gold'
+                        : '2px solid #c0392b',
                       opacity: 0,
                       willChange: 'opacity, transform',
                     }}
-                    onClick={() => navigate(`/opponent/${champ.name}`)}
-                    onContextMenu={(e) => {
-                      e.preventDefault();
-                      toggleFavorite(champ.id);
-                    }}
+                    onClick={() =>
+                      navigate(`/matchup/${playerChampion}/${champ.name}`)
+                    }
                   >
                     <img
                       src={`https://ddragon.leagueoflegends.com/cdn/15.11.1/img/champion/${champ.id}.png`}
@@ -115,13 +112,12 @@ export default function ChampionSelection() {
                       style={styles.image}
                     />
                     <div style={styles.champName}>{champ.name}</div>
-                    {champ.isFavorite && <div style={styles.star}>⭐</div>}
                   </div>
                 ))}
               </div>
 
-              <button style={styles.button} onClick={() => navigate('/history')}>
-                View Matchup History
+              <button style={styles.backButton} onClick={() => navigate('/')}>
+                Back to Champion Select
               </button>
             </div>
           </Layout>
@@ -163,8 +159,14 @@ const styles: { [key: string]: React.CSSProperties } = {
     textAlign: 'center',
   },
   title: {
-    marginBottom: '20px',
-    fontSize: '2rem',
+    marginBottom: '10px',
+    fontSize: '24px',
+    fontWeight: 'bold',
+  },
+  subtitle: {
+    marginBottom: '10px',
+    fontSize: '16px',
+    color: '#ccc',
   },
   search: {
     padding: '10px',
@@ -204,21 +206,13 @@ const styles: { [key: string]: React.CSSProperties } = {
     fontSize: '11px',
     padding: '2px 0',
   },
-  star: {
-    position: 'absolute',
-    top: '2px',
-    right: '2px',
-    fontSize: '14px',
-    color: 'gold',
-  },
-  button: {
+  backButton: {
     marginTop: '20px',
-    padding: '12px 24px',
-    backgroundColor: '#8e44ad',
+    padding: '10px 20px',
+    backgroundColor: '#34495e',
     color: '#fff',
     border: 'none',
     borderRadius: '20px',
     cursor: 'pointer',
-    fontSize: '14px',
   },
 };

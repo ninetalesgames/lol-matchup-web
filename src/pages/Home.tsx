@@ -84,11 +84,21 @@ export default function Home() {
 />
           <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px' }}>
             <div>
-              <img
-                src={`https://ddragon.leagueoflegends.com/cdn/15.11.1/img/champion/${mostPlayed}.png`}
-                alt={mostPlayed}
-                style={{ width: '80px', height: '80px', borderRadius: '12px', border: '2px solid gold' }}
-              />
+              {mostPlayed && /^[a-zA-Z]+$/.test(mostPlayed) ? (
+  <img
+    src={`https://ddragon.leagueoflegends.com/cdn/15.11.1/img/champion/${mostPlayed}.png`}
+    alt={mostPlayed}
+    style={{ width: '80px', height: '80px', borderRadius: '12px', border: '2px solid gold' }}
+    onError={(e) => {
+      e.currentTarget.style.display = 'none';
+    }}
+  />
+) : (
+  <div style={{ width: '80px', height: '80px', backgroundColor: '#111', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#888' }}>
+    ?
+  </div>
+)}
+
               <div style={{ marginTop: '8px', fontSize: '16px', fontWeight: 'bold' }}>{username}</div>
             </div>
 
@@ -117,7 +127,7 @@ export default function Home() {
             src={startMatchupButton}
             alt="Start Matchup"
             style={{ width: '160px', height: '160px', cursor: 'pointer', display: 'block', margin: '16px auto', objectFit: 'contain', transition: 'transform 0.1s ease-in-out', filter: 'drop-shadow(0 0 8px rgba(255, 221, 87, 0.4))' }}
-            onClick={() => navigate('/champion')}
+            onClick={() => navigate('/setup')}
             onMouseDown={(e) => (e.currentTarget.style.transform = 'scale(0.95)')}
             onMouseUp={(e) => (e.currentTarget.style.transform = 'scale(1)')}
             onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}

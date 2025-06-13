@@ -2,6 +2,7 @@
 {
   "id": "Aatrox",
   "name": "Aatrox",
+    "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -52,86 +53,115 @@
   {
     "id": "Akali",
     "name": "Akali",
+      "lanes": ["Mid"],
     "genericTips": "- Place control wards or pink wards to reveal her shroud; don’t waste abilities inside it blindly.\n- Punish her before level 6 when she lacks all-in tools.\n- Avoid extended trades if her passive circle is active; she can burst you hard after proccing it.\n- Dodge her E shuriken flip; if it lands, she can re-engage easily.\n- Stay behind minions to block her Q poke and limit passive trades.\n- Build early magic resist if she’s ahead.\n- Watch her energy bar; she can’t spam combos if low.\n- After she uses her shroud (W), she’s on a long cooldown and easier to punish.\n- Track her R cooldown; it’s her main assassination tool.\n- Don’t chase her blindly into jungle or brushes; she thrives in tight spaces with shroud resets.\n- Force short trades rather than long duels; Akali’s damage ramps up over time.\n- Coordinate with your jungler when her shroud is down; she’s very vulnerable to ganks.\n- Respect her item spikes, especially Hextech Gunblade or Riftmaker.\n- Watch her body movement; she often telegraphs engage angles by posturing forward.\n- Keep side lanes warded post-laning phase; she roams very well after pushing."
   },
   {
     "id": "Akshan",
     "name": "Akshan",
+      "lanes": ["Top", "Mid"],
     "genericTips": "- Watch for his passive double-shot after autos; back away to reset the trade.\n- Stay behind minions to block his hookshot swings and limit his mobility.\n- Avoid chasing blindly into fog or jungle; his grappling hook (E) gives strong escape tools.\n- Punish him if he misses his Q boomerang poke; it’s his main harass tool.\n- Keep waves pushed under his tower to reduce roam potential.\n- Track his revive passive; if he scores a takedown, he can reset fights and revive allies.\n- Engage when his shield passive is down; it gives him strong burst defense.\n- Build early armor if struggling against his poke.\n- Avoid narrow jungle paths where he can swing around walls easily.\n- Deny him skirmish resets by staying grouped in fights.\n- Harass him early before he picks up key item spikes (Kraken Slayer, Collector).\n- Watch for sneaky midgame side-lane plays; he loves solo picks and resets.\n- Communicate when his revive passive is on cooldown; it heavily impacts teamfight outcomes."
   },
   {
     "id": "Alistar",
     "name": "Alistar",
+      "lanes": ["Support"],
     "genericTips": "- Maintain distance to avoid his W-Q combo; stay at max range to limit his engage potential.\n- Harass him before level 2; his all-in threat increases significantly after unlocking W and Q.\n- Use crowd control or displacement abilities to interrupt his Headbutt (W) dash.\n- Punish him when his abilities are on cooldown; his engage tools have relatively long cooldowns.\n- Be cautious of his Flash-W-Q combo; ward flanks and maintain vision control.\n- Avoid grouping tightly; his Pulverize (Q) can knock up multiple champions.\n- Track his Unbreakable Will (R) cooldown; he becomes significantly tankier when it's active.\n- Utilize healing reduction items to mitigate his passive healing from Triumphant Roar.\n- Communicate with your team when he leaves lane; Alistar's roams can heavily impact other lanes.\n- In teamfights, focus on his carries rather than Alistar himself, especially when his ultimate is active.\n- Use vision control to spot his roaming paths; deep wards can prevent surprise engages.\n- Coordinate with your ADC to bait out his engage, then counter-attack when his abilities are down.\n- Be aware of his synergy with certain ADCs; champions like Draven or Tristana can capitalize on his engages effectively.\n- When playing enchanter supports, keep protective abilities ready to counter his all-ins.\n- Practice spacing and positioning to minimize his impact during laning phase."
   },
   {
     "id": "Amumu",
     "name": "Amumu",
+      "lanes": ["Jungle"],
     "genericTips": "- Invade early to disrupt his full-clear path; Amumu is vulnerable before level 6.\n- Ward his jungle entrances to track his movements and prevent surprise ganks.\n- Engage in skirmishes before he unlocks his ultimate; his early dueling power is limited.\n- Avoid grouping tightly in teamfights to minimize the impact of his Curse of the Sad Mummy.\n- Utilize crowd control to interrupt his Bandage Toss and prevent him from reaching your backline.\n- Build magic resistance and consider items like Quicksilver Sash to mitigate his crowd control.\n- Keep track of his ultimate cooldown; engage when it's down to capitalize on his reduced threat.\n- Pressure his lanes to force him into reactive plays, limiting his ability to farm and scale.\n- Use vision control around objectives to prevent him from setting up effective engages.\n- Exploit his reliance on close-range combat by kiting and using ranged abilities.\n- Communicate with your team to avoid unnecessary fights when his ultimate is available.\n- Deny him access to key objectives by maintaining vision and positioning advantage.\n- Punish him during his jungle clears; his health can be low, making him susceptible to invades.\n- Coordinate with your team to collapse on him when he overextends or mispositions.\n- Leverage champions with mobility and disengage tools to counter his engage attempts."
   },
   {
     "id": "Anivia",
     "name": "Anivia",
+           "lanes": ["Mid"],
+
     "genericTips": "- Dodge her Q (Flash Frost) to avoid being stunned; it's her primary crowd control tool.\n- Engage when her passive (Rebirth) is on cooldown; without it, she's more vulnerable.\n- Apply consistent pressure to force her to use mana for waveclear, potentially depleting her resources.\n- Avoid fighting in narrow spaces where her wall (W) can trap you.\n- Use champions with mobility to bypass her wall and avoid her skill shots.\n- Harass her early game before she reaches level 6; her waveclear and survivability increase significantly post-6.\n- Coordinate with your jungler for ganks when her passive is down; she's easier to kill during this window.\n- Build items that provide magic resistance to mitigate her burst damage.\n- Maintain vision control to prevent her from setting up ambushes with her wall and ultimate.\n- In teamfights, spread out to minimize the impact of her Glacial Storm (R).\n- Be cautious of her zoning capabilities; she excels at controlling areas during objectives.\n- Time your engages to coincide with her ultimate being on cooldown, reducing her damage output.\n- Utilize champions with poke abilities to chip away at her health from a safe distance.\n- Remember that her E (Frostbite) deals double damage if the target is chilled; avoid being hit by her Q or R to prevent this.\n- Keep track of her mana pool; Anivia is mana-dependent, and extended fights can exhaust her resources."
   },
   {
     "id": "Annie",
     "name": "Annie",
+           "lanes": ["Mid"],
+
     "genericTips": "- Always monitor her passive stacks; the swirling white animation indicates a ready stun.\n- Maintain a safe distance when her stun is available, especially post-level 6.\n- Harass her early to exploit her limited waveclear and lack of sustain.\n- Force her to use abilities on minions, reducing her ability to hold a stun.\n- Build early magic resistance items like Null-Magic Mantle or Mercury's Treads.\n- Consider taking Barrier or Cleanse to survive her burst or remove her stun.\n- Avoid grouping tightly in teamfights to minimize the impact of her AoE stun.\n- Use long-range poke to chip away at her health without getting into her stun range.\n- Bait out her Molten Shield (E) before committing to trades; it provides damage reduction.\n- Be wary of her Flash-Tibbers combo; ward flanks and maintain vision control.\n- Engage when her stun is down; she is significantly less threatening without it.\n- Utilize champions with mobility to dodge her skill shots and escape her engage.\n- Keep track of her mana pool; she can run out quickly if forced to use abilities frequently.\n- Coordinate with your jungler for ganks when her Flash or stun is on cooldown.\n- In teamfights, focus on disrupting her positioning to prevent optimal Tibbers usage."
   },
  {
     "id": "Aphelios",
     "name": "Aphelios",
+           "lanes": ["Bot"],
+
     "genericTips": "- Learn his weapon cycle: Aphelios has five weapons, each with unique abilities. Knowing which weapon he currently wields can help you predict his actions.\n- Exploit his lack of mobility: Aphelios has no dash or escape ability. Engage him when his support is absent or when he's overextended.\n- Punish during weak weapon combinations: Aphelios is less threatening when he has certain weapon combos. For instance, when he lacks Calibrum (green) or Gravitum (purple), he's more vulnerable.\n- Avoid clumping in teamfights: His ultimate, Moonlight Vigil, can deal massive AoE damage, especially when combined with Infernum (red). Spread out to minimize its impact.\n- Deny him farm early: Aphelios scales well into the late game. Applying early pressure can delay his power spikes.\n- Coordinate with your team to engage when his key weapons are on cooldown or when he's in a less favorable weapon cycle.\n- Be cautious of his long-range poke with Calibrum and his crowd control with Gravitum. Adjust your positioning accordingly."
   },
   {
     "id": "Ashe",
     "name": "Ashe",
+           "lanes": ["Support", "Bot"],
+
     "genericTips": "- Respect her early poke: Ashe's Volley (W) can harass effectively in lane. Position behind minions to reduce its impact.\n- Avoid predictable movement: Her ultimate, Enchanted Crystal Arrow, is a global stun. Vary your movement patterns to make it harder for her to land.\n- Exploit her lack of mobility: Ashe has no dash or escape ability. Coordinate with your support or jungler to punish her when overextended.\n- Build items that mitigate slows: Items like Mercury's Treads or Quicksilver Sash can help reduce the effectiveness of her crowd control.\n- Engage after she uses Volley: Her W has a cooldown. After she uses it, there's a window to trade without immediate retaliation.\n- Be aware of her Hawkshot (E): It provides vision. Avoid setting up ambushes in areas she can easily scout.\n- In teamfights, prioritize flanking or engaging from angles where her ultimate is less likely to hit multiple targets."
   },
   {
     "id": "AurelionSol",
     "name": "Aurelion Sol",
+           "lanes": ["Mid"],
+
     "genericTips": "- Pressure early: Aurelion Sol is weaker in the early game. Aggressive play can prevent him from scaling effectively.\n- Interrupt his waveclear: Denying him the ability to push waves can limit his roaming potential.\n- Ward river entrances: Aurelion Sol excels at roaming. Vision can help track his movements and prevent surprise ganks.\n- Avoid extended trades near his stars: His passive deals consistent damage to nearby enemies. Engage when you can burst him quickly or force him to reposition.\n- Coordinate with your jungler: Ganking Aurelion Sol when his escape abilities are on cooldown increases the chance of a successful kill.\n- Build magic resistance: Items like Banshee's Veil or Mercury's Treads can reduce his burst potential.\n- In teamfights, focus on disrupting his positioning to prevent him from maximizing his passive damage."
   },
   {
     "id": "Azir",
     "name": "Azir",
+           "lanes": ["Mid"],
+
     "genericTips": "- Dodge his soldiers: Azir's primary damage comes from his soldiers. Stay out of their attack range to minimize poke.\n- Exploit his weak early game: Azir is vulnerable before he completes key items. Apply pressure to delay his scaling.\n- Engage when his soldiers are on cooldown: Without soldiers, Azir's damage output is significantly reduced.\n- Be cautious of his Shurima Shuffle: Azir can use his E-Q combo to reposition or engage. Maintain vision and be ready to react.\n- Build magic resistance: Items like Banshee's Veil can help mitigate his burst damage.\n- Coordinate with your team to collapse on him when he's overextended or his escape abilities are on cooldown.\n- In teamfights, flank or use crowd control to disrupt his positioning and prevent him from setting up his soldiers effectively."
   },
   {
     "id": "Bard",
     "name": "Bard",
+           "lanes": ["Support"],
+
     "genericTips": "- Punish his roams: Bard often leaves lane to collect chimes. Use these opportunities to pressure his ADC or take objectives.\n- Avoid standing near walls: His Q can stun if it hits an enemy and then a wall. Positioning away from walls reduces this threat.\n- Deny his healing shrines: Bard's W provides healing. Destroy them when possible to limit his sustain.\n- Be cautious of his ultimate: Tempered Fate can catch multiple champions. Spread out in teamfights to minimize its impact.\n- Track his chime collection: The more chimes he collects, the stronger his meeps become. Denying him chimes can limit his scaling.\n- Coordinate with your team to engage when Bard is away from lane or his ultimate is on cooldown.\n- Utilize crowd control to interrupt his Magical Journey (E) and prevent escapes or engages."
   },
  {
     "id": "Belveth",
     "name": "Bel'Veth",
+           "lanes": ["Jungle"],
+
     "genericTips": "- Early Game Vulnerability: Bel'Veth can be invaded and outskirmished by many junglers if her Q (Void Surge) or E (Royal Maelstrom) are on cooldown.\n- Avoid Fighting Early: Champions like Warwick, Teemo, and Briar can stat-check or shut down Bel'Veth with a single ability.\n- Apply Grievous Wounds to reduce her sustain and healing.\n- In teamfights, avoid focusing the tank; instead, kite back when she ults as her movement speed ramps up.\n- Watch her item spikes, especially when she picks up key items like Kraken Slayer or Blade of the Ruined King.\n- Ward her jungle entrances to track her movements and prevent surprise ganks."
   },
   {
     "id": "Blitzcrank",
     "name": "Blitzcrank",
+           "lanes": ["Support"],
+
     "genericTips": "- Positioning: Maintain distance to avoid his Q (Rocket Grab); stay behind minions to limit his engage potential.\n- Cooldown Exploitation: Blitzcrank is vulnerable when his Q is on cooldown; use this window to trade or engage.\n- Level 2 Power Spike: Be cautious of his aggressive play at level 2; ensure you hit level 2 simultaneously to mitigate this threat.\n- Vision Control: Ward flanks and maintain vision to prevent surprise engages, especially around objectives.\n- In teamfights, spread out to minimize the impact of his AoE silence from R (Static Field)."
   },
   {
     "id": "Brand",
     "name": "Brand",
+           "lanes": ["Support", "Mid"],
+
     "genericTips": "- Avoid Clumping: Brand's R (Pyroclasm) can bounce between champions; spread out to reduce its effectiveness.\n- Cooldown Exploitation: Engage when his abilities are on cooldown; his damage output is significantly reduced without them.\n- Mana Management: Brand relies heavily on mana; prolonged trades can deplete his resources.\n- Bush Control: Be cautious of Brand hugging bushes in the bottom lane; he may use them to land surprise abilities.\n- Apply early pressure to prevent Brand from scaling and becoming a late-game threat."
   },
   {
     "id": "Braum",
     "name": "Braum",
+           "lanes": ["Support"],
+
     "genericTips": "- Avoid Early Trades: Braum can stun and deal significant damage to weak enemies early; limit early fighting.\n- Positioning: Keep your distance to avoid being stunned with 4 stacks of his passive.\n- Ultimate Awareness: Braum's R (Glacial Fissure) has a long cast time; use blinks or dashes to dodge it.\n- Isolation: Try to isolate Braum to reduce his support effectiveness in teamfights.\n- Use items like Black Cleaver and Mortal Reminder to reduce his armor and healing."
   },
   {
     "id": "Caitlyn",
     "name": "Caitlyn",
+           "lanes": ["Bot"],
+
     "genericTips": "- Range Management: Stay behind minions to avoid her Q (Piltover Peacemaker) and W (Yordle Snap Trap).\n- Cooldown Exploitation: Engage when her E (90 Caliber Net) is on cooldown; she lacks mobility without it.\n- Early Game Pressure: Caitlyn excels at early lane dominance; coordinate with your support to mitigate her pressure.\n- Trap Awareness: Be cautious of traps placed behind your tower when being pushed in.\n- In teamfights, focus on flanking Caitlyn to bypass her frontline and eliminate her quickly."
   },
 {
   "id": "Camille",
   "name": "Camille",
+    "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -182,11 +212,14 @@
   {
     "id": "Cassiopeia",
     "name": "Cassiopeia",
+           "lanes": ["Mid"],
+
     "genericTips": "- **Dodge her Q (Noxious Blast)**: If she misses her Q, her damage output is significantly reduced. Use this window to trade.\n- **Avoid standing in her W (Miasma)**: It grounds you, preventing movement abilities. Stay out of it to maintain mobility.\n- **Engage when her E (Twin Fang) is on cooldown**: Her E is her main damage tool. If it's on cooldown, she's vulnerable.\n- **Be cautious of her R (Petrifying Gaze)**: Facing her when she casts it will stun you. Try to turn away or sidestep.\n- **Build magic resistance**: Items like Mercury's Treads and Banshee's Veil can help reduce her burst potential."
   },
   {
   "id": "Chogath",
   "name": "Cho'Gath",
+    "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -237,11 +270,14 @@
   {
     "id": "Corki",
     "name": "Corki",
+           "lanes": ["Mid"],
+
     "genericTips": "- **Avoid his Q (Phosphorus Bomb)**: It's his primary poke tool. Dodging it reduces his damage output.\n- **Be cautious of his package**: When Corki picks up the package, he gains a powerful engage tool. Play defensively during this time.\n- **Engage when his W (Valkyrie) is on cooldown**: Without his escape, Corki is vulnerable to ganks and all-ins.\n- **Build magic resistance**: Despite being an ADC, Corki deals mixed damage. Items like Hexdrinker can be effective.\n- **Pressure early**: Corki scales well into the mid and late game. Applying early pressure can delay his power spikes."
   },
   {
   "id": "Darius",
   "name": "Darius",
+    "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -291,11 +327,14 @@
 {
     "id": "Diana",
     "name": "Diana",
+           "lanes": ["Mid", "Jungle"],
+
     "genericTips": "- **Avoid her Q (Crescent Strike)**: Diana's primary engage tool is her Q. Dodging it reduces her ability to all-in effectively.\n- **Early Game Pressure**: Diana is weaker before level 6. Apply pressure during this phase to delay her scaling.\n- **Ward Flanks**: Diana can engage from unexpected angles. Maintain vision control to prevent surprise all-ins.\n- **Post-6 Caution**: After level 6, her all-in potential increases significantly. Play more defensively unless you have a clear advantage.\n- **Itemization**: Building magic resistance items like Mercury's Treads can help mitigate her burst damage."
   },
   {
   "id": "DrMundo",
   "name": "Dr. Mundo",
+    "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -345,36 +384,43 @@
   {
     "id": "Draven",
     "name": "Draven",
+      "lanes": ["Bot"],
     "genericTips": "- **Disrupt Axe Catching**: Draven's damage relies on catching his spinning axes. Use crowd control or zoning to interrupt this.\n- **Early Game Caution**: Draven excels in early trades. Play defensively and avoid unnecessary skirmishes.\n- **Punish Overextensions**: Draven players may overextend to catch axes. Capitalize on these moments with coordinated ganks.\n- **Itemization**: Building armor and health can help survive his burst damage.\n- **Teamfighting**: Focus on positioning and peeling for your carries to mitigate Draven's impact."
   },
   {
     "id": "Ekko",
     "name": "Ekko",
+      "lanes": ["Mid"],
     "genericTips": "- **Avoid his W (Parallel Convergence)**: Ekko's stun zone can turn fights. Stay out of its range to prevent being caught.\n- **Dodge his Q (Timewinder)**: This is his primary poke and waveclear tool. Sidestep it to reduce his damage output.\n- **Track his Ultimate**: Ekko's R allows him to reposition and heal. Be cautious when he's low on health, as he may use it to escape or re-engage.\n- **Early Game Pressure**: Ekko is weaker before level 6. Apply pressure during this phase to delay his scaling.\n- **Itemization**: Magic resistance items can help mitigate his burst damage."
   },
   {
     "id": "Elise",
     "name": "Elise",
+      "lanes": ["Jungle"],
     "genericTips": "- **Avoid her E (Cocoon)**: Elise's stun is a key part of her combo. Dodging it reduces her threat significantly.\n- **Early Game Caution**: Elise is a strong early-game jungler. Ward entrances and play safely to avoid early ganks.\n- **Post-Combo Vulnerability**: After using her abilities, Elise has limited damage. Engage during these windows.\n- **Objective Control**: Elise can secure objectives quickly. Maintain vision and contest when possible.\n- **Itemization**: Building magic resistance and health can help survive her burst damage."
   },
   {
     "id": "Evelynn",
     "name": "Evelynn",
+      "lanes": ["Jungle"],
     "genericTips": "- **Early Game Pressure**: Evelynn is weak before level 6. Invade her jungle early to disrupt her farming and delay her level 6 power spike.\n- **Vision Control**: Use Control Wards and Oracle Lens to detect her when she's camouflaged. Place wards in her jungle to track her movements.\n- **Avoid Isolated Lanes**: Evelynn excels at picking off isolated targets. Stick with your team and avoid overextending without vision.\n- **Build Magic Resistance**: Items like Banshee's Veil or Maw of Malmortius can help mitigate her burst damage.\n- **Be Cautious of Her Charm**: If Evelynn applies her charm, disengage until it expires to avoid being caught in her combo."
   },
   {
     "id": "Ezreal",
     "name": "Ezreal",
+      "lanes": ["Bot"],
     "genericTips": "- **Dodge Skillshots**: Ezreal relies heavily on landing his Q (Mystic Shot) for damage. Sidestep to minimize his poke.\n- **Punish Cooldowns**: After Ezreal uses his E (Arcane Shift), he becomes vulnerable. Engage during this window.\n- **Early Game Pressure**: Ezreal is relatively weak in the early game. Apply pressure to prevent him from scaling freely.\n- **Build Armor**: Items like Ninja Tabi or Frozen Heart can help reduce his damage output.\n- **Avoid Clumping**: His ultimate, Trueshot Barrage, deals damage in a line. Spread out to minimize its impact."
   },
   {
     "id": "Fiddlesticks",
     "name": "Fiddlesticks",
+      "lanes": ["Jungle"],
     "genericTips": "- **Ward Jungle Entrances**: Fiddlesticks often uses his R (Crowstorm) from over walls. Maintain vision in key jungle areas to spot him before he engages.\n- **Interrupt Drain**: Use crowd control to interrupt his W (Bountiful Harvest) to reduce his sustain in fights.\n- **Avoid Clumping**: His abilities deal area-of-effect damage. Spread out during teamfights to minimize his impact.\n- **Build Magic Resistance**: Items like Spirit Visage or Adaptive Helm can help mitigate his damage.\n- **Track His Passive**: Fiddlesticks' passive creates effigies. Destroy them to deny his vision and map control."
   },
 {
   "id": "Fiora",
   "name": "Fiora",
+    "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -424,21 +470,25 @@
   {
     "id": "Fizz",
     "name": "Fizz",
+      "lanes": ["Mid"],
     "genericTips": "- **Dodge His Ultimate**: Fizz's R (Chum the Waters) can deal significant damage. Sidestep to avoid being hit.\n- **Punish Cooldowns**: After Fizz uses his E (Playful/Trickster), he becomes vulnerable. Engage during this window.\n- **Build Magic Resistance**: Items like Banshee's Veil or Mercury's Treads can help mitigate his burst damage.\n- **Maintain Distance**: Fizz excels in close-range engagements. Keep your distance to reduce his kill pressure.\n- **Apply Crowd Control**: Locking Fizz down can prevent him from using his mobility to escape or engage."
   },
  {
     "id": "Galio",
     "name": "Galio",
+      "lanes": ["Top", "Mid"],
     "genericTips": "- **Avoid grouped positioning**: Galio's ultimate, Hero's Entrance, can impact multiple targets. Spread out during teamfights to minimize its effectiveness.\n- **Dodge his Q (Winds of War)**: This is his primary poke tool. Sidestep to reduce incoming damage.\n- **Interrupt his W (Shield of Durand)**: Crowd control can stop his channel, preventing the taunt and damage reduction.\n- **Monitor his roaming**: Galio excels at assisting other lanes. Maintain vision and communicate with teammates to track his movements.\n- **Build magic resistance**: Items like Mercury's Treads or Banshee's Veil can help mitigate his magic damage."
   },
   {
     "id": "Gangplank",
     "name": "Gangplank",
+      "lanes": ["Top", "Mid"],
     "genericTips": "- **Destroy his barrels**: Gangplank's damage heavily relies on his barrels. Auto-attack them before he can detonate to reduce his poke.\n- **Avoid extended trades when his passive is up**: His passive, Trial by Fire, grants a powerful burn effect. Wait for it to expire before engaging.\n- **Apply early pressure**: Gangplank is weak in the early game. Aggressive play can delay his scaling.\n- **Be cautious of his global ultimate**: Cannon Barrage can impact other lanes. Communicate with teammates and ping when it's used.\n- **Build armor**: Items like Ninja Tabi or Plated Steelcaps can help reduce his physical damage output."
   },
   {
   "id": "Garen",
   "name": "Garen",
+    "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -488,6 +538,7 @@
   {
   "id": "Gnar",
   "name": "Gnar",
+    "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -537,6 +588,7 @@
   {
   "id": "Gragas",
   "name": "Gragas",
+    "lanes": ["Top", "Mid"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -586,11 +638,13 @@
  {
     "id": "Graves",
     "name": "Graves",
+      "lanes": ["Jungle"],
     "genericTips": "- **Respect his burst damage**: Graves excels in close-range skirmishes due to his passive and Q (End of the Line). Avoid fighting him in tight spaces.\n- **Avoid his smoke screen**: His W (Smoke Screen) can disrupt vision and movement. Stay out of it to maintain awareness during fights.\n- **Punish his cooldowns**: After Graves uses his dash (E), he becomes more vulnerable. Engage during this window.\n- **Build armor**: Items like Ninja Tabi and Thornmail can help mitigate his physical damage.\n- **Maintain vision control**: Graves can invade and duel effectively. Ward your jungle entrances to track his movements."
   },
   {
   "id": "Gwen",
   "name": "Gwen",
+    "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -640,16 +694,19 @@
   {
     "id": "Hecarim",
     "name": "Hecarim",
+      "lanes": ["Jungle"],
     "genericTips": "- **Avoid clumping**: Hecarim's ultimate (Onslaught of Shadows) can fear multiple targets. Spread out during teamfights.\n- **Ward river entrances**: Hecarim excels at surprise ganks. Maintain vision to anticipate his engages.\n- **Apply crowd control**: Hecarim is vulnerable to CC. Use it to disrupt his engages and peel for your carries.\n- **Build armor**: Items like Randuin's Omen and Thornmail can help reduce his physical damage.\n- **Punish his cooldowns**: After Hecarim uses his E (Devastating Charge), he becomes less threatening. Engage during this window."
   },
   {
     "id": "Heimerdinger",
     "name": "Heimerdinger",
+      "lanes": ["Mid"],
     "genericTips": "- **Destroy his turrets**: Heimerdinger's turrets are his primary source of damage. Clear them to reduce his lane control.\n- **Avoid standing in his grenade (E) zone**: His E (CH-2 Electron Storm Grenade) can stun. Stay mobile to dodge it.\n- **Engage when his turrets are on cooldown**: After placing turrets, Heimerdinger has limited defensive options. Capitalize on this.\n- **Apply crowd control**: Heimerdinger is immobile. Use CC to lock him down during fights.\n- **Coordinate with your jungler**: Ganking Heimerdinger can be effective if you avoid his turret setups."
   },
   {
   "id": "Illaoi",
   "name": "Illaoi",
+    "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -699,6 +756,7 @@
 {
   "id": "Irelia",
   "name": "Irelia",
+    "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -748,16 +806,19 @@
  {
     "id": "Janna",
     "name": "Janna",
+      "lanes": ["Support"],
     "genericTips": "- Disengage Specialist: Janna excels at disrupting melee champions and divers with her Q (Howling Gale) and R (Monsoon). Avoid grouping tightly to minimize her impact.\n- Interrupt Her Ultimate: Save crowd control abilities to interrupt her R, which can reset fights.\n- Avoid Extended Trades: Janna's W (Zephyr) provides significant poke. Engage in short trades and look for all-ins when her abilities are on cooldown.\n- Vision Control: Janna often wards alone. Set up ambushes in common warding spots to catch her off guard."
   },
   {
     "id": "JarvanIV",
     "name": "Jarvan IV",
+      "lanes": ["Jungle"],
     "genericTips": "- Early Gank Pressure: Jarvan IV can gank as early as level 2 with his E-Q combo. Ward early and play cautiously to avoid giving him an advantage.\n- Avoid Clumping: His R (Cataclysm) can trap multiple champions. Spread out during teamfights to minimize its effectiveness.\n- Interrupt His Combo: Disrupting his E-Q combo can prevent him from engaging effectively. Use crowd control or displacement abilities to interrupt.\n- Track His Movements: Jarvan IV is a strong early-game jungler. Keep major objectives warded to spot him before he secures them."
   },
   {
   "id": "Jax",
   "name": "Jax",
+    "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -807,6 +868,7 @@
   {
   "id": "Jayce",
   "name": "Jayce",
+    "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -856,61 +918,73 @@
   {
     "id": "Jhin",
     "name": "Jhin",
+      "lanes": ["Bot"],
     "genericTips": "- Punish His Reloads: Jhin has a fixed attack pattern with a reload after four shots. Engage when he's reloading to capitalize on his downtime.\n- Avoid Standing Near Low-Health Allies: His Q (Dancing Grenade) deals more damage if it kills a target. Spread out to minimize its effectiveness.\n- Dodge His W (Deadly Flourish): This ability roots if it hits a target affected by his damage. Stay mobile to avoid getting caught.\n- Engage During His Ultimate: Jhin is immobile while channeling his R (Curtain Call). Use this window to close the gap and disrupt him."
   },
   {
     "id": "Jinx",
     "name": "Jinx",
+      "lanes": ["Bot"],
     "genericTips": "- **Punish her early game**: Jinx is relatively weak in the early game. Apply pressure to prevent her from scaling freely.\n- **Avoid clumping**: Her ultimate, Super Mega Death Rocket!, deals area-of-effect damage. Spread out during teamfights.\n- **Ward flanks**: Jinx lacks mobility. Flanking her can lead to easy picks.\n- **Interrupt her passive**: When Jinx gets a takedown, she gains bonus movement and attack speed. Deny her resets by peeling for your carries.\n- **Build armor**: Items like Ninja Tabi and Randuin's Omen can help mitigate her physical damage."
   },
   {
     "id": "KSante",
     "name": "K'Sante",
+      "lanes": ["Top"],
     "genericTips": "- **Avoid extended trades**: K'Sante excels in prolonged fights due to his sustain and crowd control. Opt for short trades and disengage.\n- **Be cautious of his ultimate**: His R (All Out) transforms his abilities. Disengage when he activates it to avoid his empowered combos.\n- **Apply crowd control**: K'Sante is vulnerable to CC. Use it to interrupt his engages and peel for your carries.\n- **Build armor**: Items like Thornmail and Bramble Vest can help reduce his sustain and damage output.\n- **Maintain vision control**: K'Sante can roam effectively. Ward river and jungle entrances to track his movements."
   },
   {
     "id": "Kaisa",
     "name": "Kai'Sa",
+      "lanes": ["Bot"],
     "genericTips": "- **Avoid isolated fights**: Kai'Sa's passive deals bonus damage to isolated targets. Stick with your team to reduce her burst potential.\n- **Dodge her W (Void Seeker)**: This ability applies her passive stacks. Sidestep to minimize her poke.\n- **Be cautious of her ultimate**: Kai'Sa can reposition quickly with her R (Killer Instinct). Maintain vision to anticipate her engages.\n- **Apply crowd control**: Locking Kai'Sa down can prevent her from using her mobility to escape or engage.\n- **Build magic resistance**: Kai'Sa deals mixed damage. Items like Hexdrinker can be effective."
   },
   {
     "id": "Kalista",
     "name": "Kalista",
+      "lanes": ["Bot"],
     "genericTips": "- **Avoid extended trades**: Kalista's passive allows her to kite effectively. Opt for short trades and disengage.\n- **Be cautious of her E (Rend)**: Kalista can secure kills with her E. Disengage when you're low on health.\n- **Interrupt her ultimate**: Her R (Fate's Call) can initiate fights. Use crowd control to disrupt her engages.\n- **Apply crowd control**: Locking Kalista down can prevent her from using her mobility to escape or engage.\n- **Build armor**: Items like Ninja Tabi and Randuin's Omen can help mitigate her physical damage."
   },
   {
     "id": "Karma",
     "name": "Karma",
+      "lanes": ["Top", "Mid", "Support"],
     "genericTips": "- **Avoid clumping**: Karma's Q (Inner Flame) and R+Q combo deal area-of-effect damage. Spread out during teamfights.\n- **Dodge her Q (Inner Flame)**: This is her primary poke tool. Sidestep to minimize damage during the laning phase.\n- **Interrupt her mantra abilities**: Karma's R empowers her next ability. Be cautious when she activates it and look to disengage.\n- **Apply crowd control**: Locking Karma down can prevent her from using her abilities effectively.\n- **Build magic resistance**: Items like Mercury's Treads and Banshee's Veil can help mitigate her magic damage."
   },
   {
     "id": "Karthus",
     "name": "Karthus",
+      "lanes": ["Mid"],
     "genericTips": "- **Avoid clumping**: Karthus's Q (Lay Waste) deals more damage to isolated targets. Stay near minions or allies to reduce its impact.\n- **Interrupt his ultimate**: Use crowd control or displacement abilities to interrupt his R (Requiem) channel if possible.\n- **Apply early pressure**: Karthus is vulnerable in the early game. Invade his jungle or pressure him in lane to delay his scaling.\n- **Build magic resistance**: Items like Mercury's Treads and Banshee's Veil can help mitigate his magic damage.\n- **Be cautious of his passive**: After death, Karthus can still cast spells for a short duration. Avoid lingering near his corpse."
   },
   {
     "id": "Kassadin",
     "name": "Kassadin",
+    "lanes": ["Mid"],
     "genericTips": "- **Apply early pressure**: Kassadin is weak before level 6. Harass him to delay his scaling.\n- **Avoid extended trades post-6**: After level 6, Kassadin gains mobility with his R (Riftwalk). Be cautious of his burst potential.\n- **Build magic resistance**: Items like Mercury's Treads and Abyssal Mask can help mitigate his magic damage.\n- **Maintain vision control**: Kassadin can roam effectively. Ward river and jungle entrances to track his movements.\n- **Coordinate with your team**: Kassadin excels at picking off isolated targets. Stick with your team to reduce his impact."
   },
   {
     "id": "Katarina",
     "name": "Katarina",
+    "lanes": ["Mid"],
     "genericTips": "- **Interrupt her ultimate**: Use crowd control abilities to stop her R (Death Lotus) channel.\n- **Avoid standing near her daggers**: Katarina's passive allows her to pick up daggers for burst damage. Stay away from them to reduce her threat.\n- **Apply early pressure**: Katarina is vulnerable in the early game. Harass her to delay her power spikes.\n- **Build magic resistance**: Items like Mercury's Treads and Banshee's Veil can help mitigate her burst damage.\n- **Coordinate with your team**: Katarina thrives in chaotic fights. Focus her quickly to prevent resets."
   },
   {
     "id": "Kayle",
     "name": "Kayle",
+    "lanes": ["Top"],
     "genericTips": "- **Apply early pressure**: Kayle is weak in the early game. Harass her to delay her scaling.\n- **Avoid extended trades post-6**: After level 6, Kayle gains ranged attacks and becomes more dangerous. Be cautious of her damage output.\n- **Build magic resistance**: Items like Mercury's Treads and Wit's End can help mitigate her magic damage.\n- **Coordinate with your team**: Kayle excels in late-game teamfights. Engage before she reaches her power spikes.\n- **Be cautious of her ultimate**: Kayle's R (Divine Judgment) grants invulnerability. Wait for it to expire before committing to a kill."
   },
   {
     "id": "Kayn",
     "name": "Kayn",
+    "lanes": ["Jungle"],
     "genericTips": "- **Track his transformation**: Kayn becomes significantly stronger after transforming into either Rhaast or Shadow Assassin. Monitor his progress and adjust your play accordingly.\n- **Ward jungle entrances**: Kayn can traverse walls with his E (Shadow Step). Maintain vision to anticipate his ganks.\n- **Apply crowd control**: Kayn is vulnerable to CC. Use it to disrupt his engages and peel for your carries.\n- **Build armor or magic resistance**: Depending on his form, build appropriate defenses. Armor for Rhaast (bruiser) and magic resistance for Shadow Assassin.\n- **Be cautious of his ultimate**: Kayn's R (Umbral Trespass) allows him to become untargetable. Save CC for when he reappears."
   },
 {
   "id": "Kennen",
   "name": "Kennen",
+  "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -960,16 +1034,19 @@
   {
     "id": "Khazix",
     "name": "Kha'Zix",
+    "lanes": ["Jungle"],
     "genericTips": "- **Avoid isolation**: Kha'Zix deals bonus damage to isolated targets. Stick with your team to reduce his burst potential.\n- **Ward jungle entrances**: Maintain vision to track his movements and prevent surprise ganks.\n- **Apply crowd control**: Locking Kha'Zix down can prevent him from using his mobility to escape or engage.\n- **Build armor**: Items like Ninja Tabi and Guardian Angel can help mitigate his physical damage.\n- **Be cautious of his ultimate**: Kha'Zix's R (Void Assault) grants invisibility. Use control wards to reveal him."
   },
   {
     "id": "Kindred",
     "name": "Kindred",
+    "lanes": ["Jungle"],
     "genericTips": "- **Deny her passive stacks**: Kindred's passive marks targets. Protect marked allies and contest marked jungle camps.\n- **Apply crowd control**: Locking Kindred down can prevent her from kiting effectively.\n- **Be cautious of her ultimate**: Kindred's R (Lamb's Respite) prevents units from dying. Wait for it to expire before committing to a kill.\n- **Build armor**: Items like Randuin's Omen and Thornmail can help reduce her physical damage.\n- **Maintain vision control**: Kindred can invade and duel effectively. Ward your jungle entrances to track her movements."
   },
   {
   "id": "Kled",
   "name": "Kled",
+  "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -1019,51 +1096,61 @@
   {
     "id": "KogMaw",
     "name": "Kog'Maw",
+    "lanes": ["Bot"],
     "genericTips": "- **Apply early pressure**: Kog'Maw is weak in the early game. Harass him to delay his scaling.\n- **Avoid clumping**: His W (Bio-Arcane Barrage) grants him increased range and damage. Spread out to minimize his impact.\n- **Be cautious of his passive**: Upon death, Kog'Maw explodes, dealing true damage. Disengage after killing him.\n- **Build magic resistance**: Kog'Maw deals mixed damage. Items like Wit's End can be effective.\n- **Apply crowd control**: Locking Kog'Maw down can prevent him from using his range advantage."
   },
 {
     "id": "Leblanc",
     "name": "LeBlanc",
+    "lanes": ["Mid"],
     "genericTips": "- **Avoid her chain**: LeBlanc's E (Ethereal Chains) can root you, setting up her full combo. Sidestep to avoid being tethered.\n- **Punish her after she uses W**: Her W (Distortion) is her main mobility tool. Once used, she becomes more vulnerable.\n- **Build magic resistance**: Items like Mercury's Treads and Banshee's Veil can help mitigate her burst damage.\n- **Maintain vision control**: LeBlanc excels at picking off isolated targets. Ward common paths to anticipate her movements.\n- **Coordinate with your team**: Grouping can reduce her effectiveness in picking off targets."
   },
   {
     "id": "LeeSin",
     "name": "Lee Sin",
+    "lanes": ["Jungle"],
     "genericTips": "- **Avoid his Q (Sonic Wave)**: This ability allows him to dash to you. Dodging it can prevent his engage.\n- **Ward key areas**: Lee Sin can use wards to dash with his W (Safeguard). Deny vision to limit his mobility.\n- **Apply crowd control**: Locking Lee Sin down can prevent him from executing his combos.\n- **Build armor**: Items like Ninja Tabi and Randuin's Omen can help mitigate his physical damage.\n- **Be cautious of his early game**: Lee Sin is strong early. Play safely to avoid giving him an advantage."
   },
   {
     "id": "Leona",
     "name": "Leona",
+    "lanes": ["Support"],
     "genericTips": "- **Avoid clumping**: Leona's ultimate (Solar Flare) can stun multiple targets. Spread out during teamfights.\n- **Dodge her E (Zenith Blade)**: This ability allows her to engage. Sidestep to prevent her from closing the gap.\n- **Apply crowd control**: Locking Leona down can prevent her from using her tankiness effectively.\n- **Build magic resistance**: Items like Mercury's Treads can help mitigate her magic damage.\n- **Punish her after she engages**: Once Leona commits, she has limited escape options."
   },
   {
     "id": "Lillia",
     "name": "Lillia",
+    "lanes": ["Jungle"],
     "genericTips": "- **Avoid her Q (Blooming Blows)**: This ability deals damage in a circle. Stay out of its range to minimize damage.\n- **Be cautious of her passive**: Lillia's abilities apply a damage-over-time effect. Keep track of her stacks.\n- **Apply crowd control**: Locking Lillia down can prevent her from kiting effectively.\n- **Build magic resistance**: Items like Spirit Visage and Adaptive Helm can help mitigate her magic damage.\n- **Maintain vision control**: Lillia can move quickly through the jungle. Ward key areas to track her movements."
   },
   {
     "id": "Lissandra",
     "name": "Lissandra",
+    "lanes": ["Top", "Mid"],
     "genericTips": "- **Avoid her W (Ring of Frost)**: This ability roots nearby enemies. Keep your distance to avoid being caught.\n- **Be cautious of her E (Glacial Path)**: Lissandra can use this to engage or escape. Anticipate her movements.\n- **Apply crowd control**: Locking Lissandra down can prevent her from using her abilities effectively.\n- **Build magic resistance**: Items like Banshee's Veil and Mercury's Treads can help mitigate her magic damage.\n- **Coordinate with your team**: Lissandra excels in teamfights. Focus her quickly to prevent her from controlling the fight."
   },
   {
     "id": "Lucian",
     "name": "Lucian",
+    "lanes": ["Bot"],
     "genericTips": "- **Avoid standing in line with minions**: Lucian's Q (Piercing Light) can damage you through minions. Position yourself to the side to minimize poke damage.\n- **Punish his E (Relentless Pursuit) usage**: Lucian's dash has a relatively long cooldown early game. If he uses it aggressively, seize the opportunity to trade back while it's on cooldown.\n- **Engage in extended trades**: Lucian excels in short bursts. Champions that can sustain longer trades can outmatch him over time.\n- **Manage wave control**: Letting Lucian push the wave can set him up for ganks. Freeze the wave near your turret to limit his aggression.\n- **Build defensively early**: Items like Plated Steelcaps or early armor components can help mitigate his early burst damage.\n- **Coordinate with your support**: Hard engage supports can capitalize on Lucian's aggression, especially when his dash is down."
   },
 {
     "id": "Lulu",
     "name": "Lulu",
+    "lanes": ["Support"],
     "genericTips": "- **Avoid extended trades**: Lulu's passive and abilities favor prolonged engagements. Opt for short trades to minimize her impact.\n- **Be cautious of her polymorph**: Lulu's W (Whimsy) can disable you. Engage when it's on cooldown.\n- **Apply crowd control**: Locking Lulu down can prevent her from using her utility effectively.\n- **Build magic resistance**: Items like Mercury's Treads can help mitigate her poke damage.\n- **Coordinate with your team**: Lulu excels at protecting carries. Focus her or her carry quickly to prevent prolonged fights."
   },
   {
     "id": "Lux",
     "name": "Lux",
+     "lanes": ["Support", "Mid"],
     "genericTips": "- **Avoid her skillshots**: Lux's Q (Light Binding) and E (Lucent Singularity) are her primary damage tools. Sidestep to minimize poke damage.\n- **Be cautious of her ultimate**: Lux's R (Final Spark) has a long range. Maintain health to avoid being sniped.\n- **Apply crowd control**: Locking Lux down can prevent her from using her abilities effectively.\n- **Build magic resistance**: Items like Banshee's Veil can help mitigate her burst damage.\n- **Coordinate with your team**: Lux excels at poking from a distance. Engage quickly to prevent her from dictating the pace."
   },
   {
   "id": "Malphite",
   "name": "Malphite",
+   "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -1113,26 +1200,36 @@
   {
     "id": "Malzahar",
     "name": "Malzahar",
+       "lanes": ["Mid"],
+
     "genericTips": "- **Avoid his E (Malefic Visions)**: This ability spreads if the target dies. Stay away from infected minions.\n- **Be cautious of his ultimate**: Malzahar's R (Nether Grasp) suppresses targets. Use QSS or crowd control to counter it.\n- **Apply crowd control**: Locking Malzahar down can prevent him from using his abilities effectively.\n- **Build magic resistance**: Items like Banshee's Veil can help mitigate his damage.\n- **Coordinate with your team**: Malzahar excels at locking down targets. Engage when his ultimate is on cooldown."
   },
  {
     "id": "Maokai",
     "name": "Maokai",
+       "lanes": ["Top", "Support"],
+
     "genericTips": "- **Avoid his saplings**: Maokai's E (Sapling Toss) can zone you and deal significant poke damage. Clear them with abilities or stay out of their range.\n- **Be cautious of his W (Twisted Advance)**: This targeted root can set up ganks. Maintain distance and ward to prevent surprise engages.\n- **Apply sustained damage**: Maokai excels in extended trades. Burst damage champions can out-trade him effectively.\n- **Build magic resistance**: Items like Mercury's Treads can help mitigate his magic damage.\n- **Coordinate with your jungler**: Maokai is vulnerable to early ganks before he becomes tanky."
   },
   {
     "id": "MasterYi",
     "name": "Master Yi",
+       "lanes": ["Jungle"],
+
     "genericTips": "- **Punish him early**: Master Yi is weak in the early game. Apply pressure to delay his scaling.\n- **Avoid extended trades**: His Q (Alpha Strike) and E (Wuju Style) can deal significant damage over time. Opt for short trades.\n- **Apply crowd control**: Locking Master Yi down can prevent him from resetting with his passive.\n- **Build armor**: Items like Ninja Tabi and Randuin's Omen can help mitigate his physical damage.\n- **Coordinate with your team**: Master Yi excels at cleaning up fights. Focus him early to prevent resets."
   },
   {
     "id": "MissFortune",
     "name": "Miss Fortune",
+       "lanes": ["Bot"],
+
     "genericTips": "- **Avoid standing behind minions**: Her Q (Double Up) can bounce and deal significant damage. Position yourself to the side.\n- **Be cautious of her E (Make It Rain)**: This ability slows and pokes. Step out of it quickly to minimize damage.\n- **Apply crowd control**: Locking Miss Fortune down can prevent her from channeling her ultimate.\n- **Build armor**: Items like Ninja Tabi can help mitigate her physical damage.\n- **Coordinate with your support**: Engage supports can capitalize on her immobility."
   },
   {
   "id": "Mordekaiser",
   "name": "Mordekaiser",
+     "lanes": ["Top"],
+
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -1182,16 +1279,22 @@
   {
     "id": "Morgana",
     "name": "Morgana",
+       "lanes": ["Support", "Mid"],
+
     "genericTips": "- **Avoid her Q (Dark Binding)**: This long-duration root can set up kills. Sidestep to avoid being caught.\n- **Be cautious of her E (Black Shield)**: This ability blocks crowd control. Wait for it to expire before engaging.\n- **Apply poke damage**: Morgana has limited sustain. Poke her down before committing to an all-in.\n- **Build magic resistance**: Items like Mercury's Treads can help mitigate her magic damage.\n- **Coordinate with your support**: Engage supports can capitalize on her immobility when Black Shield is down."
   },
   {
     "id": "Nami",
     "name": "Nami",
+       "lanes": ["Support"],
+
     "genericTips": "- **Against Engage Supports**: When facing champions like Nautilus or Leona, consider taking Guardian as your keystone rune to provide additional protection for your ADC.\n- **Positioning**: Maintain a safe distance to avoid being caught by hard crowd control abilities. Utilize your W (Ebb and Flow) to sustain and poke.\n- **Timing Your Abilities**: Use your Q (Aqua Prison) reactively to interrupt enemy engages or to follow up on your ADC's crowd control.\n- **Itemization**: Against healing-heavy lanes, rush Chemtech Putrifier to apply Grievous Wounds and reduce their sustain.\n- **Wave Management**: Be cautious with your E (Tidecaller's Blessing) usage; overusing it can push the wave unintentionally."
   },
   {
   "id": "Nasus",
   "name": "Nasus",
+     "lanes": ["Top"],
+
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -1241,41 +1344,57 @@
   {
     "id": "Nautilus",
     "name": "Nautilus",
+       "lanes": ["Support"],
+
     "genericTips": "- **Level 2 Spike**: Nautilus has a strong level 2 all-in potential. Be prepared to play defensively until you match his level.\n- **Avoiding Hooks**: Position yourself behind minions to block his Q (Dredge Line) and reduce his engage opportunities.\n- **Punish Missed Engages**: If Nautilus misses his hook, capitalize on the cooldown window to trade favorably.\n- **Vision Control**: Maintain ward coverage in river and tri-bush to anticipate his roams and prevent surprise engages.\n- **Itemization**: Consider taking early boots for better positioning and to dodge his skill shots more effectively."
   },
   {
     "id": "Neeko",
     "name": "Neeko",
+       "lanes": ["Support", "Mid"],
+
     "genericTips": "- **Identifying Clones**: Neeko's passive allows her to disguise as allies. Watch for unusual movements or positioning to identify the real Neeko.\n- **Dodging Skill Shots**: Her E (Tangle-Barbs) can root you, setting up her combo. Maintain lateral movement to avoid being hit.\n- **Trading**: Engage in trades after she uses her Q (Blooming Burst), as it's a significant portion of her poke damage.\n- **Ultimate Awareness**: Her R (Pop Blossom) has a channel time. If she disappears in a minion wave, be wary of a potential engage.\n- **Wave Management**: Push the wave to prevent her from setting up ambushes with her passive and ultimate."
   },
   {
     "id": "Nidalee",
     "name": "Nidalee",
+       "lanes": ["Jungle"],
+
     "genericTips": "- **Avoiding Spears**: Her Q (Javelin Toss) deals significant damage. Maintain unpredictable movement patterns to dodge them.\n- **Brush Control**: Nidalee gains bonuses when in brush. Deny her control by warding and avoiding fights near bushes.\n- **Early Game Pressure**: She has strong early game dueling potential. Play cautiously and avoid isolated skirmishes.\n- **Post-6 Awareness**: Her mobility increases with her R (Aspect of the Cougar). Be cautious of her roam potential.\n- **Itemization**: Building early magic resistance can mitigate her burst damage."
   },
   {
     "id": "Nocturne",
     "name": "Nocturne",
+           "lanes": ["Jungle"],
+
     "genericTips": "- Track his passive cooldown and avoid trades when his empowered auto is up.\n- Ward deep near his raptor or red camps to spot early jungle paths.\n- Respect his level 6 power spike; after R (Paranoia), play under vision.\n- If he casts Q (Duskbringer), don’t stand in the trail — it boosts his stats.\n- Short trades work well since his W (Shroud of Darkness) only blocks one ability.\n- Watch for his spell shield timing; bait it out before committing major abilities.\n- Push waves early if safe to reduce his pre-6 gank threat.\n- Keep vision on river entrances, as his gank range post-6 increases massively.\n- Build armor early to reduce his auto + passive poke.\n- Avoid being isolated in side lanes after 6; group or play near turret.\n- Don’t engage extended duels near jungle walls — he can chase easily with Q.\n- Punish him when his Q or R is on cooldown; they’re his key fight tools.\n- Watch for his E (Unspeakable Horror) tether — break it by creating distance.\n- Ping when he hits 6 so teammates respect his global pressure.\n- Time your crowd control to land after he burns W.\n- If he’s fed, stack armor and stay grouped to avoid isolated picks.\n- His jungle clear is healthy; coordinate invades with teammates early.\n- Keep waves shoved under his turret to limit his lane impact.\n- Avoid fog-heavy areas post-6; he thrives on vision denial.\n- When ahead, track his ult cooldown carefully to control map plays."
   },
   {
     "id": "Nunu",
     "name": "Nunu & Willump",
+           "lanes": ["Jungle"],
+
     "genericTips": "- Watch river paths — his snowball (W) can curve from unexpected angles.\n- Avoid overextending without vision; early Nunu ganks are deadly.\n- Interrupt his R (Absolute Zero) channel with hard CC.\n- Stay spread out to reduce his ultimate’s AoE impact.\n- Punish his weak early-game trades if he’s forced into lane.\n- He’s tanky early but lacks damage; bring sustained poke or %HP damage.\n- Keep track of his jungle timers; he’s excellent at objective steals.\n- Deny his Q (Consume) on minions if he’s laning; it’s his main heal.\n- Ward pixel bushes and raptors — common snowball gank angles.\n- Post-6, respect his engage even more; his snowball + ult combo is teamfight-changing.\n- He struggles in extended trades without Q healing; force long fights.\n- Armor and Grievous Wounds can help reduce his durability.\n- Push lanes to make it riskier for him to gank or roam.\n- Bait out his snowball W before committing hard engages.\n- His snowball slows and knocks up — use dashes to dodge or reposition.\n- Build tank shred items for late-game; Nunu scales tanky.\n- Track his vision control — he sets up plays from fog or river.\n- Grouping helps reduce his pick threat; avoid isolated lanes.\n- If behind, play under turret and stall; his dives rely on numbers."
   },
   {
     "id": "Olaf",
     "name": "Olaf",
+           "lanes": ["Jungle", "Top"],
+
     "genericTips": "- Respect his level 1–3 power; he’s one of the strongest early duelists.\n- Avoid extended fights where he can spam Q (Undertow) to stick to you.\n- Kite him during trades; Olaf lacks dashes, so slows and movement are key.\n- Save hard CC until after his R (Ragnarok) ends; he’s immune during it.\n- Grievous Wounds reduces healing from his W (Vicious Strikes).\n- Play near turret if he’s ahead — his dives rely on chasing power.\n- Ward river brushes to spot roams or jungle invades.\n- Don’t fight low health Olaf; his passive boosts attack speed on missing HP.\n- Post-6, avoid clumping; his ult + Ghost lets him dive carries easily.\n- Build armor early to reduce his all-in threat.\n- Dodge or block his axes; picking them up lowers his Q cooldown.\n- Call for jungle help early; he’s weaker if set behind.\n- Watch when he uses W — that’s his sustain window.\n- Short bursts + disengage work better than all-in duels.\n- When playing ranged, poke before he can engage.\n- Respect his level 6 dueling spike — wait out his ult duration.\n- Keep track of jungle timers; Olaf loves early objective fights.\n- If you force his R defensively, punish the window it’s down.\n- Late game, peel him off carries with kiting and slows."
   },
   {
     "id": "Orianna",
     "name": "Orianna",
+           "lanes": ["Mid"],
+
     "genericTips": "- Watch the ball! Her damage zones depend entirely on ball placement.\n- Sidestep her Q (Command: Attack) to reduce poke and follow-up W damage.\n- Trade after she uses abilities; her cooldowns are moderate early.\n- Build early MR (Null-Magic Mantle or Merc’s) if struggling with poke.\n- Ward flanks; she’s vulnerable to ganks without flash.\n- Keep minions between you and the ball to reduce Q poke angles.\n- Post-6, spread out in fights to avoid Shockwave catching multiple.\n- Orianna has no mobility; coordinate jungle ganks when she’s pushed.\n- Her mana pool is limited early; force her to use abilities on waveclear.\n- Shove waves under turret to limit her roam potential.\n- Be aware when the ball is on a teammate — it can Shockwave from them.\n- Time shields or defensive tools to block incoming poke.\n- When low, avoid predictable movement; her ult can finish fights.\n- Orianna is less effective in side lanes; match her rotations smartly.\n- If she burns R and misses, punish her during the long cooldown window.\n- Flanking her in fights breaks her ball zone control.\n- Watch her build: Luden’s spikes earlier; Liandry’s favors longer fights.\n- Save key defensive summoners for her all-in combos.\n- She struggles to waveclear under heavy pressure without burning mana."
   },
   {
   "id": "Ornn",
   "name": "Ornn",
+         "lanes": ["Top"],
+
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -1325,6 +1444,7 @@
   {
   "id": "Pantheon",
   "name": "Pantheon",
+     "lanes": ["Top", "Support"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -1374,6 +1494,7 @@
   {
   "id": "Poppy",
   "name": "Poppy",
+     "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -1423,16 +1544,19 @@
   {
     "id": "Pyke",
     "name": "Pyke",
+       "lanes": ["Support"],
     "genericTips": "- Maintain vision control to reduce his roaming effectiveness.\n- Avoid standing near walls to prevent his E (Phantom Undertow) stun.\n- Punish him when his Q (Bone Skewer) is on cooldown.\n- Build health items to mitigate his execute threshold.\n- Use crowd control to interrupt his W (Ghostwater Dive) stealth.\n- Communicate with your team to track his R (Death from Below) cooldown.\n- Stay spread out in team fights to minimize his AoE execute potential.\n- Deny him kills to reduce his gold income from passive sharing.\n- Play aggressively when his mobility spells are on cooldown.\n- Coordinate with your support to zone him out during laning phase."
   },
   {
     "id": "Qiyana",
     "name": "Qiyana",
+       "lanes": ["Mid"],
     "genericTips": "- Respect her level 3 power spike; avoid extended trades early.\n- Keep track of her element selection to anticipate her next move.\n- Avoid fighting near terrain to reduce the impact of her R (Supreme Display of Talent).\n- Use crowd control to interrupt her E (Audacity) engage.\n- Build magic resistance to mitigate her burst damage.\n- Maintain vision in river and jungle to anticipate her roams.\n- Punish her when her W (Terrashape) is on cooldown.\n- Play under turret when low on health to deter her dive potential.\n- Communicate with your team to track her ultimate cooldown.\n- Use ranged poke to whittle her down before committing."
   },
   {
   "id": "Quinn",
   "name": "Quinn",
+     "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -1482,31 +1606,38 @@
   {
     "id": "Rakan",
     "name": "Rakan",
+       "lanes": ["Support"],
     "genericTips": "- Punish his weak level 1 by poking aggressively before he unlocks W.\n- Maintain distance to avoid his W (Grand Entrance) engage.\n- Bait out his E (Battle Dance) before committing to trades.\n- Use crowd control to interrupt his R (The Quickness) channel.\n- Build magic resistance to mitigate his poke damage.\n- Coordinate with your ADC to zone him out during laning phase.\n- Ward river and jungle entrances to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Communicate with your team to track his roaming patterns.\n- Punish him when his mobility spells are on cooldown."
   },
   {
     "id": "Rammus",
     "name": "Rammus",
+       "lanes": ["Jungle"],
     "genericTips": "- Avoid extended trades where his W (Defensive Ball Curl) reduces damage.\n- Use crowd control to interrupt his Q (Powerball) engage.\n- Build magic penetration to mitigate his magic damage.\n- Maintain vision in river and jungle to anticipate his ganks.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your team to track his jungle pathing.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to collapse on him during ganks.\n- Use ranged poke to whittle him down before committing.\n- Build items that reduce healing to counter his sustain."
   },
   {
     "id": "RekSai",
     "name": "Rek'Sai",
+       "lanes": ["Jungle"],
     "genericTips": "- Respect her level 3 power spike; avoid extended trades early.\n- Keep track of her tunnel locations to anticipate her movements.\n- Use crowd control to interrupt her W (Unburrow) engage.\n- Build armor to mitigate her physical damage.\n- Maintain vision in river and jungle to anticipate her ganks.\n- Play under turret when low on health to deter her dive potential.\n- Coordinate with your team to track her jungle pathing.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to collapse on her during ganks.\n- Use ranged poke to whittle her down before committing."
   },
   {
     "id": "Rell",
+    
     "name": "Rell",
+       "lanes": ["Support"],
     "genericTips": "- Avoid clumping to reduce the impact of her R (Magnet Storm).\n- Use crowd control to interrupt her W (Ferromancy: Crash Down) engage.\n- Build magic resistance to mitigate her magic damage.\n- Maintain vision in river and jungle to anticipate her roams.\n- Play under turret when low on health to deter her dive potential.\n- Coordinate with your ADC to zone her out during laning phase.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to track her roaming patterns.\n- Use ranged poke to whittle her down before committing.\n- Build items that reduce healing to counter her sustain."
   },
   {
     "id": "Renata",
     "name": "Renata Glasc",
+       "lanes": ["Support"],
     "genericTips": "- Avoid fighting in tight spaces to reduce the impact of her R (Hostile Takeover).\n- Use crowd control to interrupt her Q (Handshake) engage.\n- Build magic resistance to mitigate her magic damage.\n- Maintain vision in river and jungle to anticipate her roams.\n- Play under turret when low on health to deter her dive potential.\n- Coordinate with your ADC to zone her out during laning phase.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to track her roaming patterns.\n- Use ranged poke to whittle her down before committing.\n- Build items that reduce healing to counter her sustain."
   },
  {
   "id": "Renekton",
   "name": "Renekton",
+     "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -1556,11 +1687,13 @@
   {
     "id": "Rengar",
     "name": "Rengar",
+       "lanes": ["Top", "Jungle"],
     "genericTips": "- Ward enemy jungle entrances to spot his early invades.\n- Avoid standing near bushes to reduce his engage potential.\n- Use crowd control to interrupt his leap from passive.\n- Build armor to mitigate his burst damage.\n- Maintain vision in river and jungle to anticipate his ganks.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your team to track his ultimate cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to collapse on him during ganks.\n- Use ranged poke to whittle him down before committing."
   },
  {
   "id": "Riven",
   "name": "Riven",
+     "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -1610,36 +1743,43 @@
   {
     "id": "Rumble",
     "name": "Rumble",
+       "lanes": ["Top"],
     "genericTips": "- Avoid standing in minion waves to reduce the impact of his Q (Flamespitter).\n- Bait out his E (Electro Harpoon) before engaging.\n- Build magic resistance to mitigate his magic damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Use ranged poke to whittle him down before committing.\n- Avoid fighting him when his heat bar is in the danger zone."
   },
   {
     "id": "Ryze",
     "name": "Ryze",
+       "lanes": ["Top", "Mid"],
     "genericTips": "- Respect his level 3 power spike; avoid extended trades early.\n- Bait out his W (Rune Prison) before engaging.\n- Build magic resistance to mitigate his magic damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Use ranged poke to whittle him down before committing.\n- Avoid fighting him when he has full mana for empowered abilities."
   },
  {
     "id": "Samira",
     "name": "Samira",
+       "lanes": ["Bot"],
     "genericTips": "- Avoid extended trades early; Samira excels in all-ins after level 3.\n- Punish her when her W (Blade Whirl) is on cooldown; it's her primary defense.\n- Maintain distance to prevent her from stacking Style for her ultimate.\n- Use crowd control to interrupt her E (Wild Rush) engage.\n- Build early armor to mitigate her burst damage.\n- Coordinate with your support to zone her out during laning phase.\n- Ward river and jungle entrances to anticipate her roams.\n- Play under turret when low on health to deter her dive potential.\n- Communicate with your team to track her ultimate cooldown.\n- Punish her when her mobility spells are on cooldown."
   },
   {
     "id": "Sejuani",
     "name": "Sejuani",
+       "lanes": ["Jungle"],
     "genericTips": "- Avoid extended trades where her passive grants bonus resistances.\n- Use crowd control to interrupt her Q (Arctic Assault) engage.\n- Build magic resistance to mitigate her magic damage.\n- Maintain vision in river and jungle to anticipate her ganks.\n- Play under turret when low on health to deter her dive potential.\n- Coordinate with your team to track her jungle pathing.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to collapse on her during ganks.\n- Use ranged poke to whittle her down before committing.\n- Build items that reduce healing to counter her sustain."
   },
   {
     "id": "Senna",
     "name": "Senna",
+       "lanes": ["Support", "Bot"],
     "genericTips": "- Avoid standing near minions to reduce the impact of her Q (Piercing Darkness).\n- Bait out her W (Last Embrace) before engaging.\n- Build magic resistance to mitigate her poke damage.\n- Maintain vision in river and jungle to anticipate her roams.\n- Play under turret when low on health to deter her dive potential.\n- Coordinate with your ADC to zone her out during laning phase.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to track her roaming patterns.\n- Use ranged poke to whittle her down before committing.\n- Build items that reduce healing to counter her sustain."
   },
   {
     "id": "Seraphine",
     "name": "Seraphine",
+       "lanes": ["Support"],
     "genericTips": "- Avoid clumping to reduce the impact of her R (Encore).\n- Use crowd control to interrupt her Q (High Note) poke.\n- Build magic resistance to mitigate her magic damage.\n- Maintain vision in river and jungle to anticipate her roams.\n- Play under turret when low on health to deter her dive potential.\n- Coordinate with your ADC to zone her out during laning phase.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to track her roaming patterns.\n- Use ranged poke to whittle her down before committing.\n- Build items that reduce healing to counter her sustain."
   },
   {
   "id": "Sett",
   "name": "Sett",
+     "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -1689,6 +1829,7 @@
 {
   "id": "Shen",
   "name": "Shen",
+     "lanes": ["Top", "Support"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -1738,6 +1879,7 @@
 {
   "id": "Singed",
   "name": "Singed",
+     "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -1787,6 +1929,7 @@
  {
   "id": "Sion",
   "name": "Sion",
+     "lanes": ["Top"],
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -1836,66 +1979,88 @@
   {
     "id": "Sivir",
     "name": "Sivir",
+       "lanes": ["Bot"],
     "genericTips": "- Stand away from minion waves to minimize the bounce damage from her W (Ricochet).\n- Bait out her E (Spell Shield) with low-impact abilities before committing to key spells.\n- Exploit her short auto-attack range by zoning her during trades.\n- Monitor her mana usage; excessive spellcasting can deplete her resources.\n- Coordinate with your support to engage when her Spell Shield is on cooldown.\n- Avoid overextending post-level 6; her R (On The Hunt) can enable swift chases.\n- Use champions with strong poke to pressure her under turret.\n- Build sustain items to mitigate her poke damage over time.\n- Punish her when she uses Q (Boomerang Blade) for waveclear.\n- Communicate with your team to collapse on her when she's isolated."
   },
   {
     "id": "Skarner",
     "name": "Skarner",
+       "lanes": ["Top", "Jungle"],
     "genericTips": "- Maintain distance to avoid his E (Fracture) stun combo.\n- Use crowd control to interrupt his Q (Crystal Slash) stacking.\n- Build magic resistance to mitigate his magic damage.\n- Keep the minion wave closer to your turret to reduce his all-in potential.\n- Ward river and jungle entrances to anticipate his ganks.\n- Punish him when his mobility spells are on cooldown.\n- Coordinate with your team to collapse on him during ganks.\n- Use ranged poke to whittle him down before committing.\n- Build items that reduce healing to counter his sustain.\n- Avoid fighting him near his spires, as they grant him bonus stats."
   },
   {
     "id": "Smolder",
     "name": "Smolder",
+       "lanes": ["Bot"],
     "genericTips": "- Respect his level 4 power spike; avoid extended trades early.\n- Bait out his Q (Flame Breath) before engaging.\n- Build magic resistance to mitigate his magic damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use ranged poke to whittle him down before committing.\n- Avoid fighting him when he has full stacks for empowered abilities."
   },
   {
     "id": "Sona",
     "name": "Sona",
+       "lanes": ["Support"],
     "genericTips": "- Engage aggressively early; Sona is vulnerable before level 6.\n- Bait out her Q (Hymn of Valor) before committing to trades.\n- Build magic resistance to mitigate her poke damage.\n- Maintain vision in river and jungle to anticipate her roams.\n- Coordinate with your ADC to zone her out during laning phase.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to track her ultimate cooldown.\n- Use crowd control to interrupt her R (Crescendo) channel.\n- Build items that reduce healing to counter her sustain.\n- Avoid clumping to reduce the impact of her AoE abilities."
   },
 {
     "id": "Soraka",
     "name": "Soraka",
+           "lanes": ["Support"],
+
     "genericTips": "- Engage aggressively early; Soraka is vulnerable before level 6.\n- Bait out her Q (Starcall) before committing to trades.\n- Build magic resistance to mitigate her poke damage.\n- Maintain vision in river and jungle to anticipate her roams.\n- Coordinate with your ADC to zone her out during laning phase.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to track her ultimate cooldown.\n- Use crowd control to interrupt her R (Wish) channel.\n- Build items that reduce healing to counter her sustain.\n- Avoid clumping to reduce the impact of her AoE abilities."
   },
   {
     "id": "Swain",
     "name": "Swain",
+           "lanes": ["Support", "Mid", "Top"],
+
     "genericTips": "- Avoid extended trades where his passive grants bonus damage.\n- Use crowd control to interrupt his Q (Death's Hand) combo.\n- Build magic resistance to mitigate his magic damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use ranged poke to whittle him down before committing.\n- Build items that reduce healing to counter his sustain."
   },
   {
     "id": "Sylas",
     "name": "Sylas",
+           "lanes": ["Mid"],
+
     "genericTips": "- Respect his level 3 power spike; avoid extended trades early.\n- Bait out his E (Abscond/Abduct) before engaging.\n- Build magic resistance to mitigate his burst damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use ranged poke to whittle him down before committing.\n- Avoid fighting him when he has stolen a powerful ultimate."
   },
   {
     "id": "Syndra",
     "name": "Syndra",
+           "lanes": ["Mid"],
+
     "genericTips": "- Avoid standing near minions to reduce the impact of her Q (Dark Sphere).\n- Bait out her E (Scatter the Weak) before engaging.\n- Build magic resistance to mitigate her burst damage.\n- Maintain vision in river and jungle to anticipate her roams.\n- Play under turret when low on health to deter her dive potential.\n- Coordinate with your jungler to gank when her mobility spells are on cooldown.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to track her ultimate cooldown.\n- Use ranged poke to whittle her down before committing.\n- Avoid clumping to reduce the impact of her AoE abilities."
   },
   {
     "id": "TahmKench",
     "name": "Tahm Kench",
+           "lanes": ["Support", "Top"],
+
     "genericTips": "- Avoid extended trades where his passive grants bonus damage.\n- Use crowd control to interrupt his Q (Tongue Lash) combo.\n- Build magic resistance to mitigate his magic damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use ranged poke to whittle him down before committing.\n- Build items that reduce healing to counter his sustain."
   },
   {
     "id": "Taliyah",
     "name": "Taliyah",
+           "lanes": ["Jungle", "Mid"],
+
     "genericTips": "- Avoid standing near walls to reduce the impact of her E (Unraveled Earth).\n- Bait out her Q (Threaded Volley) before engaging.\n- Build magic resistance to mitigate her burst damage.\n- Maintain vision in river and jungle to anticipate her roams.\n- Play under turret when low on health to deter her dive potential.\n- Coordinate with your jungler to gank when her mobility spells are on cooldown.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to track her ultimate cooldown.\n- Use ranged poke to whittle her down before committing.\n- Avoid fighting her when she has full mana for empowered abilities."
   },
   {
     "id": "Talon",
     "name": "Talon",
+           "lanes": ["Mid"],
+
     "genericTips": "- Respect his level 2 power spike; avoid extended trades early.\n- Bait out his W (Rake) before engaging.\n- Build armor to mitigate his burst damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use ranged poke to whittle him down before committing.\n- Avoid fighting him when he has full combo available."
   },
   {
     "id": "Taric",
     "name": "Taric",
+           "lanes": ["Support"],
+
     "genericTips": "- Avoid clumping to reduce the impact of his R (Cosmic Radiance).\n- Use crowd control to interrupt his E (Dazzle) channel.\n- Build magic resistance to mitigate his magic damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Coordinate with your ADC to zone him out during laning phase.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use ranged poke to whittle him down before committing.\n- Build items that reduce healing to counter his sustain.\n- Avoid extended trades where his passive grants bonus damage."
   },
   {
   "id": "Teemo",
   "name": "Teemo",
+         "lanes": ["Top"],
+
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -1945,16 +2110,22 @@
   {
     "id": "Thresh",
     "name": "Thresh",
+           "lanes": ["Support"],
+
     "genericTips": "- Avoid standing near walls to reduce the impact of his Q (Death Sentence).\n- Bait out his E (Flay) before engaging.\n- Build armor to mitigate his physical damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Coordinate with your ADC to zone him out during laning phase.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his roaming patterns.\n- Use ranged poke to whittle him down before committing.\n- Build items that reduce healing to counter his sustain.\n- Avoid extended trades where his passive grants bonus damage."
   },
   {
     "id": "Tristana",
     "name": "Tristana",
+           "lanes": ["Bot", "Mid"],
+
     "genericTips": "- Respect her level 2 power spike; she can all-in with E and W.\n- Bait out her W (Rocket Jump) before engaging; it's her main escape.\n- Avoid standing near low-health minions to prevent E (Explosive Charge) splash damage.\n- Build early armor to mitigate her burst damage.\n- Coordinate with your support to zone her out during laning phase.\n- Maintain vision in river and jungle to anticipate her roams.\n- Play under turret when low on health to deter her dive potential.\n- Communicate with your team to track her ultimate cooldown.\n- Punish her when her mobility spells are on cooldown.\n- Use crowd control to interrupt her aggressive jumps."
   },
   {
   "id": "Trundle",
   "name": "Trundle",
+         "lanes": ["Jungle", "Top"],
+
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -2004,6 +2175,8 @@
   {
   "id": "Tryndamere",
   "name": "Tryndamere",
+         "lanes": ["Top"],
+
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -2053,21 +2226,29 @@
   {
     "id": "TwistedFate",
     "name": "Twisted Fate",
+           "lanes": ["Mid"],
+
     "genericTips": "- Respect his level 6 power spike; his R (Destiny) enables global roams.\n- Bait out his W (Pick a Card) before engaging to reduce his stun potential.\n- Build magic resistance to mitigate his poke damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your team to track his ultimate cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to collapse on him during roams.\n- Use ranged poke to whittle him down before committing.\n- Push the wave to limit his roaming opportunities."
   },
   {
     "id": "Twitch",
     "name": "Twitch",
+           "lanes": ["Bot"],
+
     "genericTips": "- Maintain vision control to detect his stealth approaches.\n- Bait out his Q (Ambush) before engaging to reduce his surprise factor.\n- Build armor to mitigate his physical damage.\n- Coordinate with your support to zone him out during laning phase.\n- Play under turret when low on health to deter his dive potential.\n- Communicate with your team to track his ultimate cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Use crowd control to lock him down during his R (Spray and Pray).\n- Build items that reduce healing to counter his sustain.\n- Avoid clumping to reduce the impact of his AoE damage."
   },
   {
     "id": "Udyr",
     "name": "Udyr",
+           "lanes": ["Jungle"],
+
     "genericTips": "- Avoid extended trades where his passive grants bonus attack speed.\n- Bait out his E (Blazing Stampede) before engaging to reduce his mobility.\n- Build armor to mitigate his physical damage.\n- Maintain vision in river and jungle to anticipate his ganks.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your team to collapse on him during ganks.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use ranged poke to whittle him down before committing.\n- Build items that reduce healing to counter his sustain."
   },
   {
   "id": "Urgot",
   "name": "Urgot",
+         "lanes": ["Top"],
+
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -2117,11 +2298,15 @@
   {
     "id": "Varus",
     "name": "Varus",
+           "lanes": ["Bot"],
+
     "genericTips": "- Avoid standing near minions to reduce the impact of his Q (Piercing Arrow).\n- Bait out his E (Hail of Arrows) before engaging.\n- Build magic resistance to mitigate his poke damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Coordinate with your support to zone him out during laning phase.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use crowd control to interrupt his R (Chain of Corruption) channel.\n- Build items that reduce healing to counter his sustain.\n- Avoid extended trades where his passive grants bonus attack speed."
   },
  {
   "id": "Vayne",
   "name": "Vayne",
+         "lanes": ["Top", "Bot"],
+
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -2171,41 +2356,57 @@
   {
     "id": "Veigar",
     "name": "Veigar",
+           "lanes": ["Mid"],
+
     "genericTips": "- Avoid standing near minions to reduce the impact of his Q (Baleful Strike).\n- Bait out his E (Event Horizon) before engaging.\n- Build magic resistance to mitigate his burst damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use ranged poke to whittle him down before committing.\n- Avoid extended trades where he can stack his passive for ability power."
   },
   {
     "id": "Vex",
     "name": "Vex",
+           "lanes": ["Mid"],
+
     "genericTips": "- Monitor her passive bar; when glowing, she can fear you with her next ability.\n- Bait out her W (Personal Space) before engaging to reduce her defensive options.\n- Maintain distance to avoid her Q (Mistral Bolt) poke.\n- Build magic resistance to mitigate her burst damage.\n- Ward flanks to anticipate her R (Shadow Surge) roams.\n- Play under turret when low on health to deter her dive potential.\n- Coordinate with your jungler to gank when her mobility spells are on cooldown.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to track her ultimate cooldown.\n- Use ranged poke to whittle her down before committing."
   },
     {
   "id": "Velkoz",
   "name": "Vel'Koz",
+         "lanes": ["Support", "Mid"],
+
   "genericTips": "- Sidestep his Q (Plasma Fission) to avoid poke and slow.\n- Engage after he misses E (Tectonic Disruption) — it's his main peel.\n- Stay mobile to dodge his R (Life Form Disintegration Ray).\n- Build magic resist early to reduce burst (e.g. Null-Magic Mantle).\n- Roam proactively — Vel'Koz has weak waveclear under pressure.\n- Take advantage of his immobility; gap-closers work well.\n- Ward flanks to avoid long-range ult channel angles.\n- Keep fights close range to limit his poke effectiveness.\n- Use terrain to block skillshots and break line-of-sight.\n- Punish when his cooldowns are down; he relies on combos."
 },
   {
     "id": "Vi",
     "name": "Vi",
+           "lanes": ["Jungle"],
+
     "genericTips": "- Avoid standing near walls to reduce the impact of her Q (Vault Breaker).\n- Bait out her Q before engaging to reduce her engage potential.\n- Build armor to mitigate her physical damage.\n- Maintain vision in river and jungle to anticipate her ganks.\n- Play under turret when low on health to deter her dive potential.\n- Coordinate with your team to collapse on her during ganks.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to track her ultimate cooldown.\n- Use crowd control to interrupt her R (Cease and Desist) channel.\n- Build items that reduce healing to counter her sustain."
   },
   {
     "id": "Viego",
     "name": "Viego",
+           "lanes": ["Jungle"],
+
     "genericTips": "- Avoid extended trades where his passive grants bonus damage.\n- Bait out his W (Spectral Maw) before engaging to reduce his stun potential.\n- Build armor to mitigate his physical damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use ranged poke to whittle him down before committing.\n- Build items that reduce healing to counter his sustain."
   },
   {
     "id": "Viktor",
     "name": "Viktor",
+           "lanes": ["Mid"],
+
     "genericTips": "- Avoid standing near minions to reduce the impact of his E (Death Ray).\n- Bait out his W (Gravity Field) before engaging to reduce his zoning potential.\n- Build magic resistance to mitigate his poke damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use ranged poke to whittle him down before committing.\n- Avoid extended trades where his passive grants bonus damage."
   },
   {
     "id": "Vladimir",
     "name": "Vladimir",
+           "lanes": ["Mid", "Top"],
+
     "genericTips": "- Harass him early; he is weak before level 6.\n- Bait out his W (Sanguine Pool) before committing to all-ins.\n- Build magic resistance to mitigate his poke damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use crowd control to lock him down during his R (Hemoplague).\n- Build items that reduce healing to counter his sustain."
   },
 {
   "id": "Volibear",
   "name": "Volibear",
+         "lanes": ["Top"],
+
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -2255,11 +2456,15 @@
   {
     "id": "Warwick",
     "name": "Warwick",
+           "lanes": ["Jungle", "Top"],
+
     "genericTips": "- Avoid extended trades where his passive grants bonus healing.\n- Bait out his Q (Jaws of the Beast) before engaging to reduce his sustain.\n- Build armor to mitigate his physical damage.\n- Maintain vision in river and jungle to anticipate his ganks.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your team to collapse on him during ganks.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use crowd control to interrupt his R (Infinite Duress) channel.\n- Build items that reduce healing to counter his sustain."
   },
   {
   "id": "MonkeyKing",
   "name": "Wukong",
+         "lanes": ["Top", "Jungle"],
+
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -2309,21 +2514,29 @@
   {
     "id": "Xayah",
     "name": "Xayah",
+           "lanes": ["Bot"],
+
     "genericTips": "- Avoid standing in her feather paths to prevent root from E (Bladecaller).\n- Bait out her Q (Double Daggers) before engaging to reduce her poke.\n- Build armor to mitigate her physical damage.\n- Coordinate with your support to zone her out during laning phase.\n- Maintain vision in river and jungle to anticipate her roams.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to track her ultimate cooldown.\n- Use crowd control to lock her down during her R (Featherstorm).\n- Build items that reduce healing to counter her sustain.\n- Avoid extended trades where her passive grants bonus attack speed."
   },
   {
     "id": "Xerath",
     "name": "Xerath",
+           "lanes": ["Support","Bot"],
+
     "genericTips": "- Avoid standing near minions to reduce the impact of his Q (Arcanopulse).\n- Bait out his E (Shocking Orb) before engaging to reduce his stun potential.\n- Build magic resistance to mitigate his poke damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use ranged poke to whittle him down before committing.\n- Avoid clumping to reduce the impact of his AoE abilities."
   },
   {
     "id": "Yone",
     "name": "Yone",
+           "lanes": ["Mid", "Top"],
+
     "genericTips": "- Monitor his Q stacks; avoid engaging when he has Q3 ready.\n- Bait out his E (Soul Unbound) before committing to trades.\n- Build armor to mitigate his physical damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use crowd control to lock him down during his R (Fate Sealed).\n- Avoid extended trades where his passive grants bonus damage."
   },
   {
   "id": "Yorick",
   "name": "Yorick",
+         "lanes": ["Top"],
+
   "matchupTips": [
     {
       "phase": "🕐 Levels 1–3",
@@ -2373,41 +2586,57 @@
   {
     "id": "Yuumi",
     "name": "Yuumi",
+           "lanes": ["Support"],
+
     "genericTips": "- Engage aggressively early; Yuumi is vulnerable before level 6.\n- Bait out her Q (Prowling Projectile) before committing to trades.\n- Build magic resistance to mitigate her poke damage.\n- Maintain vision in river and jungle to anticipate her roams.\n- Coordinate with your ADC to zone her out during laning phase.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to track her ultimate cooldown.\n- Use crowd control to interrupt her R (Final Chapter) channel.\n- Build items that reduce healing to counter her sustain.\n- Avoid clumping to reduce the impact of her AoE abilities."
   },
   {
     "id": "Zac",
     "name": "Zac",
+           "lanes": ["Jungle", "Top"],
+
     "genericTips": "- Avoid extended trades where his passive grants bonus healing.\n- Bait out his E (Elastic Slingshot) before engaging to reduce his engage potential.\n- Build magic resistance to mitigate his magic damage.\n- Maintain vision in river and jungle to anticipate his ganks.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your team to collapse on him during ganks.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use crowd control to interrupt his R (Let's Bounce!) channel.\n- Build items that reduce healing to counter his sustain."
   },
   {
     "id": "Zed",
     "name": "Zed",
+           "lanes": ["Mid"],
+
     "genericTips": "- Respect his level 6 power spike; his R (Death Mark) enables lethal all-ins.\n- Bait out his W (Living Shadow) before engaging to reduce his mobility.\n- Build armor to mitigate his physical damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use crowd control to lock him down during his R (Death Mark).\n- Avoid extended trades where his passive grants bonus damage."
   },
  {
     "id": "Zeri",
     "name": "Zeri",
+           "lanes": ["Bot"],
+
     "genericTips": "- Respect her level 6 power spike; her R (Lightning Crash) enhances her dueling.\n- Bait out her E (Spark Surge) before engaging to reduce her mobility.\n- Build armor to mitigate her physical damage.\n- Maintain vision in river and jungle to anticipate her roams.\n- Coordinate with your support to zone her out during laning phase.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to track her ultimate cooldown.\n- Use crowd control to lock her down during her R (Lightning Crash).\n- Avoid extended trades where her passive grants bonus movement speed.\n- Build items that reduce healing to counter her sustain."
   },
   {
     "id": "Ziggs",
     "name": "Ziggs",
+           "lanes": ["Bot", "Mid"],
+
     "genericTips": "- Avoid standing near minions to reduce the impact of his Q (Bouncing Bomb).\n- Bait out his E (Hexplosive Minefield) before engaging to reduce his zoning potential.\n- Build magic resistance to mitigate his poke damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Play under turret when low on health to deter his dive potential.\n- Coordinate with your jungler to gank when his mobility spells are on cooldown.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use ranged poke to whittle him down before committing.\n- Avoid extended trades where his passive grants bonus damage."
   },
   {
     "id": "Zilean",
     "name": "Zilean",
+           "lanes": ["Support"],
+
     "genericTips": "- Avoid standing near minions to reduce the impact of his Q (Time Bomb).\n- Bait out his W (Rewind) before engaging to reduce his cooldown resets.\n- Build magic resistance to mitigate his poke damage.\n- Maintain vision in river and jungle to anticipate his roams.\n- Coordinate with your support to zone him out during laning phase.\n- Punish him when his mobility spells are on cooldown.\n- Communicate with your team to track his ultimate cooldown.\n- Use crowd control to lock him down before he can cast R (Chronoshift).\n- Avoid extended trades where his passive grants bonus experience.\n- Build items that reduce healing to counter his sustain."
   },
   {
     "id": "Zoe",
     "name": "Zoe",
+           "lanes": ["Mid"],
+
     "genericTips": "- Avoid standing near minions to reduce the impact of her Q (Paddle Star).\n- Bait out her E (Sleepy Trouble Bubble) before engaging to reduce her CC potential.\n- Build magic resistance to mitigate her burst damage.\n- Maintain vision in river and jungle to anticipate her roams.\n- Play under turret when low on health to deter her dive potential.\n- Coordinate with your jungler to gank when her mobility spells are on cooldown.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to track her ultimate cooldown.\n- Use ranged poke to whittle her down before committing.\n- Avoid extended trades where her passive grants bonus damage."
   },
   {
     "id": "Zyra",
     "name": "Zyra",
+           "lanes": ["Support"],
+
     "genericTips": "- Avoid standing near her plants to reduce the impact of her poke.\n- Bait out her E (Grasping Roots) before engaging to reduce her CC potential.\n- Build magic resistance to mitigate her magic damage.\n- Maintain vision in river and jungle to anticipate her roams.\n- Coordinate with your support to zone her out during laning phase.\n- Punish her when her mobility spells are on cooldown.\n- Communicate with your team to track her ultimate cooldown.\n- Use crowd control to lock her down during her R (Stranglethorns).\n- Build items that reduce healing to counter her sustain.\n- Avoid extended trades where her plants can continuously deal damage."
   }
 
