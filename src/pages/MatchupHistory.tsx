@@ -20,27 +20,35 @@ export default function MatchupHistory() {
   }, [user]);
 
   useEffect(() => {
-  const style = document.createElement('style');
-  style.textContent = `
-    @keyframes jiggle {
-      0% { transform: translateX(0); }
-      25% { transform: translateX(-2px); }
-      50% { transform: translateX(2px); }
-      75% { transform: translateX(-2px); }
-      100% { transform: translateX(0); }
-    }
-    .matchup-jiggle:hover {
-      animation: jiggle 0.3s ease-in-out;
-    }
-  `;
-  document.head.appendChild(style);
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes jiggle {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-2px); }
+        50% { transform: translateX(2px); }
+        75% { transform: translateX(-2px); }
+        100% { transform: translateX(0); }
+      }
+      .matchup-jiggle:hover {
+        animation: jiggle 0.3s ease-in-out;
+      }
+    `;
+    document.head.appendChild(style);
+    return () => {
+      if (style.parentNode) style.parentNode.removeChild(style);
+    };
+  }, []);
 
-  return () => {
-    if (style.parentNode) {
-      style.parentNode.removeChild(style);
+  const deleteNote = async (key: string) => {
+    const current = await loadNotes(user);
+    delete current[key];
+    setNotes(current);
+    await saveNotes(user, current);
+
+    if (!user) {
+      localStorage.setItem('matchup_notes', JSON.stringify(current));
     }
   };
-}, []);
 
   const filteredKeys = Object.keys(notes).filter((key) =>
     key.toLowerCase().includes(search.toLowerCase())
@@ -59,17 +67,9 @@ export default function MatchupHistory() {
     return 0;
   });
 
-  const deleteNote = async (key: string) => {
-    const updated = { ...notes };
-    delete updated[key];
-    setNotes(updated);
-    await saveNotes(user, updated);
-  };
-
   return (
     <>
       <div style={styles.backgroundImage} />
-
       <div style={styles.contentWrapper}>
         <div style={styles.overlay}>
           <Layout>
