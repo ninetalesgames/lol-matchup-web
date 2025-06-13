@@ -7,7 +7,6 @@ import {
   signOut,
   type User,
 } from 'firebase/auth';
-import { syncLocalAndCloud } from './services/DataService';
 
 interface AuthContextType {
   user: User | null;
@@ -29,10 +28,12 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
         console.log('User logged in:', firebaseUser.uid);
 
         try {
-          await syncLocalAndCloud(firebaseUser);
-          console.log('✅ Synced cloud → localStorage');
+          // ✅ Load notes from Firebase and overwrite local
+          const { loadNotes } = await import('./services/DataService');
+          await loadNotes(firebaseUser);
+          console.log('Firebase notes loaded and localStorage updated');
         } catch (error) {
-          console.error('Error syncing notes:', error);
+          console.error('Error loading notes from Firebase:', error);
         }
       }
     });

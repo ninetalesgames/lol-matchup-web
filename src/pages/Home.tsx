@@ -1,4 +1,4 @@
-// Home.tsx with level system and winrate pill beside profile icon
+// Home.tsx with mostPlayed fix
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../AuthContext';
@@ -23,7 +23,7 @@ export default function Home() {
   const { user } = useAuth();
   const navigate = useNavigate();
   const [notes, setNotes] = useState<Record<string, any>>({});
-  const [mostPlayed, setMostPlayed] = useState('Jax');
+  const [mostPlayed, setMostPlayed] = useState<string | null>(null);
   const [recent, setRecent] = useState<[string, any][]>([]);
 
   useEffect(() => {
@@ -33,11 +33,15 @@ export default function Home() {
 
       const champCounts: Record<string, number> = {};
       Object.keys(saved).forEach((key) => {
-        const [player] = key.split('_');
-        champCounts[player] = (champCounts[player] || 0) + 1;
+        const [player, opponent] = key.split('_');
+        if (player && opponent) {
+          champCounts[player] = (champCounts[player] || 0) + 1;
+        }
       });
       const sorted = Object.entries(champCounts).sort((a, b) => b[1] - a[1]);
-      if (sorted.length > 0) setMostPlayed(sorted[0][0]);
+      if (sorted.length > 0 && sorted[0][0]) {
+        setMostPlayed(sorted[0][0]);
+      }
 
       const recentSorted = Object.entries(saved)
         .filter(([_, note]) => note.lastUpdated)
@@ -72,33 +76,32 @@ export default function Home() {
       <Layout showBackground={false}>
         <div style={{ textAlign: 'center' }}>
           <img
-  src={`${import.meta.env.BASE_URL}icon.png`}
-  alt="Logo"
-  style={{
-    width: '150px',
-    height: '150px',
-    objectFit: 'contain',
-    marginBottom: '12px',
-    filter: 'drop-shadow(0 0 6px rgba(255, 255, 255, 0.3))',
-  }}
-/>
+            src={`${import.meta.env.BASE_URL}icon.png`}
+            alt="Logo"
+            style={{
+              width: '150px',
+              height: '150px',
+              objectFit: 'contain',
+              marginBottom: '12px',
+              filter: 'drop-shadow(0 0 6px rgba(255, 255, 255, 0.3))',
+            }}
+          />
           <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px' }}>
             <div>
               {mostPlayed && /^[a-zA-Z]+$/.test(mostPlayed) ? (
-  <img
-    src={`https://ddragon.leagueoflegends.com/cdn/15.11.1/img/champion/${mostPlayed}.png`}
-    alt={mostPlayed}
-    style={{ width: '80px', height: '80px', borderRadius: '12px', border: '2px solid gold' }}
-    onError={(e) => {
-      e.currentTarget.style.display = 'none';
-    }}
-  />
-) : (
-  <div style={{ width: '80px', height: '80px', backgroundColor: '#111', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#888' }}>
-    ?
-  </div>
-)}
-
+                <img
+                  src={`https://ddragon.leagueoflegends.com/cdn/15.11.1/img/champion/${mostPlayed}.png`}
+                  alt={mostPlayed}
+                  style={{ width: '80px', height: '80px', borderRadius: '12px', border: '2px solid gold' }}
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                  }}
+                />
+              ) : (
+                <div style={{ width: '80px', height: '80px', backgroundColor: '#111', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#888' }}>
+                  ?
+                </div>
+              )}
               <div style={{ marginTop: '8px', fontSize: '16px', fontWeight: 'bold' }}>{username}</div>
             </div>
 
@@ -116,7 +119,8 @@ export default function Home() {
               <div>{winStats.total} Games | {winStats.wins}W / {winStats.losses}L</div>
             </div>
           </div>
-                  <h2 style={{ fontSize: '24px', color: '#ffdd57', textShadow: '0 0 10px rgba(255,221,87,0.8)', marginBottom: '8px', fontWeight: '700', textTransform: 'uppercase' }}>
+
+          <h2 style={{ fontSize: '24px', color: '#ffdd57', textShadow: '0 0 10px rgba(255,221,87,0.8)', marginBottom: '8px', fontWeight: '700', textTransform: 'uppercase' }}>
             READY TO CLIMB?
           </h2>
           <p style={{ marginBottom: '18px', fontSize: '16px', color: '#f0f0f0', fontWeight: '500' }}>
@@ -140,8 +144,6 @@ export default function Home() {
             <span>→</span>
             <span style={{ color: '#fff', textShadow: '0 0 6px rgba(255,255,255,0.6)' }}>➂ See Matchup Tips</span>
           </div>
-
-          
 
           {recent.length > 0 && (
             <div style={{ marginTop: '30px', textAlign: 'left', maxWidth: '400px', marginInline: 'auto', color: '#fff' }}>

@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../AuthContext';
-import { loadNotes, saveNotes } from '../services/DataService';
+import { loadNotes,  } from '../services/DataService';
 import Layout from '../Layout';
+import { getFirestore, doc, updateDoc } from 'firebase/firestore';
+import { deleteField } from 'firebase/firestore';
 
 export default function MatchupHistory() {
   const navigate = useNavigate();
@@ -39,16 +41,23 @@ export default function MatchupHistory() {
     };
   }, []);
 
-  const deleteNote = async (key: string) => {
-    const current = await loadNotes(user);
-    delete current[key];
-    setNotes(current);
-    await saveNotes(user, current);
+ const deleteNote = async (key: string) => {
+  const current = await loadNotes(user);
 
-    if (!user) {
-      localStorage.setItem('matchup_notes', JSON.stringify(current));
-    }
-  };
+  const updated = { ...current };
+  delete updated[key];
+  setNotes(updated);
+
+  if (user) {
+    const db = getFirestore();
+    const ref = doc(db, 'users', user.uid);
+    await updateDoc(ref, {
+      [`notes.${key}`]: deleteField(),
+    });
+  } else {
+    localStorage.setItem('matchup_notes', JSON.stringify(updated));
+  }
+};
 
   const filteredKeys = Object.keys(notes).filter((key) =>
     key.toLowerCase().includes(search.toLowerCase())
@@ -140,14 +149,24 @@ export default function MatchupHistory() {
                         style={styles.championIcon}
                       />
                       <button
-                        style={styles.deleteButton}
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          deleteNote(key);
-                        }}
-                      >
-                        Delete
-                      </button>
+  style={styles.trashButton}
+  onClick={(e) => {
+    e.stopPropagation();
+    deleteNote(key);
+  }}
+  title="Delete matchup"
+  aria-label="Delete matchup"
+>
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  height="20"
+  width="20"
+  fill="currentColor"
+>
+  <path d="M3 6h18v2H3V6zm2 3h14v13H5V9zm3 2v9h2v-9H8zm4 0v9h2v-9h-2zm4 0v9h2v-9h-2zM9 4h6v2H9V4z"/>
+</svg>
+</button>
                     </div>
                   );
                 })
@@ -283,4 +302,22 @@ const styles: { [key: string]: React.CSSProperties } = {
     borderRadius: '20px',
     cursor: 'pointer',
   },
+  trashButton: {
+  marginLeft: '12px',
+  background: 'transparent',
+  border: 'none',
+  cursor: 'pointer',
+  color: '#aaa',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  padding: '4px',
+  borderRadius: '6px',
+  transition: 'color 0.2s ease',
+},
+
+// Optional hover effect (you can inline this too):
+// onMouseEnter → set color: '#e74c3c'
+// or use CSS class and handle with :hover
+
 };

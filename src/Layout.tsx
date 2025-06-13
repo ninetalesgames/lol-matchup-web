@@ -10,22 +10,31 @@ export default function Layout({
 }: {
   children: React.ReactNode;
   showBackground?: boolean;
-}) {  const navigate = useNavigate();
+}) {
+  const navigate = useNavigate();
   const { user, logout } = useAuth();
   const [showDropdown, setShowDropdown] = useState(false);
-
   const base = import.meta.env.BASE_URL;
 
   return (
     <div style={styles.page}>
-      {/* Global background image */}
-{showBackground && <div style={styles.skyboxBackground} />}
+      {showBackground && <div style={styles.skyboxBackground} />}
+
       <header style={styles.header}>
         <div style={styles.headerInner}>
-          <button onClick={() => navigate(-1)} style={styles.backTextButton} title="Back">
-  &lt;
-</button>
+          <div style={styles.sideSpace} />
 
+          <button onClick={() => navigate(-1)} style={styles.backTextButton} title="Back" aria-label="Back">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              height="24"
+              width="24"
+              fill="currentColor"
+            >
+              <path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+            </svg>
+          </button>
 
           <nav style={styles.nav}>
             <button style={styles.iconButton} onClick={() => navigate('/')}>
@@ -38,12 +47,12 @@ export default function Layout({
 
             <div style={styles.dropdownContainer}>
               <button style={styles.iconButton} onClick={() => setShowDropdown(!showDropdown)}>
-<img
-  src={`${base}${user ? 'account.webp' : 'login.webp'}`}
-  alt={user ? 'Account' : 'Login'}
-  title={user ? 'Account' : 'Login'}
-  style={styles.iconImage}
-/>
+                <img
+                  src={`${base}${user ? 'account.webp' : 'login.webp'}`}
+                  alt={user ? 'Account' : 'Login'}
+                  title={user ? 'Account' : 'Login'}
+                  style={styles.iconImage}
+                />
               </button>
 
               {showDropdown && (
@@ -88,6 +97,8 @@ export default function Layout({
               )}
             </div>
           </nav>
+
+          <div style={styles.sideSpace} />
         </div>
       </header>
 
@@ -149,18 +160,12 @@ const styles: { [key: string]: React.CSSProperties } = {
   },
   headerInner: {
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     alignItems: 'center',
   },
-  logo: {
-    fontSize: '20px',
-    fontWeight: 'bold',
-    cursor: 'pointer',
-    filter: 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.25))',
-  },
-  logoImage: {
-    height: '60px',
-    objectFit: 'contain',
+  sideSpace: {
+    width: '40px',
+    flexShrink: 0,
   },
   nav: {
     display: 'flex',
@@ -220,10 +225,6 @@ const styles: { [key: string]: React.CSSProperties } = {
     fontSize: '12px',
     color: '#aaa',
   },
-  userSection: {
-    display: 'flex',
-    alignItems: 'center',
-  },
   link: {
     color: '#8e44ad',
     textDecoration: 'none',
@@ -243,23 +244,22 @@ const styles: { [key: string]: React.CSSProperties } = {
     display: 'block',
     filter: 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.25))',
   },
-backTextButton: {
-  position: 'absolute',
-  left: '12px',
-  top: '50%',
-  transform: 'translateY(-50%)',
-  fontSize: '28px',
-  fontWeight: 900,
-  background: 'none',
-  border: 'none',
-  cursor: 'pointer',
-  zIndex: 1002,
-  backgroundImage: 'linear-gradient(145deg, #f8e58c, #c29f4c, #fff1b2)',
-  WebkitBackgroundClip: 'text',
-  WebkitTextFillColor: 'transparent',
-  textShadow: '0 0 6px rgba(255, 221, 87, 0.5), 0 0 2px #b58c3f',
-},
-
-
-
+  backTextButton: {
+    position: 'absolute',
+    left: '12px',
+    top: '50%',
+    transform: 'translateY(-50%)',
+    background: 'none',
+    border: 'none',
+    cursor: 'pointer',
+    zIndex: 1002,
+    padding: '4px',
+    color: '#f1c40f',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    transition: 'color 0.2s',
+    fontSize: '0',
+    textShadow: '0 0 6px rgba(0, 0, 0, 0.9)',
+  },
 };
