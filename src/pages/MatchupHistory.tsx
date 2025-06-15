@@ -59,9 +59,11 @@ export default function MatchupHistory() {
   }
 };
 
-  const filteredKeys = Object.keys(notes).filter((key) =>
-    key.toLowerCase().includes(search.toLowerCase())
-  );
+ const filteredKeys = Object.keys(notes).filter((key) => {
+  if (!key.includes('_')) return false;
+  const [player, opponent] = key.split('_');
+  return player && opponent && key.toLowerCase().includes(search.toLowerCase());
+});
 
   const sortedKeys = [...filteredKeys].sort((a, b) => {
     const aNote = notes[a];

@@ -5,12 +5,13 @@ import { useAuth } from '../AuthContext';
 import { loadNotes, saveNotes } from '../services/DataService';
 import championsData from '../assets/champions.json';
 import Layout from '../Layout';
-import { useLevel } from '../LevelContext'; // 👈 Add this
+import { useLevel } from '../LevelContext';
 
 export default function MatchupSetup() {
   const { user } = useAuth();
   const navigate = useNavigate();
   const lockInRef = useRef<HTMLDivElement>(null);
+  const { level } = useLevel();
 
   const [champions, setChampions] = useState<any[]>([]);
   const [favorites, setFavorites] = useState<string[]>([]);
@@ -18,20 +19,35 @@ export default function MatchupSetup() {
   const [selectedLane, setSelectedLane] = useState<string>('All');
   const [player, setPlayer] = useState<any>(null);
   const [opponent, setOpponent] = useState<any>(null);
- const { level } = useLevel(); // ✅ ACTUALLY call the hook here
+
+useEffect(() => {
+  const loadData = async () => {
+    const result = await loadNotes(user);
+    const favs = result?.favorites || [];
+    const loaded = championsData.map((champ: any) => ({
+      ...champ,
+      isFavorite: favs.includes(champ.id),
+    }));
+    setChampions(loaded);
+    setFavorites(favs);
+  };
+  loadData();
+}, [user]);
 
   useEffect(() => {
-    const loadData = async () => {
-      const favs = (await loadNotes(user)).favorites || [];
-      const loaded = championsData.map((champ: any) => ({
-        ...champ,
-        isFavorite: favs.includes(champ.id),
-      }));
-      setChampions(loaded);
-      setFavorites(favs);
+    const style = document.createElement('style');
+    style.innerHTML = `
+      @media (max-width: 600px) {
+        .champion-grid {
+          grid-template-columns: repeat(4, 1fr) !important;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+    return () => {
+      document.head.removeChild(style);
     };
-    loadData();
-  }, [user]);
+  }, []);
 
   const toggleFavorite = async (id: string) => {
     const updated = favorites.includes(id)
@@ -103,11 +119,13 @@ export default function MatchupSetup() {
               </button>
             ))}
           </div>
-{level <= 10 && (
-          <p style={{ color: '#ccc', fontSize: '13px', marginBottom: '12px' }}>
-            Right-click a champion to mark as favorite ⭐
-          </p>
-)}
+
+          {level <= 10 && (
+            <p style={{ color: '#ccc', fontSize: '13px', marginBottom: '12px' }}>
+              Right-click a champion to mark as favorite ⭐
+            </p>
+          )}
+
           <div ref={lockInRef}>
             {(player || opponent) && (
               <div style={{ ...styles.lockInContainer, transition: 'all 0.4s ease' }}>
@@ -151,7 +169,7 @@ export default function MatchupSetup() {
             )}
           </div>
 
-          <div style={styles.grid}>
+          <div className="champion-grid" style={styles.grid}>
             {filtered.map((champ) => (
               <div
                 key={champ.id}
@@ -241,7 +259,8 @@ const styles: { [key: string]: React.CSSProperties } = {
     gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))',
     gap: '16px',
     justifyItems: 'center',
-    marginTop: '20px'
+    marginTop: '20px',
+    width: '100%',
   },
   card: {
     position: 'relative',

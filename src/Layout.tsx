@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from './AuthContext';
 import LoginDropdown from './components/LoginDropdown';
@@ -15,6 +15,24 @@ export default function Layout({
   const { user, logout } = useAuth();
   const [showDropdown, setShowDropdown] = useState(false);
   const base = import.meta.env.BASE_URL;
+
+  useEffect(() => {
+    const style = document.createElement('style');
+    style.innerHTML = `
+      @media (max-width: 600px) {
+        img[alt="Home"],
+        img[alt="Matchup History"],
+        img[alt="Account"],
+        img[alt="Login"] {
+          height: 36px !important;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
 
   return (
     <div style={styles.page}>

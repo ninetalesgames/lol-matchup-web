@@ -530,5 +530,15 @@
   "id": "3068",
   "name": "Sunfire Aegis",
   "icon": "https://ddragon.leagueoflegends.com/cdn/14.10.1/img/item/3068.png"
+},
+{
+  "id": "4637",
+  "name": "Liandry's Anguish",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/14.10.1/img/item/4637.png"
+},
+{
+  "id": "3194",
+  "name": "Adaptive Helm",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/10.16.1/img/item/3194.png"
 }
 ]

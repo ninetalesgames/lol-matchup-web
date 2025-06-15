@@ -52,7 +52,7 @@ export default function NotesForm() {
   const [itemSearch, setItemSearch] = useState('');
 
   const { triggerCheck, SaveCheck } = useSaveStatus();
-  const opponent = championData.find((c) => c.id === opponentChampion);
+const opponent = championData.find((c) => c.name === opponentChampion);
   const recommendedItems = opponent?.recommendedItems || [];
 
   useEffect(() => {
